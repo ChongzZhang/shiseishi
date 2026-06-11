@@ -1,0 +1,20 @@
+{
+  "color": "鹅黄",
+  "pinyin": "c1724b",
+  "hex": "#fff143",
+  "entries": [
+    {
+      "line": "看尽鹅黄嫩绿，都是江南旧相识",
+      "title": "淡黄柳",
+      "author": "姜夔",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "鹅黄",
+      "_hex": "#fff143",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

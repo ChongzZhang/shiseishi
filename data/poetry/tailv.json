@@ -1,0 +1,48 @@
+{
+  "color": "苔绿",
+  "pinyin": "tailv",
+  "hex": "#887322",
+  "entries": [
+    {
+      "line": "庭前弱柳黄金线，池畔新苔绿玉钱。",
+      "title": "春思五首  其一",
+      "author": "韦骧",
+      "type": "诗",
+      "source": "全唐诗/poet.song.41000.json#686",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "固知竹箭已抽萌，玉筯琼簪破苔绿。",
+      "title": "又和谢良辅惠箭笋",
+      "author": "吴芾",
+      "type": "诗",
+      "source": "全唐诗/poet.song.113000.json#905",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "下有幽泉鸣，上有苍苔绿。",
+      "title": "临流石",
+      "author": "朱熹",
+      "type": "诗",
+      "source": "全唐诗/poet.song.147000.json#655",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "为怜一径新苔绿，别就墙阴取路行。",
+      "title": "雨后散步后园二首  其一",
+      "author": "陆游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.129000.json#446",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "4/5"
+}

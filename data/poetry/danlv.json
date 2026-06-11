@@ -1,0 +1,38 @@
+{
+  "color": "淡绿",
+  "pinyin": "danlv",
+  "hex": "#61ac85",
+  "entries": [
+    {
+      "line": "孤山路，晚蒲病柳，淡绿锁深院。",
+      "title": "霓裳中序第一",
+      "author": "罗志仁",
+      "type": "词",
+      "source": "宋词/ci.song.18000.json#448",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "双髻绾云颜似玉，素娥辉淡绿。",
+      "title": "谒金门",
+      "author": "阎选",
+      "type": "词",
+      "source": "全唐诗/poet.tang.49000.json#669",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "唐"
+    },
+    {
+      "line": "修水浓青，新条淡绿，翠光交映虚亭。",
+      "title": "满庭芳",
+      "author": "黄庭坚",
+      "type": "词",
+      "source": "宋词/ci.song.2000.json#746",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

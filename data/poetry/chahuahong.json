@@ -1,0 +1,28 @@
+{
+  "color": "茶花红",
+  "pinyin": "chahuahong",
+  "hex": "#ee3f4d",
+  "entries": [
+    {
+      "line": "三曲渔人献寿茶，新翻衢样织茶花。",
+      "title": "荆江渔父竹枝词九首和夔帅□侍郎韵为荆帅范侍郎寿  其三",
+      "author": "项安世",
+      "type": "诗",
+      "source": "全唐诗/poet.song.146000.json#801",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "中置短尾铫，细煑茶花熟。",
+      "title": "黎伯英解元赠予一大缶封泥如法初谓酒也至乃西山泉云暑中时可一酌珍重其意为赋此章",
+      "author": "郑刚中",
+      "type": "诗",
+      "source": "全唐诗/poet.song.98000.json#39",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

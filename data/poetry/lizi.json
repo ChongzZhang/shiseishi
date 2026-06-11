@@ -1,0 +1,18 @@
+{
+  "color": "李紫",
+  "pinyin": "lizi",
+  "hex": "#2b1216",
+  "entries": [
+    {
+      "line": "紫栗一寻青箬裹，红炉三尺雪花寒。",
+      "title": "初冬",
+      "author": "陆游",
+      "type": "诗",
+      "matchTier": 1,
+      "verified": true,
+      "_color": "栗紫",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

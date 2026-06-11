@@ -1,0 +1,19 @@
+{
+  "color": "彤",
+  "pinyin": "cbc79",
+  "hex": "#f35336",
+  "entries": [
+    {
+      "line": "彤云又吐，一竿残照",
+      "title": "青门饮",
+      "author": "时彦",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "彤",
+      "_hex": "#f35336",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

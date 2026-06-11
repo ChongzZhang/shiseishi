@@ -1,0 +1,96 @@
+{
+  "color": "朱红",
+  "pinyin": "c4b6c",
+  "hex": "#ff4c00",
+  "entries": [
+    {
+      "line": "画阁朱楼尽相望，红桃绿柳垂簷向",
+      "title": "洛阳女儿行",
+      "author": "王维",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "朱红",
+      "_hex": "#ff4c00",
+      "dynasty": "唐"
+    },
+    {
+      "line": "朱雀桥边野草花，乌衣巷口夕阳斜",
+      "title": "乌衣巷",
+      "author": "刘禹锡",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "朱红",
+      "_hex": "#ff4c00",
+      "dynasty": "唐"
+    },
+    {
+      "line": "新妆宜面下朱楼，深锁春光一院愁",
+      "title": "春词",
+      "author": "刘禹锡",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "朱红",
+      "_hex": "#ff4c00",
+      "dynasty": "唐"
+    },
+    {
+      "line": "翠叶藏莺，朱帘隔燕",
+      "title": "踏莎行",
+      "author": "晏殊",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "朱红",
+      "_hex": "#ff4c00",
+      "dynasty": "宋"
+    },
+    {
+      "line": "逞朱唇、缓歌妖丽，似听流莺乱花隔",
+      "title": "多丽",
+      "author": "聂冠卿",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "朱红",
+      "_hex": "#ff4c00",
+      "dynasty": "宋"
+    },
+    {
+      "line": "映水曲、翠瓦朱簷，垂杨里、乍见津亭",
+      "title": "绮寮怨",
+      "author": "周邦彦",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "朱红",
+      "_hex": "#ff4c00",
+      "dynasty": "宋"
+    },
+    {
+      "line": "参差双燕，还染残朱剩粉",
+      "title": "瑞鹤仙",
+      "author": "陆叡",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "朱红",
+      "_hex": "#ff4c00",
+      "dynasty": "宋"
+    },
+    {
+      "line": "骰彩红成点，素彩接乾坤",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "朱红",
+      "_hex": "#ff4c00",
+      "dynasty": "清"
+    }
+  ],
+  "coverage": "5/5"
+}

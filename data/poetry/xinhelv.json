@@ -1,0 +1,38 @@
+{
+  "color": "新禾绿",
+  "pinyin": "xinhelv",
+  "hex": "#d2b116",
+  "entries": [
+    {
+      "line": "仳违临晚萚，声问约新禾。",
+      "title": "次韵和邓德夫再和书怀别用三十韵",
+      "author": "韦骧",
+      "type": "诗",
+      "source": "全唐诗/poet.song.41000.json#377",
+      "matchTier": 3,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "上供旋捣新禾米，行部时惊旧水痕。",
+      "title": "送比部孙郎中将漕二浙",
+      "author": "张舜民",
+      "type": "诗",
+      "source": "全唐诗/poet.song.47000.json#54",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "新禾狼籍团团穟，远树婆娑簇簇烟。",
+      "title": "颍州道中有感",
+      "author": "毕仲游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.58000.json#870",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

@@ -1,0 +1,19 @@
+{
+  "color": "淡豆沙",
+  "pinyin": "dandousha",
+  "hex": "#873d24",
+  "entries": [
+    {
+      "line": "弄啄红豆实，飞上桄榔枝。",
+      "title": "谢鹇和公仪",
+      "author": "梅尧臣",
+      "type": "诗",
+      "source": "全唐诗/poet.song.15000.json#456",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

@@ -1,0 +1,28 @@
+{
+  "color": "甘草黄",
+  "pinyin": "gancaohuang",
+  "hex": "#f3bf4c",
+  "entries": [
+    {
+      "line": "双盘锦带丁香结，窄袖春衫甘草黄。",
+      "title": "再和元礼春怀十首  其九",
+      "author": "黄庭坚",
+      "type": "诗",
+      "source": "全唐诗/poet.song.57000.json#606",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "剪剪衰兰甘草莽，朣朣华月在林皋。",
+      "title": "楼大参嘱珣起宗索孤山旧藁  其一",
+      "author": "释居简",
+      "type": "诗",
+      "source": "全唐诗/poet.song.180000.json#196",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

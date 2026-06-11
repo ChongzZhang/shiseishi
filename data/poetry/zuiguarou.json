@@ -1,0 +1,19 @@
+{
+  "color": "醉瓜肉",
+  "pinyin": "zuiguarou",
+  "hex": "#db8540",
+  "entries": [
+    {
+      "line": "不用更烦人祝鲠，轮囷瓜瓠是常珍。",
+      "title": "食新",
+      "author": "陆游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.134000.json#437",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

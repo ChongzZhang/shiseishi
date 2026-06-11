@@ -1,0 +1,20 @@
+{
+  "color": "青葱",
+  "pinyin": "c6e02",
+  "hex": "#0aa344",
+  "entries": [
+    {
+      "line": "青山不语，残照当门",
+      "title": "湘春夜月",
+      "author": "黄孝迈",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "青葱",
+      "_hex": "#0aa344",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

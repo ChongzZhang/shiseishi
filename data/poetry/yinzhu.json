@@ -1,0 +1,40 @@
+{
+  "color": "银朱",
+  "pinyin": "yinzhu",
+  "hex": "#f43e06",
+  "entries": [
+    {
+      "line": "万颗蕖心琼珠辊，细滴与、银朱小砚。",
+      "title": "珍珠帘・真珠帘",
+      "author": "蒋捷",
+      "type": "词",
+      "source": "宋词/ci.song.18000.json#481",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "忆旧游、邃馆朱扉，小园香径",
+      "title": "苏武慢",
+      "author": "蔡伸",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "银朱",
+      "_hex": "#f43e06",
+      "dynasty": "宋"
+    },
+    {
+      "line": "残灯朱幌，淡月纱窗",
+      "title": "瑞鹤仙",
+      "author": "陆淞",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "银朱",
+      "_hex": "#f43e06",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

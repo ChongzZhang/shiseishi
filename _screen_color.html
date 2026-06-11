@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>色谱寻诗 · 选色</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:"Noto Serif SC","STSong","SimSun","Songti SC",serif;
+    background:#252017;color:#b8a88c;
+    display:flex;justify-content:center;align-items:center;
+    min-height:100vh;user-select:none;
+}
+.frame{width:580px;padding:48px 40px}
+.top{margin-bottom:44px}
+.top h1{font-size:1.2rem;font-weight:400;color:#8a7a60;letter-spacing:.5em;text-align:center}
+.top .mute{font-size:.72rem;color:#5a4e3a;text-align:center;margin-top:10px;letter-spacing:.2em}
+
+.bar-outer{margin:0 0 36px}
+.bar{height:1px;background:#3a3225}
+.bar-in{height:100%;background:#8a7a60;transition:width .2s}
+.bar-num{text-align:center;font-size:.72rem;color:#5a4e3a;margin-top:10px}
+
+.card{padding:40px 0;border-top:1px solid #3a3225;border-bottom:1px solid #3a3225;text-align:center}
+.swatch{margin:0 auto 28px;width:140px;height:140px;border-radius:50%;border:2px solid rgba(180,168,140,.15)}
+.cname{font-size:1.6rem;letter-spacing:.35em;color:#cdc0a4;margin-bottom:10px}
+.chex{font-size:.8rem;color:#5a4e3a;font-family:Consolas,monospace}
+.crgb{font-size:.78rem;color:#5a4e3a;font-family:Consolas,monospace;margin-top:4px}
+
+.hint{display:flex;justify-content:space-between;margin-top:36px}
+.hi{font-size:.8rem;color:#5a4e3a;padding:10px 24px;border:1px solid #3a3225;border-radius:1px;transition:all .12s;cursor:default}
+.hi:active{background:#3a3225}
+
+.done{text-align:center;padding:48px 0;border-top:1px solid #3a3225;border-bottom:1px solid #3a3225}
+.done h2{font-size:1.2rem;color:#8a7a60;letter-spacing:.3em;margin-bottom:24px}
+.done .st{color:#7a6e58;font-size:.88rem;line-height:2.2;letter-spacing:.1em}
+.done .st b{color:#b8a88c;font-weight:400}
+
+.flash{position:fixed;top:44px;left:50%;transform:translateX(-50%);
+    font-size:.8rem;letter-spacing:.12em;padding:6px 22px;
+    border-radius:1px;transition:opacity .25s;opacity:0;pointer-events:none}
+.flash.a{background:#2a3420;color:#8cb068;opacity:1}
+.flash.r{background:#342420;color:#b06868;opacity:1}
+</style>
+</head>
+<body>
+<div class="frame" id="app"></div>
+<div class="flash" id="flash" style="opacity:0"></div>
+<script>
+let DATA=[],ci=0,acc=[],gone=[];
+
+fetch('/data').then(r=>r.json()).then(arr=>{
+    DATA=arr;
+    if(!DATA.length){app.innerHTML='<div class="done"><h2>没有待选颜色</h2></div>';return}
+    shuffle(DATA);
+    render();
+    document.addEventListener('keydown',e=>{
+        if(e.key==='ArrowRight'){decide(true);e.preventDefault()}
+        if(e.key==='ArrowLeft'){decide(false);e.preventDefault()}
+    });
+});
+
+function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}}
+
+function hexToRgb(h){
+    h=h.replace('#','');
+    let r=parseInt(h.substring(0,2),16);
+    let g=parseInt(h.substring(2,4),16);
+    let b=parseInt(h.substring(4,6),16);
+    return [r,g,b];
+}
+
+function render(){
+    if(ci>=DATA.length){save();return}
+    let it=DATA[ci],n=ci+1,tot=DATA.length,pct=Math.round(n/tot*100);
+    let rgb=hexToRgb(it.hex);
+    app.innerHTML=
+    '<div class="top"><h1>色 谱 寻 诗</h1><div class="mute">→ 录用 &emsp; ← 跳过</div></div>'+
+    '<div class="bar-outer"><div class="bar"><div class="bar-in" style="width:'+pct+'%"></div></div><div class="bar-num">'+n+' / '+tot+'</div></div>'+
+    '<div class="card">'+
+    '<div class="swatch" style="background:'+it.hex+'"></div>'+
+    '<div class="cname">'+esc(it.name)+'</div>'+
+    '<div class="chex">'+it.hex+'</div>'+
+    '<div class="crgb">RGB('+rgb[0]+', '+rgb[1]+', '+rgb[2]+')</div>'+
+    '</div>'+
+    '<div class="hint"><div class="hi">← 跳过</div><div class="hi">→ 录用</div></div>';
+}
+
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function decide(ok){
+    let it=DATA[ci];
+    if(ok){acc.push(it);flash('录 用','a')}
+    else{gone.push(it);flash('跳 过','r')}
+    ci++;
+    if(ci>=DATA.length)save();else render();
+}
+
+function flash(msg,cls){let e=document.getElementById('flash');e.textContent=msg;e.className='flash '+cls;setTimeout(()=>e.className='flash',400)}
+
+function save(){
+    app.innerHTML='<div class="top"><h1>色 谱 寻 诗</h1></div><div class="done"><p style="color:#5a4e3a">保存中...</p></div>';
+    fetch('/save',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({accepted:acc,rejected:gone})})
+    .then(r=>r.json()).then(r=>{
+        app.innerHTML=
+        '<div class="top"><h1>色 谱 寻 诗</h1></div>'+
+        '<div class="done"><h2>选 色 完 成</h2>'+
+        '<div class="st"><p>新录用 <b>'+r.accepted+'</b> 色</p><p>色板总计 <b>'+r.total+'</b> 色</p></div>'+
+        '<p style="color:#5a4e3a;font-size:.72rem;margin-top:24px">可关闭此页面</p></div>';
+    }).catch(e=>{
+        app.innerHTML='<div class="done"><p style="color:#b06868">保存失败</p><p style="color:#5a4e3a;font-size:.72rem">'+esc(e.message)+'</p></div>';
+    });
+}
+</script>
+</body>
+</html>

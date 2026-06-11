@@ -1,0 +1,18 @@
+{
+  "color": "丁香棕",
+  "pinyin": "dingxiangzong",
+  "hex": "#71361d",
+  "entries": [
+    {
+      "line": "丁香多意绪，和月堕林梢。",
+      "title": "荳蔻花",
+      "author": "许及之",
+      "type": "诗",
+      "source": "全唐诗/poet.song.153000.json#282",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

@@ -1,0 +1,30 @@
+{
+  "color": "青翠",
+  "pinyin": "cfbab",
+  "hex": "#00e079",
+  "entries": [
+    {
+      "line": "绛帻鸡人报晓筹，尚衣方进翠云裘",
+      "title": "和贾至舍人早朝大明宫之作",
+      "author": "王维",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "青翠",
+      "_hex": "#00e079",
+      "dynasty": "唐"
+    },
+    {
+      "line": "远芳侵古道，晴翠接荒城",
+      "title": "赋得古原草送别",
+      "author": "白居易",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "青翠",
+      "_hex": "#00e079",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "2/5"
+}

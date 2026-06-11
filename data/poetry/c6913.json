@@ -1,0 +1,32 @@
+{
+  "color": "丁香色",
+  "pinyin": "c6913",
+  "hex": "#cca4e3",
+  "entries": [
+    {
+      "line": "丁香露泣残枝，算未比、愁肠寸结",
+      "title": "柳梢青",
+      "author": "蔡伸",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "丁香色",
+      "_hex": "#cca4e3",
+      "dynasty": "宋"
+    },
+    {
+      "line": "共有几许新愁，芭蕉不展丁香结",
+      "title": "石州慢",
+      "author": "贺铸",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "丁香色",
+      "_hex": "#cca4e3",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

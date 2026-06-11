@@ -1,0 +1,19 @@
+{
+  "color": "北瓜黄",
+  "pinyin": "beiguahuang",
+  "hex": "#fc8c23",
+  "entries": [
+    {
+      "line": "东陵老去瓜田熟，敢向人间说故侯。",
+      "title": "见李察判竹溪四首  其三",
+      "author": "何梦桂",
+      "type": "诗",
+      "source": "全唐诗/poet.song.234000.json#976",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

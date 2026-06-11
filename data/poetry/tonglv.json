@@ -1,0 +1,38 @@
+{
+  "color": "铜绿",
+  "pinyin": "tonglv",
+  "hex": "#2bae85",
+  "entries": [
+    {
+      "line": "庐山山南刷铜绿，黄金锯解纯苍玉。",
+      "title": "过江州岸回望庐山",
+      "author": "杨万里",
+      "type": "诗",
+      "source": "全唐诗/poet.song.142000.json#265",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "东畔连尖尤秀绝，一双铜绿翠铺茸。",
+      "title": "塘闸",
+      "author": "杨万里",
+      "type": "诗",
+      "source": "全唐诗/poet.song.140000.json#460",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "何曾薰陆绮床供，但见相轮铜绿明。",
+      "title": "尧章金铜佛塔歌",
+      "author": "周文璞",
+      "type": "诗",
+      "source": "全唐诗/poet.song.183000.json#731",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

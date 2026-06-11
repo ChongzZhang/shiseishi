@@ -1,0 +1,19 @@
+{
+  "color": "青碧",
+  "pinyin": "caeec",
+  "hex": "#48c0a3",
+  "entries": [
+    {
+      "line": "蜀江水碧蜀山青，圣主朝朝暮暮情",
+      "title": "长恨歌",
+      "author": "白居易",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "青碧",
+      "_hex": "#48c0a3",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "1/5"
+}

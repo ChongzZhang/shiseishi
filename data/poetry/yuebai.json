@@ -1,0 +1,39 @@
+{
+  "color": "月白",
+  "pinyin": "yuebai",
+  "hex": "#eef7f2",
+  "entries": [
+    {
+      "line": "人倚虚阑唤鹤，月白千峰。",
+      "title": "一萼红",
+      "author": "张炎",
+      "type": "词",
+      "source": "宋词/ci.song.18000.json#657",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "丁东敲断，弄晴月白。",
+      "title": "秋思",
+      "author": "吴文英",
+      "type": "词",
+      "source": "宋词/ci.song.6000.json#507",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "东船西舫悄无言，唯见江心秋月白",
+      "title": "琵琶行并序",
+      "author": "白居易",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "月白",
+      "_hex": "#eef7f2",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "3/5"
+}

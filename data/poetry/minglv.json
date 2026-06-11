@@ -1,0 +1,39 @@
+{
+  "color": "明绿",
+  "pinyin": "minglv",
+  "hex": "#9eccab",
+  "entries": [
+    {
+      "line": "垂杨袅袅蘸清漪，明绿染春丝。",
+      "title": "眼儿媚",
+      "author": "尹焕",
+      "type": "词",
+      "source": "宋词/ci.song.15000.json#103",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "白鹭飞来，点破一川明绿。",
+      "title": "凤凰阁",
+      "author": "赵师侠",
+      "type": "词",
+      "source": "宋词/ci.song.12000.json#215",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "竿竿青欲滴，个个绿生凉",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "明绿",
+      "_hex": "#9eccab",
+      "dynasty": "清"
+    }
+  ],
+  "coverage": "3/5"
+}

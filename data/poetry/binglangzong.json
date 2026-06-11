@@ -1,0 +1,19 @@
+{
+  "color": "槟榔综",
+  "pinyin": "binglangzong",
+  "hex": "#c1651a",
+  "entries": [
+    {
+      "line": "且胜堆盘供苜蓿，未言满斛进槟榔。",
+      "title": "晓出湖边摘野蔬",
+      "author": "陆游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.129000.json#320",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

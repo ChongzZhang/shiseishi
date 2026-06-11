@@ -1,0 +1,38 @@
+{
+  "color": "蜻蜓红",
+  "pinyin": "qingtinghong",
+  "hex": "#f1441d",
+  "entries": [
+    {
+      "line": "小荷才露尖尖角，早有蜻蜓立上头。",
+      "title": "小池",
+      "author": "杨万里",
+      "type": "诗",
+      "source": "全唐诗/poet.song.139000.json#453",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "度水红蜻蜓，傍人飞欵欵。",
+      "title": "杂诗绝句十七首  其一三",
+      "author": "梅尧臣",
+      "type": "诗",
+      "source": "全唐诗/poet.song.14000.json#192",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "山照澄波䰀鬌青，新蒲梢上立蜻蜓。",
+      "title": "泛舟",
+      "author": "陆游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.131000.json#737",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

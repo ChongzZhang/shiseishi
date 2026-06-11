@@ -1,0 +1,28 @@
+{
+  "color": "枫叶红",
+  "pinyin": "fengyehong",
+  "hex": "#c21f30",
+  "entries": [
+    {
+      "line": "枫叶红绡翦，芦花白雪铺。",
+      "title": "由上饶之贵溪舟中书事",
+      "author": "喻良能",
+      "type": "诗",
+      "source": "全唐诗/poet.song.144000.json#884",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "枫叶红遮店，芒花白满坡。",
+      "title": "宜阳道中作",
+      "author": "齐己",
+      "type": "诗",
+      "source": "全唐诗/poet.tang.46000.json#420",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "2/5"
+}

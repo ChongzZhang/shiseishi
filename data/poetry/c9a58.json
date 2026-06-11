@@ -1,0 +1,30 @@
+{
+  "color": "胭脂",
+  "pinyin": "c9a58",
+  "hex": "#9d2933",
+  "entries": [
+    {
+      "line": "胭脂洗出秋阶影，冰雪招来露砌魂",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "胭脂",
+      "_hex": "#9d2933",
+      "dynasty": "清"
+    },
+    {
+      "line": "胭脂鲜艳何相类，花之颜色人之泪",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "胭脂",
+      "_hex": "#9d2933",
+      "dynasty": "清"
+    }
+  ],
+  "coverage": "2/5"
+}

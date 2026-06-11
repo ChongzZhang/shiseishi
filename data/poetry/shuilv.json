@@ -1,0 +1,38 @@
+{
+  "color": "水绿",
+  "pinyin": "shuilv",
+  "hex": "#8cc269",
+  "entries": [
+    {
+      "line": "寒食近，湖水绿平桥。",
+      "title": "望江南・忆江南",
+      "author": "谢逸",
+      "type": "词",
+      "source": "宋词/ci.song.4000.json#655",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "夜来犹上星台望，全不厌、水绿云红。",
+      "title": "风入松",
+      "author": "张继先",
+      "type": "词",
+      "source": "宋词/ci.song.5000.json#190",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "一段山青水绿，作洞庭春晓。",
+      "title": "好事近",
+      "author": "汪莘",
+      "type": "词",
+      "source": "宋词/ci.song.12000.json#790",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

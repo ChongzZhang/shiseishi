@@ -1,0 +1,18 @@
+{
+  "color": "姚黄",
+  "pinyin": "yaohuang",
+  "hex": "#d0deaa",
+  "entries": [
+    {
+      "line": "一任姚黄魏紫，供吟赏、银烛笼纱。",
+      "title": "满庭芳",
+      "author": "王以宁",
+      "type": "词",
+      "source": "宋词/ci.song.6000.json#59",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

@@ -1,0 +1,19 @@
+{
+  "color": "暗海水绿",
+  "pinyin": "anhaishuilv",
+  "hex": "#584717",
+  "entries": [
+    {
+      "line": "五色云烟聚十洲，蓬莱海浪压鼇头。",
+      "title": "缘识  其八六",
+      "author": "宋太宗",
+      "type": "诗",
+      "source": "全唐诗/poet.song.1000.json#956",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

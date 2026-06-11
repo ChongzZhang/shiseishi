@@ -1,0 +1,38 @@
+{
+  "color": "蔚蓝",
+  "pinyin": "weilan",
+  "hex": "#29b7cb",
+  "entries": [
+    {
+      "line": "涪右金华宅，上有蔚蓝天。",
+      "title": "水调歌头",
+      "author": "魏了翁",
+      "type": "词",
+      "source": "宋词/ci.song.13000.json#664",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "于时日在房，山色染蔚蓝。",
+      "title": "和游南岩",
+      "author": "汪应辰",
+      "type": "诗",
+      "source": "全唐诗/poet.song.123000.json#958",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "上有蔚蓝天，垂光抱琼台。",
+      "title": "冬到金华山观因得故拾遗陈公学堂遗迹",
+      "author": "杜甫",
+      "type": "诗",
+      "source": "全唐诗/poet.tang.10000.json#783",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "3/5"
+}

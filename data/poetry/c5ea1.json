@@ -1,0 +1,30 @@
+{
+  "color": "黛",
+  "pinyin": "c5ea1",
+  "hex": "#4a4266",
+  "entries": [
+    {
+      "line": "霜皮溜雨四十围，黛色参天二千尺",
+      "title": "古柏行",
+      "author": "杜甫",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "黛",
+      "_hex": "#4a4266",
+      "dynasty": "唐"
+    },
+    {
+      "line": "乡梦窄，水天宽，小窗愁黛澹秋山。",
+      "title": "鹧鸪天",
+      "author": "吴文英",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "黛",
+      "_hex": "#4a4266",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

@@ -1,0 +1,71 @@
+{
+  "color": "翠绿",
+  "pinyin": "cuilv",
+  "hex": "#20a162",
+  "entries": [
+    {
+      "line": "东风巧，尽收翠绿，吹在眉山。",
+      "title": "庆清朝慢・庆清朝",
+      "author": "王观",
+      "type": "词",
+      "source": "宋词/ci.song.1000.json#378",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "唐"
+    },
+    {
+      "line": "五色杂黄红，一林常翠绿。",
+      "title": "寄题刘仲叟泽州园亭",
+      "author": "梅尧臣",
+      "type": "诗",
+      "source": "全唐诗/poet.song.15000.json#935",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "两水夹城飘近远，万山拥翠绿参差。",
+      "title": "句  其九",
+      "author": "谌祜",
+      "type": "诗",
+      "source": "全唐诗/poet.song.222000.json#49",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "闺中少妇不知愁，春日凝妆上翠楼",
+      "title": "闺怨",
+      "author": "王昌龄",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "翠绿",
+      "_hex": "#20a162",
+      "dynasty": "唐"
+    },
+    {
+      "line": "翠华摇摇行复止，西出都门百余里",
+      "title": "长恨歌",
+      "author": "白居易",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "翠绿",
+      "_hex": "#20a162",
+      "dynasty": "唐"
+    },
+    {
+      "line": "翠影红霞映朝日，鸟飞不到吴天长",
+      "title": "庐山谣寄卢侍御虚舟",
+      "author": "李白",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "翠绿",
+      "_hex": "#20a162",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "5/5"
+}

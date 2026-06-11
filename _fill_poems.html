@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>色谱寻诗 · 补诗</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:"Noto Serif SC","STSong","SimSun","Songti SC",serif;
+    background:#252017;color:#b8a88c;
+    display:flex;justify-content:center;align-items:center;
+    min-height:100vh;user-select:none;
+}
+.frame{width:680px;padding:40px}
+.top{text-align:center;margin-bottom:28px}
+.top h1{font-size:1.15rem;font-weight:400;color:#8a7a60;letter-spacing:.4em}
+.top .mute{font-size:.72rem;color:#5a4e3a;margin-top:8px;letter-spacing:.12em}
+
+.bar-outer{margin:0 0 24px}
+.bar{height:1px;background:#3a3225}
+.bar-in{height:100%;background:#8a7a60;transition:width .18s}
+.bar-num{text-align:center;font-size:.7rem;color:#5a4e3a;margin-top:8px}
+
+.color-bar{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    margin-bottom:24px;padding:14px 0;
+    border-top:1px solid #3a3225;border-bottom:1px solid #3a3225;
+}
+.dot{width:16px;height:16px;border-radius:50%;border:1px solid rgba(180,168,140,.2)}
+.cname{font-size:1.15rem;letter-spacing:.25em}
+.cmeta{font-size:.72rem;color:#5a4e3a;font-family:Consolas,monospace}
+
+.card{padding:28px 0}
+.poem-line{font-size:1.25rem;line-height:2.2;color:#cdc0a4;text-align:center;letter-spacing:.1em;padding:0 12px}
+.poem-src{text-align:center;font-size:.78rem;color:#5a4e3a;margin-top:16px;letter-spacing:.06em}
+.match-tag{text-align:center;font-size:.72rem;color:#6b5e48;margin-top:10px}
+
+.hint{display:flex;justify-content:space-between;margin-top:32px}
+.hi{font-size:.8rem;color:#5a4e3a;padding:10px 28px;border:1px solid #3a3225;border-radius:1px}
+
+.empty-note{text-align:center;color:#7a6e58;font-size:.9rem;padding:32px 0;line-height:2}
+.done{text-align:center;padding:48px 0;border-top:1px solid #3a3225;border-bottom:1px solid #3a3225}
+.done h2{font-size:1.15rem;color:#8a7a60;letter-spacing:.3em;margin-bottom:20px}
+.done p{color:#7a6e58;line-height:2;font-size:.88rem}
+
+.flash{position:fixed;top:44px;left:50%;transform:translateX(-50%);
+    font-size:.8rem;letter-spacing:.1em;padding:6px 22px;border-radius:1px;
+    transition:opacity .25s;opacity:0;pointer-events:none}
+.flash.a{background:#2a3420;color:#8cb068;opacity:1}
+.flash.r{background:#342420;color:#b06868;opacity:1}
+</style>
+</head>
+<body>
+<div class="frame" id="app"><p style="text-align:center;color:#5a4e3a">加载中...</p></div>
+<div class="flash" id="flash" style="opacity:0"></div>
+<script>
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function load(){
+    fetch('/state').then(r=>r.json()).then(render);
+}
+
+function render(d){
+    if(d.done){
+        app.innerHTML=
+        '<div class="top"><h1>色 谱 寻 诗</h1></div>'+
+        '<div class="done"><h2>补 诗 完 成</h2>'+
+        '<p>共处理 <b>'+d.colors+'</b> 种无诗色</p>'+
+        '<p>新添加 <b>'+d.added+'</b> 联</p>'+
+        '<p style="font-size:.72rem;color:#5a4e3a;margin-top:20px">请运行 gen_browse_data.py 更新前端包</p></div>';
+        return;
+    }
+
+    let c=d.color;
+    let pct=Math.round((d.color_index+1)/d.color_total*100);
+    let sub=d.empty_color
+        ? '<div class="empty-note">未在唐三百 / 宋词中找到候选<br>自动跳过</div>'
+        : '<div class="card">'+
+          '<div class="poem-line">'+esc(d.poem.line)+'</div>'+
+          '<div class="poem-src">——《'+esc(d.poem.title)+'》 '+esc(d.poem.author)+'</div>'+
+          '<div class="match-tag">'+esc(d.poem.source)+' · 匹配「'+esc(d.poem.match)+'」</div>'+
+          '</div>'+
+          '<div class="hint"><div class="hi">← 舍弃</div><div class="hi">→ 添加</div></div>';
+
+    app.innerHTML=
+    '<div class="top"><h1>色 谱 寻 诗 · 补 诗</h1>'+
+    '<div class="mute">→ 添加 &emsp; ← 舍弃 &emsp; 每色最多 5 联</div></div>'+
+    '<div class="bar-outer"><div class="bar"><div class="bar-in" style="width:'+pct+'%"></div></div>'+
+    '<div class="bar-num">颜色 '+(d.color_index+1)+' / '+d.color_total+'</div></div>'+
+    '<div class="color-bar"><div class="dot" style="background:'+c.hex+'"></div>'+
+    '<span class="cname">'+esc(c.name)+'</span>'+
+    '<span class="cmeta">'+c.hex+' · RGB('+c.rgb.join(', ')+')</span></div>'+
+    (d.empty_color ? sub :
+    '<div class="bar-num" style="margin-bottom:16px">本句 '+(d.poem_index+1)+' / '+d.poem_total+
+    '（共找到 '+d.found_for_color+' 联）</div>'+sub);
+
+    window._state=d;
+    if(d.empty_color) setTimeout(load, 800);
+}
+
+function accept(){
+    let d=window._state;
+    if(!d||d.empty_color||d.done) return;
+    flash('已添加','a');
+    fetch('/accept',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({color:d.color,poem:d.poem})})
+    .then(r=>r.json()).then(render);
+}
+
+function skip(){
+    let d=window._state;
+    if(!d||d.done) return;
+    if(d.empty_color){load();return}
+    flash('已舍弃','r');
+    fetch('/skip',{method:'POST'}).then(r=>r.json()).then(render);
+}
+
+function flash(msg,cls){
+    let e=document.getElementById('flash');
+    e.textContent=msg;e.className='flash '+cls;
+    setTimeout(()=>e.className='flash',400);
+}
+
+document.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'){accept();e.preventDefault()}
+    if(e.key==='ArrowLeft'){skip();e.preventDefault()}
+});
+
+load();
+</script>
+</body>
+</html>

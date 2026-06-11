@@ -1,0 +1,20 @@
+{
+  "color": "霜色",
+  "pinyin": "c2f2a",
+  "hex": "#e9f1f6",
+  "entries": [
+    {
+      "line": "霜凋岸草，雾隐城堞",
+      "title": "浪涛沙",
+      "author": "周邦彦",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "霜色",
+      "_hex": "#e9f1f6",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

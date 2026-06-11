@@ -1,0 +1,18 @@
+{
+  "color": "金驼",
+  "pinyin": "jintuo",
+  "hex": "#e46828",
+  "entries": [
+    {
+      "line": "金驼银鼻岂关念，梦月当窗印寒水。",
+      "title": "太平印歌",
+      "author": "张镃",
+      "type": "诗",
+      "source": "全唐诗/poet.song.170000.json#972",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

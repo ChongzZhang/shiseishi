@@ -1,0 +1,38 @@
+{
+  "color": "凋叶棕",
+  "pinyin": "diaoyezong",
+  "hex": "#e7a23f",
+  "entries": [
+    {
+      "line": "先生归驾挟西风，堕我南堂似凋叶。",
+      "title": "次德符韵六诗 书怀二首 其一",
+      "author": "邹浩",
+      "type": "诗",
+      "source": "全唐诗/poet.song.69000.json#440",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "庭皋簌簌吹凋叶，江渚翩翩落断鸿。",
+      "title": "月下独坐",
+      "author": "陆游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.130000.json#422",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "塞鴈来宾，井梧凋叶。",
+      "title": "偈颂一百一十七首  其一○二",
+      "author": "释绍昙",
+      "type": "诗",
+      "source": "全唐诗/poet.song.226000.json#682",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

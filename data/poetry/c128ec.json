@@ -1,0 +1,19 @@
+{
+  "color": "缟",
+  "pinyin": "c128ec",
+  "hex": "#f2ecde",
+  "entries": [
+    {
+      "line": "月窟仙人缝缟袂，秋闺怨女拭啼痕",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "缟",
+      "_hex": "#f2ecde",
+      "dynasty": "清"
+    }
+  ],
+  "coverage": "1/5"
+}

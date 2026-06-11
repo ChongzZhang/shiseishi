@@ -1,0 +1,44 @@
+{
+  "color": "秋香色",
+  "pinyin": "c89fd",
+  "hex": "#d9b611",
+  "entries": [
+    {
+      "line": "问秋香浓未，待携客、出西城",
+      "title": "紫萸香慢",
+      "author": "姚云文",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "秋香色",
+      "_hex": "#d9b611",
+      "dynasty": "宋"
+    },
+    {
+      "line": "秋千外、芳草连天，谁遣风沙暗南浦",
+      "title": "兰陵王",
+      "author": "刘辰翁",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "秋香色",
+      "_hex": "#d9b611",
+      "dynasty": "宋"
+    },
+    {
+      "line": "秋已无多，早是败荷衰柳",
+      "title": "大有",
+      "author": "潘希白",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "秋香色",
+      "_hex": "#d9b611",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

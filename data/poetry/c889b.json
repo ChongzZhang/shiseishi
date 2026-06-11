@@ -1,0 +1,41 @@
+{
+  "color": "翡翠色",
+  "pinyin": "c889b",
+  "hex": "#3de1ad",
+  "entries": [
+    {
+      "line": "花钿委地无人收，翠翘金雀玉搔头",
+      "title": "长恨歌",
+      "author": "白居易",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "翡翠色",
+      "_hex": "#3de1ad",
+      "dynasty": "唐"
+    },
+    {
+      "line": "鸳鸯瓦冷霜华重，翡翠衾寒谁与共",
+      "title": "长恨歌",
+      "author": "白居易",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "翡翠色",
+      "_hex": "#3de1ad",
+      "dynasty": "唐"
+    },
+    {
+      "line": "鸳鸯绿蒲上，翡翠锦屏中",
+      "title": "长干行之二",
+      "author": "李白",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "翡翠色",
+      "_hex": "#3de1ad",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "3/5"
+}

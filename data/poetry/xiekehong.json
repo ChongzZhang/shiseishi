@@ -1,0 +1,28 @@
+{
+  "color": "蟹壳红",
+  "pinyin": "xiekehong",
+  "hex": "#f27635",
+  "entries": [
+    {
+      "line": "如钱拾蟹壳，比针玩鱼影。",
+      "title": "奉答张寺丞再招游薛园",
+      "author": "韩维",
+      "type": "诗",
+      "source": "全唐诗/poet.song.24000.json#488",
+      "matchTier": 3,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "盘堆白玉鲈腴美，手擘黄金蟹壳肥。",
+      "title": "塞下追忆乌江之会寄李诚之待制",
+      "author": "范纯仁",
+      "type": "诗",
+      "source": "全唐诗/poet.song.36000.json#491",
+      "matchTier": 3,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

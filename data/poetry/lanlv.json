@@ -1,0 +1,28 @@
+{
+  "color": "蓝绿",
+  "pinyin": "lanlv",
+  "hex": "#12a182",
+  "entries": [
+    {
+      "line": "江水挼蓝绿，江花泼火红。",
+      "title": "江花四首  其一",
+      "author": "彭汝砺",
+      "type": "诗",
+      "source": "全唐诗/poet.song.52000.json#154",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "揉蓝绿色曲尘开，静见三星入坐来。",
+      "title": "青萝帐女赠穆郎 褰帐",
+      "author": "不详",
+      "type": "诗",
+      "source": "全唐诗/poet.tang.48000.json#126",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "2/5"
+}

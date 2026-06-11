@@ -1,0 +1,28 @@
+{
+  "color": "艾绿",
+  "pinyin": "ailv",
+  "hex": "#cad3c3",
+  "entries": [
+    {
+      "line": "香如桃蕊色如曲，蟹眼松声浮艾绿。",
+      "title": "句  其三九",
+      "author": "张舜民",
+      "type": "诗",
+      "source": "全唐诗/poet.song.47000.json#271",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "艾绿浓香，鹅黄新酿。",
+      "title": "踏莎行",
+      "author": "毛滂",
+      "type": "词",
+      "source": "宋词/ci.song.4000.json#757",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

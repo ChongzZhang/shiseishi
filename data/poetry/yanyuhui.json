@@ -1,0 +1,38 @@
+{
+  "color": "燕羽灰",
+  "pinyin": "yanyuhui",
+  "hex": "#685e48",
+  "entries": [
+    {
+      "line": "卷重帘，看双飞燕羽，舞庭花昼。",
+      "title": "倦寻芳",
+      "author": "张端义",
+      "type": "词",
+      "source": "宋词/ci.song.14000.json#80",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "小桃涨浪堤痕润，绿麦翻风燕羽斜。",
+      "title": "东津净行院",
+      "author": "李新",
+      "type": "诗",
+      "source": "全唐诗/poet.song.70000.json#911",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "洒濯林光净，归飞燕羽轻。",
+      "title": "小雨四首  其三",
+      "author": "刘敞",
+      "type": "诗",
+      "source": "全唐诗/poet.song.27000.json#889",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

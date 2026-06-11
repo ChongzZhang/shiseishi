@@ -1,0 +1,19 @@
+{
+  "color": "淡罂粟红",
+  "pinyin": "danyingsuhong",
+  "hex": "#eea08c",
+  "entries": [
+    {
+      "line": "千枝罂粟红如锦，谁谓侬家已送春。",
+      "title": "雨余早起五首  其四",
+      "author": "方回",
+      "type": "诗",
+      "source": "全唐诗/poet.song.231000.json#72",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

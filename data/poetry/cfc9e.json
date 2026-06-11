@@ -1,0 +1,44 @@
+{
+  "color": "绯红",
+  "pinyin": "cfc9e",
+  "hex": "#c83c23",
+  "entries": [
+    {
+      "line": "红叶黄花秋意晚，千里念行客",
+      "title": "思远人",
+      "author": "晏几道",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "绯红",
+      "_hex": "#c83c23",
+      "dynasty": "宋"
+    },
+    {
+      "line": "红巾翠袖，揾英雄泪",
+      "title": "水龙吟",
+      "author": "辛弃疾",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "绯红",
+      "_hex": "#c83c23",
+      "dynasty": "宋"
+    },
+    {
+      "line": "红杏枝头花几许，啼痕止恨清明雨。",
+      "title": "蝶恋花",
+      "author": "赵令畤",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "绯红",
+      "_hex": "#c83c23",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

@@ -1,0 +1,49 @@
+{
+  "color": "玫瑰紫",
+  "pinyin": "meiguizi",
+  "hex": "#ba2f7b",
+  "entries": [
+    {
+      "line": "待摘玫瑰，飞下粉黄蝶。",
+      "title": "醉落魄・一斛珠",
+      "author": "周密",
+      "type": "词",
+      "source": "宋词/ci.song.17000.json#807",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "下阶笑折紫玫瑰，蜂蝶扑云鬓。",
+      "title": "好事近",
+      "author": "周密",
+      "type": "词",
+      "source": "宋词/ci.song.17000.json#709",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "摛锦绣，写玫瑰。",
+      "title": "鹧鸪天",
+      "author": "辛弃疾",
+      "type": "词",
+      "source": "宋词/ci.song.11000.json#532",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "紫萸一枝传赐，梦谁到、汉家陵",
+      "title": "紫萸香慢",
+      "author": "姚云文",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "玫瑰紫",
+      "_hex": "#ba2f7b",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "4/5"
+}

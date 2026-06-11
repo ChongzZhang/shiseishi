@@ -1,0 +1,48 @@
+{
+  "color": "肉色",
+  "pinyin": "rouse",
+  "hex": "#f7c173",
+  "entries": [
+    {
+      "line": "肉色欠纯正，腰上多红铃。",
+      "title": "论肉  其二",
+      "author": "贾似道",
+      "type": "诗",
+      "source": "全唐诗/poet.song.221000.json#579",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "红衿映肉色，薄暮无乃寒。",
+      "title": "雨中观秉仲家月桂",
+      "author": "陈与义",
+      "type": "诗",
+      "source": "全唐诗/poet.song.100000.json#325",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "花容肉色两相宜，肌理细腻端不俗。",
+      "title": "庵中有红山茶一株自腊月开至二月半为蕊尚无数也盖十霜十雪矣",
+      "author": "舒岳祥",
+      "type": "诗",
+      "source": "全唐诗/poet.song.227000.json#441",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "肉色似花难可得，但花如、肉色妖娆。",
+      "title": "恋绣衾",
+      "author": "刘辰翁",
+      "type": "词",
+      "source": "宋词/ci.song.17000.json#473",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "4/5"
+}

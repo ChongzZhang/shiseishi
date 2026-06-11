@@ -1,0 +1,41 @@
+{
+  "color": "草灰绿",
+  "pinyin": "caohuilv",
+  "hex": "#8e804b",
+  "entries": [
+    {
+      "line": "依旧池边草色芳，故人何处忆山阳。",
+      "title": "寄孟进士",
+      "author": "谭用之",
+      "type": "诗",
+      "source": "全唐诗/poet.song.0.json#221",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "唐"
+    },
+    {
+      "line": "不见铜龙何处飞，空余芳草旧台基。",
+      "title": "朝斗坛",
+      "author": "胡衍",
+      "type": "诗",
+      "source": "全唐诗/poet.song.0.json#253",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    },
+    {
+      "line": "事往山光在，春晴草色深。",
+      "title": "后湖访古各赋一题得西邸",
+      "author": "徐铉",
+      "type": "诗",
+      "source": "全唐诗/poet.song.0.json#587",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "3/5"
+}

@@ -1,0 +1,20 @@
+{
+  "color": "水色",
+  "pinyin": "c3186",
+  "hex": "#88ada6",
+  "entries": [
+    {
+      "line": "水为沼，酒徒历历坐洲鸟",
+      "title": "石鱼湖上醉歌并序",
+      "author": "元结",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "唐诗三百首",
+      "_color": "水色",
+      "_hex": "#88ada6",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "1/5"
+}

@@ -1,0 +1,28 @@
+{
+  "color": "海青",
+  "pinyin": "haiqing",
+  "hex": "#22a2c3",
+  "entries": [
+    {
+      "line": "围猎看人放海青，黑山峡口路交横。",
+      "title": "阴山观猎和赵待制回文",
+      "author": "汪元量",
+      "type": "诗",
+      "source": "全唐诗/poet.song.245000.json#57",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "吴山浮海青，蜀山粘雪白。",
+      "title": "送王瞻叔总领",
+      "author": "李石",
+      "type": "诗",
+      "source": "全唐诗/poet.song.116000.json#277",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

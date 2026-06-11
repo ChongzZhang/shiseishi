@@ -1,0 +1,63 @@
+{
+  "color": "竹青",
+  "pinyin": "c7e3a",
+  "hex": "#789262",
+  "entries": [
+    {
+      "line": "泉声咽危石，日色冷青松",
+      "title": "过香积寺",
+      "author": "王维",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "竹青",
+      "_hex": "#789262",
+      "dynasty": "唐"
+    },
+    {
+      "line": "渭城朝雨裛轻尘，客舍青青柳色新",
+      "title": "渭城曲",
+      "author": "王维",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "竹青",
+      "_hex": "#789262",
+      "dynasty": "唐"
+    },
+    {
+      "line": "青槐夹驰道，宫馆何玲珑",
+      "title": "与高适薛据登慈恩寺浮图",
+      "author": "岑参",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "竹青",
+      "_hex": "#789262",
+      "dynasty": "唐"
+    },
+    {
+      "line": "绿竹入幽径，青萝拂行衣",
+      "title": "下终南山遇斛斯山人宿置酒",
+      "author": "李白",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "竹青",
+      "_hex": "#789262",
+      "dynasty": "唐"
+    },
+    {
+      "line": "郎骑竹马来，绕床弄青梅",
+      "title": "长干行之一",
+      "author": "李白",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "竹青",
+      "_hex": "#789262",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "5/5"
+}

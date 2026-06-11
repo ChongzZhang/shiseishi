@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数据浏览 — 识色赋诗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page browse-page">
+    <header class="site-header">
+      <h1>数据浏览</h1>
+      <p class="tagline">RGB 索引库与中国传统色诗句库</p>
+      <nav class="browse-nav">
+        <a href="index.html">← 返回识色赋诗</a>
+      </nav>
+    </header>
+
+    <main class="browse-main">
+      <div class="browse-tabs" role="tablist">
+        <button class="browse-tab active" data-tab="poetry" role="tab" aria-selected="true">诗词库</button>
+        <button class="browse-tab" data-tab="colors" role="tab" aria-selected="false">RGB 索引库</button>
+        <button class="browse-tab browse-tab-hidden" data-tab="no-poetry" role="tab" aria-selected="false" hidden>无诗句</button>
+      </div>
+
+      <div class="browse-toolbar">
+        <select id="search-mode" class="browse-search-mode" aria-label="检索方式">
+          <option value="name">色名 / 拼音</option>
+          <option value="rgb">RGB 数值</option>
+          <option value="hex">十六进制</option>
+        </select>
+        <input id="search-input" type="search" placeholder="搜索色名或拼音…" autocomplete="off">
+        <p id="browse-stats" class="browse-stats"></p>
+      </div>
+
+      <section id="tab-poetry" class="browse-panel active" role="tabpanel">
+        <p class="browse-desc">经语料验证的古诗词句，共 <strong id="poetry-count">—</strong> 种中国传统色有诗。</p>
+        <div id="poetry-list" class="poetry-browse-list"></div>
+      </section>
+
+      <section id="tab-colors" class="browse-panel" role="tabpanel" hidden>
+        <p class="browse-desc">来源 <a href="https://zhongguose.com/" target="_blank" rel="noopener">中国色</a>，共 <strong id="color-count">—</strong> 条色值索引（其中 <strong id="game-color-count">—</strong> 种用于识色匹配）。</p>
+        <div id="colors-table-wrap" class="browse-table-wrap">
+          <table class="browse-table" id="colors-table">
+            <thead>
+              <tr>
+                <th>色块</th>
+                <th>色名</th>
+                <th>拼音</th>
+                <th>R</th>
+                <th>G</th>
+                <th>B</th>
+                <th>十六进制</th>
+                <th>诗句</th>
+              </tr>
+            </thead>
+            <tbody id="colors-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="tab-no-poetry" class="browse-panel" role="tabpanel" hidden>
+        <p class="browse-desc">语料中未检索到诗句的颜色，共 <strong id="no-poetry-count">—</strong> 种。</p>
+        <div id="no-poetry-table-wrap" class="browse-table-wrap">
+          <table class="browse-table" id="no-poetry-table">
+            <thead>
+              <tr>
+                <th>色块</th>
+                <th>色名</th>
+                <th>RGB</th>
+                <th>HEX</th>
+              </tr>
+            </thead>
+            <tbody id="no-poetry-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>构建报告见 <code>scripts/build_report.txt</code> · 文字预览见 <a href="data/poetry-preview.txt" target="_blank">data/poetry-preview.txt</a></p>
+    </footer>
+  </div>
+
+  <script src="js/poetry-ui.js"></script>
+  <script src="js/colors-data.js"></script>
+  <script src="js/rgb-index-data.js"></script>
+  <script src="js/poetry-bundle.js"></script>
+  <script src="js/browse.js"></script>
+</body>
+</html>

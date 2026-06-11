@@ -1,0 +1,30 @@
+{
+  "color": "浅驼色",
+  "pinyin": "qiantuose",
+  "hex": "#e2c17c",
+  "entries": [
+    {
+      "line": "中有两骆驼，气韵颇不俗。",
+      "title": "谢友人寄画",
+      "author": "文同",
+      "type": "诗",
+      "source": "全唐诗/poet.song.25000.json#480",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    },
+    {
+      "line": "世悦邹骆驼，我贤扬执㦸。",
+      "title": "侨居一首",
+      "author": "苏籀",
+      "type": "诗",
+      "source": "全唐诗/poet.song.101000.json#7",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

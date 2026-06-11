@@ -1,0 +1,18 @@
+{
+  "color": "粉绿",
+  "pinyin": "fenlv",
+  "hex": "#83cbac",
+  "entries": [
+    {
+      "line": "露濯文犀和粉绿，未容浓翠伴桃红。",
+      "title": "玉楼春",
+      "author": "钱惟演",
+      "type": "词",
+      "source": "宋词/ci.song.0.json#12",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

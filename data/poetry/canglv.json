@@ -1,0 +1,38 @@
+{
+  "color": "苍绿",
+  "pinyin": "canglv",
+  "hex": "#223e36",
+  "entries": [
+    {
+      "line": "桂花凝毫拔苍绿，蜀丝缠金缕湘竹。",
+      "title": "梁隆吉遗冯笔并诗答以长句",
+      "author": "宋无",
+      "type": "诗",
+      "source": "全唐诗/poet.song.249000.json#295",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "郭北下湖枕苍绿，书屋奈此五月溽。",
+      "title": "寄韩玉玙二首  其一",
+      "author": "董嗣杲",
+      "type": "诗",
+      "source": "全唐诗/poet.song.237000.json#860",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "其间有孤松，亭亭表苍绿。",
+      "title": "题画",
+      "author": "吕从庆",
+      "type": "诗",
+      "source": "全唐诗/poet.tang.50000.json#901",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "3/5"
+}

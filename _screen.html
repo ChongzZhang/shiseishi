@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>色谱寻诗 · 逐句筛</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:"Noto Serif SC","STSong","SimSun","Songti SC",serif;
+    background:#252017;color:#b8a88c;
+    display:flex;justify-content:center;align-items:center;
+    min-height:100vh;user-select:none;
+}
+.frame{width:640px;padding:48px 40px}
+.top{margin-bottom:44px}
+.top h1{font-size:1.2rem;font-weight:400;color:#8a7a60;letter-spacing:.5em;text-align:center}
+.top .mute{font-size:.72rem;color:#5a4e3a;text-align:center;margin-top:10px;letter-spacing:.2em}
+.color-idx{text-align:center;font-size:.72rem;color:#6a5e48;margin-top:6px;letter-spacing:.15em}
+
+.bar-outer{margin:0 0 36px}
+.bar{height:1px;background:#3a3225}
+.bar-in{height:100%;background:#8a7a60;transition:width .2s}
+.bar-num{text-align:center;font-size:.72rem;color:#5a4e3a;margin-top:10px}
+
+.card{padding:40px 0;border-top:1px solid #3a3225;border-bottom:1px solid #3a3225}
+.color-row{display:flex;align-items:center;gap:10px;margin-bottom:36px;justify-content:center}
+.dot{width:12px;height:12px;border-radius:50%;border:1px solid rgba(180,168,140,.25);flex-shrink:0}
+.color-row .cn{font-size:1.1rem;letter-spacing:.25em}
+.color-row .hex{font-size:.7rem;color:#5a4e3a;font-family:Consolas,monospace}
+
+.verse{font-size:1.3rem;line-height:2.2;color:#cdc0a4;text-align:center;padding:8px 12px;letter-spacing:.1em}
+.src{text-align:center;font-size:.8rem;color:#5a4e3a;margin-top:18px;letter-spacing:.08em}
+
+.hint{display:flex;justify-content:space-between;margin-top:36px}
+.hi{font-size:.8rem;color:#5a4e3a;padding:10px 24px;border:1px solid #3a3225;border-radius:1px;transition:all .12s}
+.hi:active{background:#3a3225}
+
+.done{text-align:center;padding:48px 0;border-top:1px solid #3a3225;border-bottom:1px solid #3a3225}
+.done h2{font-size:1.2rem;color:#8a7a60;letter-spacing:.3em;margin-bottom:24px}
+.done .st{color:#7a6e58;font-size:.88rem;line-height:2.2;letter-spacing:.1em}
+.done .st b{color:#b8a88c;font-weight:400}
+
+.flash{position:fixed;top:44px;left:50%;transform:translateX(-50%);
+    font-size:.8rem;letter-spacing:.12em;padding:6px 22px;
+    border-radius:1px;transition:opacity .25s;opacity:0;pointer-events:none}
+.flash.a{background:#2a3420;color:#8cb068;opacity:1}
+.flash.r{background:#342420;color:#b06868;opacity:1}
+</style>
+</head>
+<body>
+<div class="frame" id="app"></div>
+<div class="flash" id="flash" style="opacity:0"></div>
+<script>
+let POOLS=[],ci=0;
+let kept=[],gone=[];
+let colorMeta=[];
+
+fetch('/data').then(r=>r.json()).then(arr=>{
+    arr.sort((a,b)=>a.name.localeCompare(b.name,'zh-CN'));
+    for(let c of arr){
+        if(!c.poems.length) continue;
+        colorMeta.push({name:c.name,total:c.poems.length});
+        for(let p of c.poems)
+            POOLS.push({pinyin:c.pinyin,name:c.name,hex:c.hex,rgb:c.rgb,
+                line:p.line,title:p.title||'',author:p.author||'',source:p.source||''});
+    }
+    if(!POOLS.length){app.innerHTML='<div class="done"><h2>无诗句可筛</h2></div>';return}
+    render();
+    document.addEventListener('keydown',e=>{
+        if(e.key==='ArrowRight'){decide(true);e.preventDefault()}
+        if(e.key==='ArrowLeft'){decide(false);e.preventDefault()}
+    });
+});
+
+function poemIndexInColor(i){
+    let name=POOLS[i].name,idx=1;
+    for(let j=0;j<i;j++) if(POOLS[j].name===name) idx++;
+    return idx;
+}
+function colorPoemTotal(name){
+    return POOLS.filter(p=>p.name===name).length;
+}
+function colorOrdinal(name){
+    let seen=new Set(),n=0;
+    for(let p of POOLS){
+        if(!seen.has(p.name)){seen.add(p.name);n++;}
+        if(p.name===name) return n;
+    }
+    return 0;
+}
+
+function render(){
+    if(ci>=POOLS.length){save();return}
+    let it=POOLS[ci],n=ci+1,tot=POOLS.length,pct=Math.round(n/tot*100);
+    let inColor=poemIndexInColor(ci),colorTotal=colorPoemTotal(it.name),colorNo=colorOrdinal(it.name);
+    app.innerHTML=
+    '<div class="top"><h1>色 谱 寻 诗</h1><div class="mute">按颜色逐句 &emsp; → 保留 &emsp; ← 剔除</div></div>'+
+    '<div class="bar-outer"><div class="bar"><div class="bar-in" style="width:'+pct+'%"></div></div><div class="bar-num">'+n+' / '+tot+' 句</div></div>'+
+    '<div class="card">'+
+    '<div class="color-row"><div class="dot" style="background:'+it.hex+'"></div>'+
+    '<span class="cn">'+esc(it.name)+'</span>'+
+    '<span class="hex">'+esc(it.hex)+'</span></div>'+
+    '<div class="color-idx">第 '+colorNo+' 色 · 本句 '+inColor+' / '+colorTotal+'</div>'+
+    '<div class="verse">'+esc(it.line)+'</div>'+
+    '<div class="src">《'+esc(it.title)+'》&emsp;'+esc(it.author)+'</div>'+
+    '</div>'+
+    '<div class="hint"><div class="hi">← 剔除</div><div class="hi">→ 保留</div></div>';
+}
+
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function decide(ok){
+    let it=POOLS[ci];
+    if(ok){kept.push(it);flash('保 留','a')}
+    else{gone.push(it);flash('剔 除','r')}
+    ci++;
+    if(ci>=POOLS.length)save();else render();
+}
+
+function flash(msg,cls){let e=document.getElementById('flash');e.textContent=msg;e.className='flash '+cls;setTimeout(()=>e.className='flash',400)}
+
+function save(){
+    app.innerHTML='<div class="top"><h1>色 谱 寻 诗</h1></div><div class="done"><p style="color:#5a4e3a">保存中...</p></div>';
+    fetch('/save',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({kept,removed:gone})})
+    .then(r=>r.json()).then(r=>{
+        app.innerHTML=
+        '<div class="top"><h1>色 谱 寻 诗</h1></div>'+
+        '<div class="done"><h2>筛 选 完 成</h2>'+
+        '<div class="st"><p>保留 <b>'+r.poems_kept+'</b> 句</p><p>剔除 <b>'+r.poems_removed+'</b> 句</p><p>有诗 <b>'+r.colors_with_poems+'</b> / '+r.colors+' 色</p></div>'+
+        '<p style="color:#5a4e3a;font-size:.72rem;margin-top:24px">可关闭此页面</p></div>';
+    }).catch(e=>{
+        app.innerHTML='<div class="done"><p style="color:#b06868">保存失败</p><p style="color:#5a4e3a;font-size:.72rem">'+esc(e.message)+'</p></div>';
+    });
+}
+</script>
+</body>
+</html>

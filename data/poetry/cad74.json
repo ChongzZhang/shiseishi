@@ -1,0 +1,19 @@
+{
+  "color": "杏红",
+  "pinyin": "cad74",
+  "hex": "#ff8c31",
+  "entries": [
+    {
+      "line": "桃未芳菲杏未红，冲寒先已笑东风",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "杏红",
+      "_hex": "#ff8c31",
+      "dynasty": "清"
+    }
+  ],
+  "coverage": "1/5"
+}

@@ -1,0 +1,30 @@
+{
+  "color": "碧色",
+  "pinyin": "c21c3",
+  "hex": "#1bd1a5",
+  "entries": [
+    {
+      "line": "暮从碧山下，山月随人归",
+      "title": "下终南山遇斛斯山人宿置酒",
+      "author": "李白",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "碧色",
+      "_hex": "#1bd1a5",
+      "dynasty": "唐"
+    },
+    {
+      "line": "燕草如碧丝，秦桑低绿枝",
+      "title": "春思",
+      "author": "李白",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "碧色",
+      "_hex": "#1bd1a5",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "2/5"
+}

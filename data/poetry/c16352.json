@@ -1,0 +1,41 @@
+{
+  "color": "嫣红",
+  "pinyin": "c16352",
+  "hex": "#ef7a82",
+  "entries": [
+    {
+      "line": "怅望西风抱闷思，蓼红苇白断肠时",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "嫣红",
+      "_hex": "#ef7a82",
+      "dynasty": "清"
+    },
+    {
+      "line": "绿裁歌扇迷芳草，红衬湘裙舞落梅",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "嫣红",
+      "_hex": "#ef7a82",
+      "dynasty": "清"
+    },
+    {
+      "line": "桃花桃叶乱纷纷，花绽新红叶凝碧",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "嫣红",
+      "_hex": "#ef7a82",
+      "dynasty": "清"
+    }
+  ],
+  "coverage": "3/5"
+}

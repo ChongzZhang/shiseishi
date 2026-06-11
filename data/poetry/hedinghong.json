@@ -1,0 +1,28 @@
+{
+  "color": "鹤顶红",
+  "pinyin": "hedinghong",
+  "hex": "#d42517",
+  "entries": [
+    {
+      "line": "千朵鹤顶红，染此一丛绿。",
+      "title": "观山茶过回龙寺示邦基",
+      "author": "释德洪",
+      "type": "诗",
+      "source": "全唐诗/poet.song.75000.json#565",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "仿佛芙蓉箭镞形，涩如鹤顶红如火。",
+      "title": "张户部惠山杨梅",
+      "author": "张镃",
+      "type": "诗",
+      "source": "全唐诗/poet.song.171000.json#5",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

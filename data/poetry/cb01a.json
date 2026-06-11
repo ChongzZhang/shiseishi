@@ -1,0 +1,32 @@
+{
+  "color": "藕荷色",
+  "pinyin": "cb01a",
+  "hex": "#e4c6d0",
+  "entries": [
+    {
+      "line": "荷笠带斜阳，青山独归远",
+      "title": "送灵澈",
+      "author": "刘长卿",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "唐诗三百首",
+      "_color": "藕荷色",
+      "_hex": "#e4c6d0",
+      "dynasty": "唐"
+    },
+    {
+      "line": "荷风送香气，竹露滴清响",
+      "title": "夏日南亭怀辛大",
+      "author": "孟浩然",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "唐诗三百首",
+      "_color": "藕荷色",
+      "_hex": "#e4c6d0",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "2/5"
+}

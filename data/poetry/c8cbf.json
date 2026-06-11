@@ -1,0 +1,32 @@
+{
+  "color": "玄色",
+  "pinyin": "c8cbf",
+  "hex": "#622a1d",
+  "entries": [
+    {
+      "line": "万里寒光生积雪，三边曙色动危旌",
+      "title": "望蓟门",
+      "author": "祖咏",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "唐诗三百首",
+      "_color": "玄色",
+      "_hex": "#622a1d",
+      "dynasty": "唐"
+    },
+    {
+      "line": "不堪玄鬓影，来对白头吟",
+      "title": "在狱咏蝉并序",
+      "author": "骆宾王",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "唐诗三百首",
+      "_color": "玄色",
+      "_hex": "#622a1d",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "2/5"
+}

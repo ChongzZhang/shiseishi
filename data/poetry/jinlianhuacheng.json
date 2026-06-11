@@ -1,0 +1,38 @@
+{
+  "color": "金莲花橙",
+  "pinyin": "jinlianhuacheng",
+  "hex": "#f86b1d",
+  "entries": [
+    {
+      "line": "广深莫种金莲花，故使浮杯衬双脚。",
+      "title": "题渡水罗汉画",
+      "author": "庞谦孺",
+      "type": "诗",
+      "source": "全唐诗/poet.song.122000.json#886",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "上有金莲花，茎叶相扶将。",
+      "title": "遗所思",
+      "author": "曹勋",
+      "type": "诗",
+      "source": "全唐诗/poet.song.109000.json#446",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "波底金莲花，万叶绿绮缛。",
+      "title": "荆门军惠泉呈李使君舜卿",
+      "author": "刘挚",
+      "type": "诗",
+      "source": "全唐诗/poet.song.38000.json#684",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

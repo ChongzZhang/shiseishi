@@ -1,0 +1,18 @@
+{
+  "color": "山鸡褐",
+  "pinyin": "shanjihe",
+  "hex": "#986524",
+  "entries": [
+    {
+      "line": "听彻山鸡唤雨声，东风未肯放新晴。",
+      "title": "衡阳道间  其二",
+      "author": "李曾伯",
+      "type": "诗",
+      "source": "全唐诗/poet.song.214000.json#629",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

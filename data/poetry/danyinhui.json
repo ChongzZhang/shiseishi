@@ -1,0 +1,28 @@
+{
+  "color": "淡银灰",
+  "pinyin": "danyinhui",
+  "hex": "#c1b2a3",
+  "entries": [
+    {
+      "line": "真珠帘卷玉楼空，天淡银河垂地。",
+      "title": "御街行",
+      "author": "范仲淹",
+      "type": "词",
+      "source": "宋词/ci.song.0.json#43",
+      "matchTier": 3,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "乌乌画角凌风起，淡淡银河拂地垂。",
+      "title": "庭中夜赋",
+      "author": "陆游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.134000.json#400",
+      "matchTier": 3,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

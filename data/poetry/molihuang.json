@@ -1,0 +1,48 @@
+{
+  "color": "茉莉黄",
+  "pinyin": "molihuang",
+  "hex": "#f8df72",
+  "entries": [
+    {
+      "line": "旅程一见错欢喜，仿佛吾乡茉莉花。",
+      "title": "句  其四",
+      "author": "郑域",
+      "type": "诗",
+      "source": "全唐诗/poet.song.173000.json#760",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "招还茉莉同为伴，欺压黄花不得施。",
+      "title": "和胡秉彝敷文岩桂四首  其三",
+      "author": "蔡戡",
+      "type": "诗",
+      "source": "全唐诗/poet.song.162000.json#463",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "影翻凤尾槟榔叶，香散龙涎茉莉花。",
+      "title": "四月十四日晚陈列之见顾追凉玩月于东桥之上辄成长句以写一时风景之胜",
+      "author": "李光",
+      "type": "诗",
+      "source": "全唐诗/poet.song.82000.json#907",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "斫雪蝤蛑鲙，生香茉莉杯。",
+      "title": "句  其四九",
+      "author": "高似孙",
+      "type": "诗",
+      "source": "全唐诗/poet.song.173000.json#670",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "4/5"
+}

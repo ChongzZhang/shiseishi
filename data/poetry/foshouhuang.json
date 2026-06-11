@@ -1,0 +1,40 @@
+{
+  "color": "佛手黄",
+  "pinyin": "foshouhuang",
+  "hex": "#fed71a",
+  "entries": [
+    {
+      "line": "一轩碧芦佛手种，霜叶戚戚如诗鸣。",
+      "title": "留隠庵老住碧芦轩",
+      "author": "何耕",
+      "type": "诗",
+      "source": "全唐诗/poet.song.144000.json#38",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "清铅素靥，蜂黄暗偷晕",
+      "title": "花犯",
+      "author": "吴文英",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "佛手黄",
+      "_hex": "#fed71a",
+      "dynasty": "宋"
+    },
+    {
+      "line": "玉纤曾擘黄柑，柔香系幽素",
+      "title": "祝英台近",
+      "author": "吴文英",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "佛手黄",
+      "_hex": "#fed71a",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

@@ -1,0 +1,2195 @@
+[
+  {
+    "CMYK": [
+      32,
+      83,
+      96,
+      41
+    ],
+    "RGB": [
+      113,
+      54,
+      29
+    ],
+    "hex": "#71361d",
+    "name": "丁香棕",
+    "pinyin": "dingxiangzong",
+    "namePinyin": "dingxiangzong"
+  },
+  {
+    "name": "丁香色",
+    "pinyin": "c6913",
+    "hex": "#cca4e3",
+    "RGB": [
+      204,
+      164,
+      227
+    ],
+    "CMYK": [
+      10,
+      28,
+      0,
+      11
+    ],
+    "namePinyin": "dingxiangse"
+  },
+  {
+    "CMYK": [
+      4,
+      5,
+      18,
+      0
+    ],
+    "RGB": [
+      249,
+      244,
+      220
+    ],
+    "hex": "#f9f4dc",
+    "name": "乳白",
+    "pinyin": "rubai",
+    "namePinyin": "rubai"
+  },
+  {
+    "CMYK": [
+      1,
+      18,
+      94,
+      0
+    ],
+    "RGB": [
+      254,
+      215,
+      26
+    ],
+    "hex": "#fed71a",
+    "name": "佛手黄",
+    "pinyin": "foshouhuang",
+    "namePinyin": "foshouhuang"
+  },
+  {
+    "CMYK": [
+      2,
+      44,
+      83,
+      0
+    ],
+    "RGB": [
+      231,
+      162,
+      63
+    ],
+    "hex": "#e7a23f",
+    "name": "凋叶棕",
+    "pinyin": "diaoyezong",
+    "namePinyin": "diaoyezong"
+  },
+  {
+    "CMYK": [
+      0,
+      56,
+      87,
+      0
+    ],
+    "RGB": [
+      252,
+      140,
+      35
+    ],
+    "hex": "#fc8c23",
+    "name": "北瓜黄",
+    "pinyin": "beiguahuang",
+    "namePinyin": "beiguahuang"
+  },
+  {
+    "name": "墨灰",
+    "pinyin": "c12e18",
+    "hex": "#758a99",
+    "RGB": [
+      117,
+      138,
+      153
+    ],
+    "CMYK": [
+      24,
+      10,
+      0,
+      40
+    ],
+    "namePinyin": "mohui"
+  },
+  {
+    "CMYK": [
+      0,
+      80,
+      28,
+      0
+    ],
+    "RGB": [
+      235,
+      80,
+      126
+    ],
+    "hex": "#eb507e",
+    "name": "夹竹桃红",
+    "pinyin": "jiazhutaohong",
+    "namePinyin": "jiazhutaohong"
+  },
+  {
+    "CMYK": [
+      28,
+      4,
+      44,
+      0
+    ],
+    "RGB": [
+      208,
+      222,
+      170
+    ],
+    "hex": "#d0deaa",
+    "name": "姚黄",
+    "pinyin": "yaohuang",
+    "namePinyin": "yaohuang"
+  },
+  {
+    "name": "嫣红",
+    "pinyin": "c16352",
+    "hex": "#ef7a82",
+    "RGB": [
+      239,
+      122,
+      130
+    ],
+    "CMYK": [
+      0,
+      49,
+      46,
+      6
+    ],
+    "namePinyin": "yanhong"
+  },
+  {
+    "name": "嫩绿",
+    "pinyin": "cb2c2",
+    "hex": "#bddd22",
+    "RGB": [
+      189,
+      221,
+      34
+    ],
+    "CMYK": [
+      15,
+      0,
+      85,
+      13
+    ],
+    "namePinyin": "nenlv"
+  },
+  {
+    "CMYK": [
+      26,
+      31,
+      57,
+      10
+    ],
+    "RGB": [
+      182,
+      164,
+      118
+    ],
+    "hex": "#b6a476",
+    "name": "尘灰",
+    "pinyin": "chenhui",
+    "namePinyin": "chenhui"
+  },
+  {
+    "CMYK": [
+      27,
+      60,
+      97,
+      21
+    ],
+    "RGB": [
+      152,
+      101,
+      36
+    ],
+    "hex": "#986524",
+    "name": "山鸡褐",
+    "pinyin": "shanjihe",
+    "namePinyin": "shanjihe"
+  },
+  {
+    "CMYK": [
+      26,
+      76,
+      97,
+      20
+    ],
+    "RGB": [
+      150,
+      77,
+      34
+    ],
+    "hex": "#964d22",
+    "name": "岩石棕",
+    "pinyin": "yanshizong",
+    "namePinyin": "yanshizong"
+  },
+  {
+    "name": "彤",
+    "pinyin": "cbc79",
+    "hex": "#f35336",
+    "RGB": [
+      243,
+      83,
+      54
+    ],
+    "CMYK": [
+      0,
+      66,
+      78,
+      5
+    ],
+    "namePinyin": "tong"
+  },
+  {
+    "CMYK": [
+      17,
+      29,
+      100,
+      4
+    ],
+    "RGB": [
+      210,
+      177,
+      22
+    ],
+    "hex": "#d2b116",
+    "name": "新禾绿",
+    "pinyin": "xinhelv",
+    "namePinyin": "xinhelv"
+  },
+  {
+    "CMYK": [
+      53,
+      1,
+      44,
+      0
+    ],
+    "RGB": [
+      158,
+      204,
+      171
+    ],
+    "hex": "#9eccab",
+    "name": "明绿",
+    "pinyin": "minglv",
+    "namePinyin": "minglv"
+  },
+  {
+    "CMYK": [
+      45,
+      56,
+      100,
+      56
+    ],
+    "RGB": [
+      88,
+      71,
+      23
+    ],
+    "hex": "#584717",
+    "name": "暗海水绿",
+    "pinyin": "anhaishuilv",
+    "namePinyin": "anhaishuilv"
+  },
+  {
+    "CMYK": [
+      28,
+      26,
+      45,
+      7
+    ],
+    "RGB": [
+      183,
+      174,
+      143
+    ],
+    "hex": "#b7ae8f",
+    "name": "月灰",
+    "pinyin": "yuehui",
+    "namePinyin": "yuehui"
+  },
+  {
+    "CMYK": [
+      11,
+      0,
+      8,
+      0
+    ],
+    "RGB": [
+      238,
+      247,
+      242
+    ],
+    "hex": "#eef7f2",
+    "name": "月白",
+    "pinyin": "yuebai",
+    "namePinyin": "yuebai"
+  },
+  {
+    "name": "朱红",
+    "pinyin": "c4b6c",
+    "hex": "#ff4c00",
+    "RGB": [
+      255,
+      76,
+      0
+    ],
+    "CMYK": [
+      0,
+      70,
+      100,
+      0
+    ],
+    "namePinyin": "zhuhong"
+  },
+  {
+    "name": "杏红",
+    "pinyin": "cad74",
+    "hex": "#ff8c31",
+    "RGB": [
+      255,
+      140,
+      49
+    ],
+    "CMYK": [
+      0,
+      45,
+      81,
+      0
+    ],
+    "namePinyin": "xinghong"
+  },
+  {
+    "name": "松柏绿",
+    "pinyin": "c176f1",
+    "hex": "#21a675",
+    "RGB": [
+      33,
+      166,
+      117
+    ],
+    "CMYK": [
+      80,
+      0,
+      29,
+      35
+    ],
+    "namePinyin": "songbailv"
+  },
+  {
+    "CMYK": [
+      0,
+      47,
+      92,
+      0
+    ],
+    "RGB": [
+      252,
+      161,
+      6
+    ],
+    "hex": "#fca106",
+    "name": "枇杷黄",
+    "pinyin": "pipahuang",
+    "namePinyin": "pipahuang"
+  },
+  {
+    "CMYK": [
+      28,
+      100,
+      86,
+      33
+    ],
+    "RGB": [
+      124,
+      24,
+      35
+    ],
+    "hex": "#7c1823",
+    "name": "枣红",
+    "pinyin": "zaohong",
+    "namePinyin": "zaohong"
+  },
+  {
+    "CMYK": [
+      10,
+      96,
+      82,
+      2
+    ],
+    "RGB": [
+      194,
+      31,
+      48
+    ],
+    "hex": "#c21f30",
+    "name": "枫叶红",
+    "pinyin": "fengyehong",
+    "namePinyin": "fengyehong"
+  },
+  {
+    "name": "柳绿",
+    "pinyin": "c36d8",
+    "hex": "#afdd22",
+    "RGB": [
+      175,
+      221,
+      34
+    ],
+    "CMYK": [
+      21,
+      0,
+      85,
+      13
+    ],
+    "namePinyin": "liulv"
+  },
+  {
+    "CMYK": [
+      35,
+      100,
+      85,
+      54
+    ],
+    "RGB": [
+      90,
+      25,
+      27
+    ],
+    "hex": "#5a191b",
+    "name": "栗紫",
+    "pinyin": "lizi",
+    "namePinyin": "lizi"
+  },
+  {
+    "CMYK": [
+      0,
+      76,
+      67,
+      0
+    ],
+    "RGB": [
+      242,
+      90,
+      71
+    ],
+    "hex": "#f25a47",
+    "name": "桂红",
+    "pinyin": "guihong",
+    "namePinyin": "guihong"
+  },
+  {
+    "CMYK": [
+      0,
+      44,
+      32,
+      0
+    ],
+    "RGB": [
+      240,
+      173,
+      160
+    ],
+    "hex": "#f0ada0",
+    "name": "桃红",
+    "pinyin": "taohong",
+    "namePinyin": "taohong"
+  },
+  {
+    "CMYK": [
+      0,
+      44,
+      84,
+      0
+    ],
+    "RGB": [
+      249,
+      166,
+      51
+    ],
+    "hex": "#f9a633",
+    "name": "榴萼黄",
+    "pinyin": "liuehuang",
+    "namePinyin": "liuehuang"
+  },
+  {
+    "CMYK": [
+      14,
+      69,
+      100,
+      4
+    ],
+    "RGB": [
+      193,
+      101,
+      26
+    ],
+    "hex": "#c1651a",
+    "name": "槟榔综",
+    "pinyin": "binglangzong",
+    "namePinyin": "binglangzong"
+  },
+  {
+    "name": "殷红",
+    "pinyin": "c92a5",
+    "hex": "#be002f",
+    "RGB": [
+      190,
+      0,
+      47
+    ],
+    "CMYK": [
+      1,
+      100,
+      75,
+      25
+    ],
+    "namePinyin": "yanhong"
+  },
+  {
+    "CMYK": [
+      75,
+      0,
+      61,
+      0
+    ],
+    "RGB": [
+      102,
+      193,
+      140
+    ],
+    "hex": "#66c18c",
+    "name": "毛绿",
+    "pinyin": "maolv",
+    "namePinyin": "maolv"
+  },
+  {
+    "CMYK": [
+      62,
+      0,
+      76,
+      0
+    ],
+    "RGB": [
+      140,
+      194,
+      105
+    ],
+    "hex": "#8cc269",
+    "name": "水绿",
+    "pinyin": "shuilv",
+    "namePinyin": "shuilv"
+  },
+  {
+    "name": "水色",
+    "pinyin": "c3186",
+    "hex": "#88ada6",
+    "RGB": [
+      136,
+      173,
+      166
+    ],
+    "CMYK": [
+      22,
+      0,
+      4,
+      32
+    ],
+    "namePinyin": "shuise"
+  },
+  {
+    "name": "水蓝",
+    "pinyin": "c4190",
+    "hex": "#d2f0f4",
+    "RGB": [
+      210,
+      240,
+      244
+    ],
+    "CMYK": [
+      14,
+      2,
+      0,
+      4
+    ],
+    "namePinyin": "shuilan"
+  },
+  {
+    "CMYK": [
+      2,
+      16,
+      84,
+      0
+    ],
+    "RGB": [
+      251,
+      218,
+      65
+    ],
+    "hex": "#fbda41",
+    "name": "油菜花黄",
+    "pinyin": "youcaihuahuang",
+    "namePinyin": "youcaihuahuang"
+  },
+  {
+    "CMYK": [
+      10,
+      27,
+      59,
+      1
+    ],
+    "RGB": [
+      226,
+      193,
+      124
+    ],
+    "hex": "#e2c17c",
+    "name": "浅驼色",
+    "pinyin": "qiantuose",
+    "namePinyin": "qiantuose"
+  },
+  {
+    "name": "海棠红",
+    "pinyin": "c15fce",
+    "hex": "#db5a6b",
+    "RGB": [
+      219,
+      90,
+      107
+    ],
+    "CMYK": [
+      0,
+      59,
+      51,
+      14
+    ],
+    "namePinyin": "haitanghong"
+  },
+  {
+    "CMYK": [
+      92,
+      10,
+      25,
+      1
+    ],
+    "RGB": [
+      34,
+      162,
+      195
+    ],
+    "hex": "#22a2c3",
+    "name": "海青",
+    "pinyin": "haiqing",
+    "namePinyin": "haiqing"
+  },
+  {
+    "CMYK": [
+      0,
+      28,
+      25,
+      0
+    ],
+    "RGB": [
+      247,
+      205,
+      188
+    ],
+    "hex": "#f7cdbc",
+    "name": "润红",
+    "pinyin": "runhong",
+    "namePinyin": "runhong"
+  },
+  {
+    "CMYK": [
+      30,
+      30,
+      70,
+      12
+    ],
+    "RGB": [
+      173,
+      158,
+      85
+    ],
+    "hex": "#ad9e5f",
+    "name": "淡灰绿",
+    "pinyin": "danhuilv",
+    "namePinyin": "danhuilv"
+  },
+  {
+    "CMYK": [
+      0,
+      68,
+      21,
+      0
+    ],
+    "RGB": [
+      236,
+      118,
+      150
+    ],
+    "hex": "#ec7696",
+    "name": "淡绛红",
+    "pinyin": "danjianghong",
+    "namePinyin": "danjianghong"
+  },
+  {
+    "CMYK": [
+      78,
+      6,
+      62,
+      0
+    ],
+    "RGB": [
+      97,
+      172,
+      133
+    ],
+    "hex": "#61ac85",
+    "name": "淡绿",
+    "pinyin": "danlv",
+    "namePinyin": "danlv"
+  },
+  {
+    "CMYK": [
+      0,
+      49,
+      41,
+      0
+    ],
+    "RGB": [
+      238,
+      160,
+      140
+    ],
+    "hex": "#eea08c",
+    "name": "淡罂粟红",
+    "pinyin": "danyingsuhong",
+    "namePinyin": "danyingsuhong"
+  },
+  {
+    "CMYK": [
+      28,
+      83,
+      92,
+      28
+    ],
+    "RGB": [
+      135,
+      61,
+      36
+    ],
+    "hex": "#873d24",
+    "name": "淡豆沙",
+    "pinyin": "dandousha",
+    "namePinyin": "dandousha"
+  },
+  {
+    "CMYK": [
+      22,
+      28,
+      34,
+      6
+    ],
+    "RGB": [
+      193,
+      178,
+      163
+    ],
+    "hex": "#c1b2a3",
+    "name": "淡银灰",
+    "pinyin": "danyinhui",
+    "namePinyin": "danyinhui"
+  },
+  {
+    "name": "湖蓝",
+    "pinyin": "c3abb",
+    "hex": "#30dff3",
+    "RGB": [
+      48,
+      223,
+      243
+    ],
+    "CMYK": [
+      80,
+      8,
+      0,
+      5
+    ],
+    "namePinyin": "hulan"
+  },
+  {
+    "CMYK": [
+      48,
+      48,
+      100,
+      45
+    ],
+    "RGB": [
+      100,
+      88,
+      34
+    ],
+    "hex": "#645822",
+    "name": "潭水绿",
+    "pinyin": "tanshuilv",
+    "namePinyin": "tanshuilv"
+  },
+  {
+    "name": "火红",
+    "pinyin": "c2ff3",
+    "hex": "#ff2d51",
+    "RGB": [
+      255,
+      45,
+      81
+    ],
+    "CMYK": [
+      0,
+      82,
+      68,
+      0
+    ],
+    "namePinyin": "huohong"
+  },
+  {
+    "CMYK": [
+      47,
+      47,
+      65,
+      42
+    ],
+    "RGB": [
+      104,
+      94,
+      72
+    ],
+    "hex": "#685e48",
+    "name": "燕羽灰",
+    "pinyin": "yanyuhui",
+    "namePinyin": "yanyuhui"
+  },
+  {
+    "name": "玄色",
+    "pinyin": "c8cbf",
+    "hex": "#622a1d",
+    "RGB": [
+      98,
+      42,
+      29
+    ],
+    "CMYK": [
+      0,
+      57,
+      70,
+      62
+    ],
+    "namePinyin": "xuanse"
+  },
+  {
+    "CMYK": [
+      13,
+      83,
+      62,
+      3
+    ],
+    "RGB": [
+      192,
+      72,
+      81
+    ],
+    "hex": "#c04851",
+    "name": "玉红",
+    "pinyin": "yuhong",
+    "namePinyin": "yuhong"
+  },
+  {
+    "CMYK": [
+      41,
+      76,
+      64,
+      65
+    ],
+    "RGB": [
+      175,
+      46,
+      43
+    ],
+    "hex": "#4b2e2b",
+    "name": "玫瑰灰",
+    "pinyin": "meiguihui",
+    "namePinyin": "meiguihui"
+  },
+  {
+    "CMYK": [
+      18,
+      91,
+      18,
+      2
+    ],
+    "RGB": [
+      186,
+      47,
+      123
+    ],
+    "hex": "#ba2f7b",
+    "name": "玫瑰紫",
+    "pinyin": "meiguizi",
+    "namePinyin": "meiguizi"
+  },
+  {
+    "CMYK": [
+      4,
+      89,
+      21,
+      0
+    ],
+    "RGB": [
+      210,
+      53,
+      125
+    ],
+    "hex": "#d2357d",
+    "name": "玫瑰红",
+    "pinyin": "meiguihong",
+    "namePinyin": "meiguihong"
+  },
+  {
+    "CMYK": [
+      10,
+      41,
+      72,
+      1
+    ],
+    "RGB": [
+      218,
+      164,
+      90
+    ],
+    "hex": "#daa45a",
+    "name": "玳瑁黄",
+    "pinyin": "daimaohuang",
+    "namePinyin": "daimaohuang"
+  },
+  {
+    "CMYK": [
+      1,
+      31,
+      79,
+      0
+    ],
+    "RGB": [
+      243,
+      191,
+      76
+    ],
+    "hex": "#f3bf4c",
+    "name": "甘草黄",
+    "pinyin": "gancaohuang",
+    "namePinyin": "gancaohuang"
+  },
+  {
+    "CMYK": [
+      39,
+      60,
+      58,
+      51
+    ],
+    "RGB": [
+      98,
+      73,
+      65
+    ],
+    "hex": "#624941",
+    "name": "石板灰",
+    "pinyin": "shibanhui",
+    "namePinyin": "shibanhui"
+  },
+  {
+    "name": "石榴红",
+    "pinyin": "c52e9",
+    "hex": "#f20c00",
+    "RGB": [
+      242,
+      12,
+      0
+    ],
+    "CMYK": [
+      0,
+      95,
+      100,
+      5
+    ],
+    "namePinyin": "shiliuhong"
+  },
+  {
+    "name": "碧绿",
+    "pinyin": "c7163",
+    "hex": "#2add9c",
+    "RGB": [
+      42,
+      221,
+      156
+    ],
+    "CMYK": [
+      81,
+      0,
+      30,
+      13
+    ],
+    "namePinyin": "bilv"
+  },
+  {
+    "name": "碧色",
+    "pinyin": "c21c3",
+    "hex": "#1bd1a5",
+    "RGB": [
+      27,
+      209,
+      165
+    ],
+    "CMYK": [
+      87,
+      0,
+      21,
+      18
+    ],
+    "namePinyin": "bise"
+  },
+  {
+    "name": "碧蓝",
+    "pinyin": "c1bf6",
+    "hex": "#3eede7",
+    "RGB": [
+      62,
+      237,
+      231
+    ],
+    "CMYK": [
+      74,
+      0,
+      3,
+      7
+    ],
+    "namePinyin": "bilan"
+  },
+  {
+    "CMYK": [
+      0,
+      88,
+      81,
+      0
+    ],
+    "RGB": [
+      236,
+      43,
+      36
+    ],
+    "hex": "#ec2b24",
+    "name": "秋海棠红",
+    "pinyin": "qiuhaitanghong",
+    "namePinyin": "qiuhaitanghong"
+  },
+  {
+    "name": "秋色",
+    "pinyin": "c5d03",
+    "hex": "#896c39",
+    "RGB": [
+      137,
+      108,
+      57
+    ],
+    "CMYK": [
+      1,
+      22,
+      59,
+      46
+    ],
+    "namePinyin": "qiuse"
+  },
+  {
+    "name": "秋香色",
+    "pinyin": "c89fd",
+    "hex": "#d9b611",
+    "RGB": [
+      217,
+      182,
+      17
+    ],
+    "CMYK": [
+      0,
+      16,
+      92,
+      15
+    ],
+    "namePinyin": "qiuxiangse"
+  },
+  {
+    "name": "竹青",
+    "pinyin": "c7e3a",
+    "hex": "#789262",
+    "RGB": [
+      120,
+      146,
+      98
+    ],
+    "CMYK": [
+      17,
+      0,
+      33,
+      43
+    ],
+    "namePinyin": "zhuqing"
+  },
+  {
+    "CMYK": [
+      0,
+      38,
+      25,
+      0
+    ],
+    "RGB": [
+      242,
+      185,
+      178
+    ],
+    "hex": "#f2b9b2",
+    "name": "粉红",
+    "pinyin": "fenhong",
+    "namePinyin": "fenhong"
+  },
+  {
+    "CMYK": [
+      64,
+      0,
+      46,
+      0
+    ],
+    "RGB": [
+      131,
+      203,
+      172
+    ],
+    "hex": "#83cbac",
+    "name": "粉绿",
+    "pinyin": "fenlv",
+    "namePinyin": "fenlv"
+  },
+  {
+    "name": "紫色",
+    "pinyin": "ccb3c",
+    "hex": "#8d4bbb",
+    "RGB": [
+      141,
+      75,
+      187
+    ],
+    "CMYK": [
+      24,
+      60,
+      0,
+      27
+    ],
+    "namePinyin": "zise"
+  },
+  {
+    "name": "绛紫",
+    "pinyin": "c1ce0",
+    "hex": "#8c4356",
+    "RGB": [
+      140,
+      67,
+      86
+    ],
+    "CMYK": [
+      0,
+      52,
+      39,
+      45
+    ],
+    "namePinyin": "jiangzi"
+  },
+  {
+    "name": "绯红",
+    "pinyin": "cfc9e",
+    "hex": "#c83c23",
+    "RGB": [
+      200,
+      60,
+      35
+    ],
+    "CMYK": [
+      0,
+      70,
+      82,
+      22
+    ],
+    "namePinyin": "feihong"
+  },
+  {
+    "name": "缟",
+    "pinyin": "c128ec",
+    "hex": "#f2ecde",
+    "RGB": [
+      242,
+      236,
+      222
+    ],
+    "CMYK": [
+      0,
+      3,
+      8,
+      5
+    ],
+    "namePinyin": "gao"
+  },
+  {
+    "CMYK": [
+      98,
+      0,
+      82,
+      0
+    ],
+    "RGB": [
+      32,
+      161,
+      98
+    ],
+    "hex": "#20a162",
+    "name": "翠绿",
+    "pinyin": "cuilv",
+    "namePinyin": "cuilv"
+  },
+  {
+    "name": "翡翠色",
+    "pinyin": "c889b",
+    "hex": "#3de1ad",
+    "RGB": [
+      61,
+      225,
+      173
+    ],
+    "CMYK": [
+      73,
+      0,
+      23,
+      12
+    ],
+    "namePinyin": "feicuise"
+  },
+  {
+    "CMYK": [
+      0,
+      32,
+      52,
+      0
+    ],
+    "RGB": [
+      247,
+      193,
+      115
+    ],
+    "hex": "#f7c173",
+    "name": "肉色",
+    "pinyin": "rouse",
+    "namePinyin": "rouse"
+  },
+  {
+    "name": "胭脂",
+    "pinyin": "c9a58",
+    "hex": "#9d2933",
+    "RGB": [
+      157,
+      41,
+      51
+    ],
+    "CMYK": [
+      1,
+      74,
+      68,
+      38
+    ],
+    "namePinyin": "yanzhi"
+  },
+  {
+    "CMYK": [
+      0,
+      77,
+      49,
+      0
+    ],
+    "RGB": [
+      237,
+      90,
+      101
+    ],
+    "hex": "#ed5a65",
+    "name": "艳红",
+    "pinyin": "yanhong",
+    "namePinyin": "yanhong"
+  },
+  {
+    "CMYK": [
+      27,
+      11,
+      27,
+      1
+    ],
+    "RGB": [
+      202,
+      211,
+      195
+    ],
+    "hex": "#cad3c3",
+    "name": "艾绿",
+    "pinyin": "ailv",
+    "namePinyin": "ailv"
+  },
+  {
+    "CMYK": [
+      39,
+      53,
+      38,
+      25
+    ],
+    "RGB": [
+      133,
+      109,
+      114
+    ],
+    "hex": "#856d72",
+    "name": "芦灰",
+    "pinyin": "luhui",
+    "namePinyin": "luhui"
+  },
+  {
+    "name": "花白",
+    "pinyin": "c4438",
+    "hex": "#c2ccd0",
+    "RGB": [
+      194,
+      204,
+      208
+    ],
+    "CMYK": [
+      7,
+      2,
+      1,
+      18
+    ],
+    "namePinyin": "huabai"
+  },
+  {
+    "CMYK": [
+      58,
+      1,
+      88,
+      0
+    ],
+    "RGB": [
+      150,
+      194,
+      78
+    ],
+    "hex": "#96c24e",
+    "name": "芽绿",
+    "pinyin": "yalv",
+    "namePinyin": "yalv"
+  },
+  {
+    "name": "苍白",
+    "pinyin": "c10c6d",
+    "hex": "#d1d9e0",
+    "RGB": [
+      209,
+      217,
+      224
+    ],
+    "CMYK": [
+      7,
+      3,
+      0,
+      12
+    ],
+    "namePinyin": "cangbai"
+  },
+  {
+    "CMYK": [
+      93,
+      46,
+      70,
+      61
+    ],
+    "RGB": [
+      34,
+      62,
+      54
+    ],
+    "hex": "#223e36",
+    "name": "苍绿",
+    "pinyin": "canglv",
+    "namePinyin": "canglv"
+  },
+  {
+    "name": "苍翠",
+    "pinyin": "c141ba",
+    "hex": "#519a73",
+    "RGB": [
+      81,
+      154,
+      115
+    ],
+    "CMYK": [
+      47,
+      0,
+      25,
+      40
+    ],
+    "namePinyin": "cangcui"
+  },
+  {
+    "name": "苍色",
+    "pinyin": "cfce2",
+    "hex": "#75878a",
+    "RGB": [
+      117,
+      135,
+      138
+    ],
+    "CMYK": [
+      15,
+      2,
+      0,
+      46
+    ],
+    "namePinyin": "cangse"
+  },
+  {
+    "CMYK": [
+      34,
+      52,
+      85,
+      35
+    ],
+    "RGB": [
+      128,
+      99,
+      50
+    ],
+    "hex": "#806332",
+    "name": "苍黄",
+    "pinyin": "canghuang",
+    "namePinyin": "canghuang"
+  },
+  {
+    "CMYK": [
+      36,
+      42,
+      100,
+      29
+    ],
+    "RGB": [
+      136,
+      115,
+      34
+    ],
+    "hex": "#887322",
+    "name": "苔绿",
+    "pinyin": "tailv",
+    "namePinyin": "tailv"
+  },
+  {
+    "CMYK": [
+      4,
+      13,
+      67,
+      0
+    ],
+    "RGB": [
+      248,
+      223,
+      114
+    ],
+    "hex": "#f8df72",
+    "name": "茉莉黄",
+    "pinyin": "molihuang",
+    "namePinyin": "molihuang"
+  },
+  {
+    "CMYK": [
+      0,
+      84,
+      60,
+      0
+    ],
+    "RGB": [
+      238,
+      63,
+      77
+    ],
+    "hex": "#ee3f4d",
+    "name": "茶花红",
+    "pinyin": "chahuahong",
+    "namePinyin": "chahuahong"
+  },
+  {
+    "CMYK": [
+      38,
+      38,
+      76,
+      24
+    ],
+    "RGB": [
+      142,
+      128,
+      75
+    ],
+    "hex": "#8e804b",
+    "name": "草灰绿",
+    "pinyin": "caohuilv",
+    "namePinyin": "caohuilv"
+  },
+  {
+    "CMYK": [
+      10,
+      13,
+      35,
+      1
+    ],
+    "RGB": [
+      233,
+      221,
+      182
+    ],
+    "hex": "#e9ddb6",
+    "name": "菊蕾白",
+    "pinyin": "juleibai",
+    "namePinyin": "juleibai"
+  },
+  {
+    "CMYK": [
+      33,
+      100,
+      58,
+      60
+    ],
+    "RGB": [
+      98,
+      16,
+      46
+    ],
+    "hex": "#62102e",
+    "name": "葡萄酒红",
+    "pinyin": "putaojiuhong",
+    "namePinyin": "putaojiuhong"
+  },
+  {
+    "CMYK": [
+      14,
+      22,
+      85,
+      2
+    ],
+    "RGB": [
+      223,
+      194,
+      67
+    ],
+    "hex": "#dfc243",
+    "name": "蒿黄",
+    "pinyin": "haohuang",
+    "namePinyin": "haohuang"
+  },
+  {
+    "CMYK": [
+      98,
+      2,
+      64,
+      0
+    ],
+    "RGB": [
+      18,
+      161,
+      130
+    ],
+    "hex": "#12a182",
+    "name": "蓝绿",
+    "pinyin": "lanlv",
+    "namePinyin": "lanlv"
+  },
+  {
+    "CMYK": [
+      89,
+      0,
+      29,
+      0
+    ],
+    "RGB": [
+      41,
+      183,
+      203
+    ],
+    "hex": "#29b7cb",
+    "name": "蔚蓝",
+    "pinyin": "weilan",
+    "namePinyin": "weilan"
+  },
+  {
+    "name": "藕荷色",
+    "pinyin": "cb01a",
+    "hex": "#e4c6d0",
+    "RGB": [
+      228,
+      198,
+      208
+    ],
+    "CMYK": [
+      0,
+      13,
+      8,
+      11
+    ],
+    "namePinyin": "ouhese"
+  },
+  {
+    "CMYK": [
+      56,
+      26,
+      36,
+      7
+    ],
+    "RGB": [
+      134,
+      157,
+      157
+    ],
+    "hex": "#869d9d",
+    "name": "虾壳青",
+    "pinyin": "xiakeqing",
+    "namePinyin": "xiakeqing"
+  },
+  {
+    "CMYK": [
+      0,
+      81,
+      84,
+      0
+    ],
+    "RGB": [
+      241,
+      68,
+      29
+    ],
+    "hex": "#f1441d",
+    "name": "蜻蜓红",
+    "pinyin": "qingtinghong",
+    "namePinyin": "qingtinghong"
+  },
+  {
+    "CMYK": [
+      0,
+      65,
+      80,
+      0
+    ],
+    "RGB": [
+      242,
+      118,
+      53
+    ],
+    "hex": "#f27635",
+    "name": "蟹壳红",
+    "pinyin": "xiekehong",
+    "namePinyin": "xiekehong"
+  },
+  {
+    "CMYK": [
+      4,
+      57,
+      82,
+      1
+    ],
+    "RGB": [
+      219,
+      133,
+      64
+    ],
+    "hex": "#db8540",
+    "name": "醉瓜肉",
+    "pinyin": "zuiguarou",
+    "namePinyin": "zuiguarou"
+  },
+  {
+    "CMYK": [
+      0,
+      29,
+      95,
+      0
+    ],
+    "RGB": [
+      252,
+      195,
+      7
+    ],
+    "hex": "#fcc307",
+    "name": "金盏黄",
+    "pinyin": "jinzhanhuang",
+    "namePinyin": "jinzhanhuang"
+  },
+  {
+    "name": "金色",
+    "pinyin": "c10607",
+    "hex": "#eacd76",
+    "RGB": [
+      234,
+      205,
+      118
+    ],
+    "CMYK": [
+      0,
+      13,
+      50,
+      8
+    ],
+    "namePinyin": "jinse"
+  },
+  {
+    "CMYK": [
+      0,
+      69,
+      86,
+      0
+    ],
+    "RGB": [
+      248,
+      107,
+      29
+    ],
+    "hex": "#f86b1d",
+    "name": "金莲花橙",
+    "pinyin": "jinlianhuacheng",
+    "namePinyin": "jinlianhuacheng"
+  },
+  {
+    "CMYK": [
+      0,
+      70,
+      87,
+      0
+    ],
+    "RGB": [
+      228,
+      104,
+      40
+    ],
+    "hex": "#e46828",
+    "name": "金驼",
+    "pinyin": "jintuo",
+    "namePinyin": "jintuo"
+  },
+  {
+    "CMYK": [
+      0,
+      76,
+      97,
+      0
+    ],
+    "RGB": [
+      216,
+      89,
+      22
+    ],
+    "hex": "#d85916",
+    "name": "铁棕",
+    "pinyin": "tiezong",
+    "namePinyin": "tiezong"
+  },
+  {
+    "CMYK": [
+      92,
+      0,
+      64,
+      0
+    ],
+    "RGB": [
+      43,
+      174,
+      133
+    ],
+    "hex": "#2bae85",
+    "name": "铜绿",
+    "pinyin": "tonglv",
+    "namePinyin": "tonglv"
+  },
+  {
+    "CMYK": [
+      0,
+      83,
+      87,
+      0
+    ],
+    "RGB": [
+      244,
+      62,
+      6
+    ],
+    "hex": "#f43e06",
+    "name": "银朱",
+    "pinyin": "yinzhu",
+    "namePinyin": "yinzhu"
+  },
+  {
+    "CMYK": [
+      34,
+      42,
+      46,
+      23
+    ],
+    "RGB": [
+      145,
+      128,
+      114
+    ],
+    "hex": "#918072",
+    "name": "银灰",
+    "pinyin": "yinhui",
+    "namePinyin": "yinhui"
+  },
+  {
+    "name": "银白",
+    "pinyin": "c2cc1",
+    "hex": "#e9e7ef",
+    "RGB": [
+      233,
+      231,
+      239
+    ],
+    "CMYK": [
+      3,
+      4,
+      0,
+      6
+    ],
+    "namePinyin": "yinbai"
+  },
+  {
+    "name": "雪白",
+    "pinyin": "c10501",
+    "hex": "#f2fdff",
+    "RGB": [
+      242,
+      253,
+      255
+    ],
+    "CMYK": [
+      5,
+      1,
+      0,
+      0
+    ],
+    "namePinyin": "xuebai"
+  },
+  {
+    "name": "霜色",
+    "pinyin": "c2f2a",
+    "hex": "#e9f1f6",
+    "RGB": [
+      233,
+      241,
+      246
+    ],
+    "CMYK": [
+      5,
+      2,
+      0,
+      4
+    ],
+    "namePinyin": "shuangse"
+  },
+  {
+    "name": "青白",
+    "pinyin": "c21b2",
+    "hex": "#c0ebd7",
+    "RGB": [
+      192,
+      235,
+      215
+    ],
+    "CMYK": [
+      18,
+      0,
+      8,
+      8
+    ],
+    "namePinyin": "qingbai"
+  },
+  {
+    "name": "青碧",
+    "pinyin": "caeec",
+    "hex": "#48c0a3",
+    "RGB": [
+      72,
+      192,
+      163
+    ],
+    "CMYK": [
+      62,
+      0,
+      15,
+      25
+    ],
+    "namePinyin": "qingbi"
+  },
+  {
+    "name": "青翠",
+    "pinyin": "cfbab",
+    "hex": "#00e079",
+    "RGB": [
+      0,
+      224,
+      121
+    ],
+    "CMYK": [
+      100,
+      0,
+      46,
+      12
+    ],
+    "namePinyin": "qingcui"
+  },
+  {
+    "name": "青色",
+    "pinyin": "c1267",
+    "hex": "#00e09e",
+    "RGB": [
+      0,
+      224,
+      158
+    ],
+    "CMYK": [
+      100,
+      0,
+      30,
+      12
+    ],
+    "namePinyin": "qingse"
+  },
+  {
+    "name": "青葱",
+    "pinyin": "c6e02",
+    "hex": "#0aa344",
+    "RGB": [
+      10,
+      163,
+      68
+    ],
+    "CMYK": [
+      94,
+      0,
+      58,
+      36
+    ],
+    "namePinyin": "qingcong"
+  },
+  {
+    "name": "靛蓝",
+    "pinyin": "cdae7",
+    "hex": "#065279",
+    "RGB": [
+      6,
+      82,
+      121
+    ],
+    "CMYK": [
+      95,
+      32,
+      0,
+      53
+    ],
+    "namePinyin": "dianlan"
+  },
+  {
+    "CMYK": [
+      6,
+      51,
+      95,
+      1
+    ],
+    "RGB": [
+      220,
+      145,
+      35
+    ],
+    "hex": "#dc9123",
+    "name": "风帆黄",
+    "pinyin": "fengfanhuang",
+    "namePinyin": "fengfanhuang"
+  },
+  {
+    "CMYK": [
+      0,
+      65,
+      38,
+      0
+    ],
+    "RGB": [
+      240,
+      124,
+      130
+    ],
+    "hex": "#f07c82",
+    "name": "香叶红",
+    "pinyin": "xiangyehong",
+    "namePinyin": "xiangyehong"
+  },
+  {
+    "CMYK": [
+      52,
+      100,
+      17,
+      7
+    ],
+    "RGB": [
+      126,
+      22,
+      113
+    ],
+    "hex": "#7e1671",
+    "name": "魏紫",
+    "pinyin": "weizi",
+    "namePinyin": "weizi"
+  },
+  {
+    "CMYK": [
+      88,
+      0,
+      99,
+      0
+    ],
+    "RGB": [
+      67,
+      178,
+      68
+    ],
+    "hex": "#43b244",
+    "name": "鲜绿",
+    "pinyin": "xianlv",
+    "namePinyin": "xianlv"
+  },
+  {
+    "name": "鹅黄",
+    "pinyin": "c1724b",
+    "hex": "#fff143",
+    "RGB": [
+      255,
+      241,
+      67
+    ],
+    "CMYK": [
+      0,
+      5,
+      74,
+      0
+    ],
+    "namePinyin": "ehuang"
+  },
+  {
+    "CMYK": [
+      52,
+      56,
+      64,
+      62
+    ],
+    "RGB": [
+      74,
+      64,
+      53
+    ],
+    "hex": "#4a4035",
+    "name": "鹤灰",
+    "pinyin": "hehui",
+    "namePinyin": "hehui"
+  },
+  {
+    "CMYK": [
+      0,
+      92,
+      95,
+      0
+    ],
+    "RGB": [
+      212,
+      37,
+      23
+    ],
+    "hex": "#d42517",
+    "name": "鹤顶红",
+    "pinyin": "hedinghong",
+    "namePinyin": "hedinghong"
+  },
+  {
+    "name": "黛",
+    "pinyin": "c5ea1",
+    "hex": "#4a4266",
+    "RGB": [
+      74,
+      66,
+      102
+    ],
+    "CMYK": [
+      27,
+      35,
+      0,
+      60
+    ],
+    "namePinyin": "dai"
+  },
+  {
+    "name": "黛蓝",
+    "pinyin": "c43f3",
+    "hex": "#425066",
+    "RGB": [
+      66,
+      80,
+      102
+    ],
+    "CMYK": [
+      35,
+      22,
+      0,
+      60
+    ],
+    "namePinyin": "dailan"
+  },
+  {
+    "name": "黯",
+    "pinyin": "c847f",
+    "hex": "#41555d",
+    "RGB": [
+      65,
+      85,
+      93
+    ],
+    "CMYK": [
+      29,
+      7,
+      0,
+      64
+    ],
+    "namePinyin": "an"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "color": "蒿黄",
+  "pinyin": "haohuang",
+  "hex": "#dfc243",
+  "entries": [
+    {
+      "line": "渐觉东风料峭寒，青蒿黄韭试春盘。",
+      "title": "送范德孺",
+      "author": "苏轼",
+      "type": "诗",
+      "source": "全唐诗/poet.song.46000.json#630",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "他时京岘下，不比野蒿黄。",
+      "title": "寄麦门冬于符公院",
+      "author": "梅尧臣",
+      "type": "诗",
+      "source": "全唐诗/poet.song.14000.json#223",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

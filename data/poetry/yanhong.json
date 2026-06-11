@@ -1,0 +1,18 @@
+{
+  "color": "殷红",
+  "pinyin": "yanhong",
+  "hex": "#82111f",
+  "entries": [
+    {
+      "line": "一片殷红新锦样，天机知费春多少。",
+      "title": "满江红",
+      "author": "李曾伯",
+      "type": "词",
+      "source": "宋词/ci.song.15000.json#637",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

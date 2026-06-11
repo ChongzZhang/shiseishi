@@ -1,0 +1,41 @@
+{
+  "color": "碧绿",
+  "pinyin": "c7163",
+  "hex": "#2add9c",
+  "entries": [
+    {
+      "line": "自怜碧玉亲教舞，不惜珊瑚持与人",
+      "title": "洛阳女儿行",
+      "author": "王维",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "碧绿",
+      "_hex": "#2add9c",
+      "dynasty": "唐"
+    },
+    {
+      "line": "不觉碧山暮，秋云暗几重",
+      "title": "听蜀僧濬弹琴",
+      "author": "李白",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "碧绿",
+      "_hex": "#2add9c",
+      "dynasty": "唐"
+    },
+    {
+      "line": "映阶碧草自春色，隔叶黄鹂空好音",
+      "title": "蜀相",
+      "author": "杜甫",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "碧绿",
+      "_hex": "#2add9c",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "3/5"
+}

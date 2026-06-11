@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>色谱寻诗 · 配色</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:"Noto Serif SC","STSong","SimSun","Songti SC",serif;
+    background:#252017;color:#b8a88c;
+    display:flex;justify-content:center;align-items:center;
+    min-height:100vh;user-select:none;
+}
+.frame{width:720px;padding:40px 40px}
+
+.top{margin-bottom:32px;text-align:center}
+.top h1{font-size:1.15rem;font-weight:400;color:#8a7a60;letter-spacing:.45em}
+.top .mute{font-size:.72rem;color:#5a4e3a;margin-top:8px;letter-spacing:.15em}
+
+.bar-outer{margin:0 0 24px}
+.bar{height:1px;background:#3a3225}
+.bar-in{height:100%;background:#8a7a60;transition:width .18s}
+.bar-num{text-align:center;font-size:.7rem;color:#5a4e3a;margin-top:8px}
+
+.card{padding:32px 0;border-top:1px solid #3a3225;border-bottom:1px solid #3a3225}
+
+.poem-line{font-size:1.3rem;line-height:2.2;color:#cdc0a4;text-align:center;padding:8px 12px;letter-spacing:.1em}
+.poem-src{text-align:center;font-size:.78rem;color:#5a4e3a;margin-top:14px;letter-spacing:.08em}
+
+.section-label{font-size:.75rem;color:#5a4e3a;text-align:center;margin:28px 0 16px;letter-spacing:.15em}
+
+.colors{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{
+    display:flex;align-items:center;gap:10px;
+    background:#2a251a;border:1px solid #3a3225;border-radius:2px;
+    padding:10px 14px;cursor:pointer;transition:all .12s;
+}
+.opt:hover{border-color:#8a7a60}
+.opt .num{
+    width:24px;height:24px;border-radius:50%;border:1px solid #5a4e3a;
+    display:flex;align-items:center;justify-content:center;
+    font-size:.75rem;color:#5a4e3a;flex-shrink:0;
+}
+.opt .dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.opt .cname{font-size:.95rem;color:#c8b896;letter-spacing:.15em;flex:1}
+.opt .reason{font-size:.7rem;color:#5a4e3a;text-align:right}
+
+.hint{display:flex;justify-content:center;margin-top:28px;gap:20px}
+.hi{font-size:.78rem;color:#5a4e3a;padding:8px 20px;border:1px solid #3a3225;border-radius:1px}
+
+.flash{position:fixed;top:40px;left:50%;transform:translateX(-50%);
+    font-size:.8rem;letter-spacing:.1em;padding:6px 22px;
+    border-radius:1px;transition:opacity .25s;opacity:0;pointer-events:none}
+.flash.a{background:#2a3420;color:#8cb068;opacity:1}
+.flash.r{background:#342420;color:#b06868;opacity:1}
+
+.loading{text-align:center;padding:60px 0;color:#5a4e3a}
+</style>
+</head>
+<body>
+<div class="frame" id="app"><div class="loading">加载中...</div></div>
+<div class="flash" id="flash" style="opacity:0"></div>
+<script>
+let POEM = null;
+let MATCHES = [];
+let idx = 0, total = 0;
+
+function load(){
+    fetch('/poem').then(r=>r.json()).then(d=>{
+        if(d.done){ showDone(); return }
+        POEM = d.poem;
+        MATCHES = d.matches;
+        idx = d.index;
+        total = d.total;
+        render();
+    });
+}
+
+function render(){
+    let pct = Math.round((idx+1)/total*100);
+    let optHtml = MATCHES.map((m,i)=>`
+        <div class="opt" data-i="${i+1}">
+            <div class="num">${i+1}</div>
+            <div class="dot" style="background:${m.hex}"></div>
+            <div class="cname">${esc(m.name)}</div>
+            <div class="reason">${m.reason}</div>
+        </div>
+    `).join('');
+
+    app.innerHTML =
+    '<div class="top"><h1>色 谱 寻 诗 · 配 色</h1>'+
+    '<div class="mute">1-4 选色 &emsp; S 舍弃 &emsp; R 重来</div></div>'+
+    '<div class="bar-outer"><div class="bar"><div class="bar-in" style="width:'+pct+'%"></div></div>'+
+    '<div class="bar-num">'+(idx+1)+' / '+total+'</div></div>'+
+    '<div class="card">'+
+    '<div class="poem-line">'+esc(POEM.line)+'</div>'+
+    '<div class="poem-src">——《'+esc(POEM.title)+'》&emsp;'+esc(POEM.author)+'</div>'+
+    '</div>'+
+    '<div class="section-label">选择匹配的颜色</div>'+
+    '<div class="colors">'+optHtml+'</div>'+
+    '<div class="hint"><div class="hi">1 · 2 · 3 · 4 选色</div><div class="hi">S 舍弃</div></div>';
+
+    // Add click handlers
+    document.querySelectorAll('.opt').forEach(el=>{
+        el.addEventListener('click',()=>choose(parseInt(el.dataset.i)));
+    });
+}
+
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function choose(n){
+    let c = MATCHES[n-1];
+    flash('归入: '+c.name,'a');
+    fetch('/save',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({choice:n,poem:POEM})})
+    .then(r=>r.json()).then(d=>{
+        if(d.done){ showDone(); return }
+        POEM = d.poem; MATCHES = d.matches; idx = d.index; total = d.total;
+        setTimeout(render,150);
+    });
+}
+
+function skip(){
+    flash('舍弃','r');
+    fetch('/skip',{method:'POST'}).then(r=>r.json()).then(d=>{
+        if(d.done){ showDone(); return }
+        POEM = d.poem; MATCHES = d.matches; idx = d.index; total = d.total;
+        setTimeout(render,150);
+    });
+}
+
+function flash(msg,cls){
+    let e=document.getElementById('flash');
+    e.textContent=msg; e.className='flash '+cls;
+    setTimeout(()=>e.className='flash',400);
+}
+
+function showDone(){
+    app.innerHTML =
+    '<div class="top"><h1>色 谱 寻 诗</h1></div>'+
+    '<div class="card" style="text-align:center;padding:48px 0">'+
+    '<h2 style="font-size:1.2rem;color:#8a7a60;letter-spacing:.3em">配 色 完 成</h2>'+
+    '<p style="color:#7a6e58;margin-top:20px">所有诗句已处理完毕</p>'+
+    '<p style="color:#5a4e3a;font-size:.72rem;margin-top:12px">可关闭此页面，然后运行 gen_browse_data.py 生成前端包</p>'+
+    '</div>';
+}
+
+document.addEventListener('keydown',e=>{
+    if(e.key>='1' && e.key<='4' && MATCHES.length>=parseInt(e.key)){
+        choose(parseInt(e.key)); e.preventDefault();
+    }
+    if(e.key==='s' || e.key==='S'){ skip(); e.preventDefault(); }
+    if(e.key==='r' || e.key==='R'){ fetch('/reset').then(()=>location.reload()); e.preventDefault(); }
+});
+
+load();
+</script>
+</body>
+</html>

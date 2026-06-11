@@ -1,0 +1,20 @@
+{
+  "color": "黯",
+  "pinyin": "c847f",
+  "hex": "#41555d",
+  "entries": [
+    {
+      "line": "冻云黯淡天气，扁舟一叶",
+      "title": "夜半乐",
+      "author": "柳永",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "黯",
+      "_hex": "#41555d",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "1/5"
+}

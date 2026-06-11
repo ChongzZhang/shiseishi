@@ -1,0 +1,52 @@
+{
+  "color": "银灰",
+  "pinyin": "yinhui",
+  "hex": "#918072",
+  "entries": [
+    {
+      "line": "三春蓬岛花无限，八月银河路更长。",
+      "title": "贻浄居寺新及第",
+      "author": "谭用之",
+      "type": "诗",
+      "source": "全唐诗/poet.song.0.json#238",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "唐"
+    },
+    {
+      "line": "凤管不调慵进曲，却排银烛夜藏钩。",
+      "title": "宫词  其二八",
+      "author": "宋白",
+      "type": "诗",
+      "source": "全唐诗/poet.song.1000.json#329",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    },
+    {
+      "line": "别有寒郊外，银河映玉岑。",
+      "title": "奉和御制雪",
+      "author": "徐铉",
+      "type": "诗",
+      "source": "全唐诗/poet.song.0.json#592",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "唐"
+    },
+    {
+      "line": "今夜银河万里秋，人言织女嫁牵牛。",
+      "title": "陈侍郎宅观花烛",
+      "author": "徐铉",
+      "type": "诗",
+      "source": "全唐诗/poet.song.0.json#563",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "4/5"
+}

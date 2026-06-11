@@ -1,0 +1,19 @@
+{
+  "color": "水蓝",
+  "pinyin": "c4190",
+  "hex": "#d2f0f4",
+  "entries": [
+    {
+      "line": "神仙昨日降都门，种得蓝田玉一盆",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "水蓝",
+      "_hex": "#d2f0f4",
+      "dynasty": "清"
+    }
+  ],
+  "coverage": "1/5"
+}

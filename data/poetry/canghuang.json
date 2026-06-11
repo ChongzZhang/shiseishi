@@ -1,0 +1,28 @@
+{
+  "color": "苍黄",
+  "pinyin": "canghuang",
+  "hex": "#806332",
+  "entries": [
+    {
+      "line": "天苍苍，野茫茫，风吹草低见牛羊。",
+      "title": "敕勒歌",
+      "author": "北朝民歌",
+      "type": "诗",
+      "matchTier": 1,
+      "verified": true,
+      "_color": "苍黄",
+      "dynasty": "唐"
+    },
+    {
+      "line": "日暮苍山远，天寒白屋贫。",
+      "title": "逢雪宿芙蓉山主人",
+      "author": "刘长卿",
+      "type": "诗",
+      "matchTier": 1,
+      "verified": true,
+      "_color": "苍黄",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "2/5"
+}

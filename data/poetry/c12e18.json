@@ -1,0 +1,30 @@
+{
+  "color": "墨灰",
+  "pinyin": "c12e18",
+  "hex": "#758a99",
+  "entries": [
+    {
+      "line": "蛛丝罩，淡墨苔晕青",
+      "title": "绮寮怨",
+      "author": "周邦彦",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "墨灰",
+      "_hex": "#758a99",
+      "dynasty": "宋"
+    },
+    {
+      "line": "聚叶泼成千点墨，攒花染出几痕霜",
+      "title": "红楼梦",
+      "author": "曹雪芹",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "墨灰",
+      "_hex": "#758a99",
+      "dynasty": "清"
+    }
+  ],
+  "coverage": "2/5"
+}

@@ -1,0 +1,44 @@
+{
+  "color": "海棠红",
+  "pinyin": "c15fce",
+  "hex": "#db5a6b",
+  "entries": [
+    {
+      "line": "海棠铺绣，梨花飘雪",
+      "title": "柳梢青",
+      "author": "蔡伸",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "海棠红",
+      "_hex": "#db5a6b",
+      "dynasty": "宋"
+    },
+    {
+      "line": "满院东风，海棠铺绣",
+      "title": "柳梢青",
+      "author": "蔡伸",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "海棠红",
+      "_hex": "#db5a6b",
+      "dynasty": "宋"
+    },
+    {
+      "line": "绣屋秦筝，傍海棠偏爱",
+      "title": "三姝媚",
+      "author": "吴文英",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "海棠红",
+      "_hex": "#db5a6b",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

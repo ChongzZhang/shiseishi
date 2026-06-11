@@ -1,0 +1,20 @@
+{
+  "color": "湖蓝",
+  "pinyin": "c3abb",
+  "hex": "#30dff3",
+  "entries": [
+    {
+      "line": "湖月照我影，送我至剡溪",
+      "title": "梦游天姥吟留别",
+      "author": "李白",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "唐诗三百首",
+      "_color": "湖蓝",
+      "_hex": "#30dff3",
+      "dynasty": "唐"
+    }
+  ],
+  "coverage": "1/5"
+}

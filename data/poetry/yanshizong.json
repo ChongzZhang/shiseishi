@@ -1,0 +1,28 @@
+{
+  "color": "岩石棕",
+  "pinyin": "yanshizong",
+  "hex": "#964d22",
+  "entries": [
+    {
+      "line": "偃盖覆岩石，岁寒傲霜雪。",
+      "title": "栽松题石",
+      "author": "释天石",
+      "type": "诗",
+      "source": "全唐诗/poet.song.110000.json#755",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "下岩石润挥毫后，正焙茶香落硙时。",
+      "title": "初归杂咏七首  其五",
+      "author": "陆游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.133000.json#547",
+      "matchTier": 2,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

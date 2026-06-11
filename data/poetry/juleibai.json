@@ -1,0 +1,29 @@
+{
+  "color": "菊蕾白",
+  "pinyin": "juleibai",
+  "hex": "#e9ddb6",
+  "entries": [
+    {
+      "line": "秋色萧萧野水边，茱萸时节菊花天。",
+      "title": "九日  其三",
+      "author": "宋白",
+      "type": "诗",
+      "source": "全唐诗/poet.song.1000.json#409",
+      "matchTier": 4,
+      "verified": true,
+      "matchVia": "imagery",
+      "dynasty": "宋"
+    },
+    {
+      "line": "我思前月九，菊蕾初含芳。",
+      "title": "壬戌闰重九客中写梦",
+      "author": "董嗣杲",
+      "type": "诗",
+      "source": "全唐诗/poet.song.237000.json#265",
+      "matchTier": 3,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

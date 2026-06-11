@@ -1,0 +1,41 @@
+{
+  "color": "黛蓝",
+  "pinyin": "c43f3",
+  "hex": "#425066",
+  "entries": [
+    {
+      "line": "映浓愁浅黛，遥山媚妩",
+      "title": "瑞鹤仙",
+      "author": "袁去华",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "黛蓝",
+      "_hex": "#425066",
+      "dynasty": "宋"
+    },
+    {
+      "line": "璧月初晴，黛云远澹",
+      "title": "永遇乐",
+      "author": "刘辰翁",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "黛蓝",
+      "_hex": "#425066",
+      "dynasty": "宋"
+    },
+    {
+      "line": "黛云远澹，春事谁主",
+      "title": "永遇乐",
+      "author": "刘辰翁",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "黛蓝",
+      "_hex": "#425066",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

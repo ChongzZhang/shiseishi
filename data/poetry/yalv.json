@@ -1,0 +1,38 @@
+{
+  "color": "芽绿",
+  "pinyin": "yalv",
+  "hex": "#96c24e",
+  "entries": [
+    {
+      "line": "东风细细筀芽绿，畏日曛曛天昼清。",
+      "title": "病兴即事",
+      "author": "薛季宣",
+      "type": "诗",
+      "source": "全唐诗/poet.song.154000.json#918",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "嫩水春来别样光，草芽绿甚却成黄。",
+      "title": "丁亥正月新晴晚步二首  其一",
+      "author": "杨万里",
+      "type": "诗",
+      "source": "全唐诗/poet.song.139000.json#133",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "半旬霖雨泉脉动，四岸春风柳芽绿。",
+      "title": "竹间亭作",
+      "author": "刘攽",
+      "type": "诗",
+      "source": "全唐诗/poet.song.35000.json#33",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "3/5"
+}

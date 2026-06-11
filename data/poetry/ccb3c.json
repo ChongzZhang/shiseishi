@@ -1,0 +1,30 @@
+{
+  "color": "紫色",
+  "pinyin": "ccb3c",
+  "hex": "#8d4bbb",
+  "entries": [
+    {
+      "line": "莫作游侠儿，矜夸紫骝好",
+      "title": "塞上曲",
+      "author": "王昌龄",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "紫色",
+      "_hex": "#8d4bbb",
+      "dynasty": "唐"
+    },
+    {
+      "line": "兰佩紫，菊簪黄",
+      "title": "阮郎归",
+      "author": "晏几道",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "紫色",
+      "_hex": "#8d4bbb",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

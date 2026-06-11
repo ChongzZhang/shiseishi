@@ -1,0 +1,32 @@
+{
+  "color": "石榴红",
+  "pinyin": "c52e9",
+  "hex": "#f20c00",
+  "entries": [
+    {
+      "line": "曾是寂寥金烬暗，断无消息石榴红",
+      "title": "无题二首之一",
+      "author": "李商隐",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "source": "唐诗三百首",
+      "_color": "石榴红",
+      "_hex": "#f20c00",
+      "dynasty": "唐"
+    },
+    {
+      "line": "榴心空叠舞裙红，艾枝应压愁鬟乱",
+      "title": "踏莎行",
+      "author": "吴文英",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "source": "宋词三百首",
+      "_color": "石榴红",
+      "_hex": "#f20c00",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "2/5"
+}

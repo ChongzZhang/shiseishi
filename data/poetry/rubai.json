@@ -1,0 +1,92 @@
+{
+  "color": "乳白",
+  "pinyin": "rubai",
+  "hex": "#f9f4dc",
+  "entries": [
+    {
+      "line": "客坐暖浮茶乳白，夜堂春动烛花红。",
+      "title": "喜雪  其二",
+      "author": "朱翌",
+      "type": "诗",
+      "source": "全唐诗/poet.song.108000.json#232",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "新开数尺泉，涌然如乳白。",
+      "title": "煎茶",
+      "author": "张侃",
+      "type": "诗",
+      "source": "全唐诗/poet.song.204000.json#521",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "嫩汤茶乳白，软火地炉红。",
+      "title": "寓叹三首  其一",
+      "author": "陆游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.130000.json#308",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "汲取满瓶牛乳白，分流触石珮声长。",
+      "title": "三游洞前岩下小潭水甚奇取以煎茶",
+      "author": "陆游",
+      "type": "诗",
+      "source": "全唐诗/poet.song.127000.json#779",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "宋"
+    },
+    {
+      "line": "黄河远上白云间，一片孤城万仞山",
+      "title": "出塞",
+      "author": "王之涣",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "乳白",
+      "_hex": "#f9f4dc",
+      "dynasty": "唐"
+    },
+    {
+      "line": "白云回望合，青霭入看无",
+      "title": "终南山",
+      "author": "王维",
+      "type": "诗",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "乳白",
+      "_hex": "#f9f4dc",
+      "dynasty": "唐"
+    },
+    {
+      "line": "墙头丹杏雨余花，门外绿杨风后絮",
+      "title": "木兰花",
+      "author": "晏几道",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "乳白",
+      "_hex": "#f9f4dc",
+      "dynasty": "宋"
+    },
+    {
+      "line": "手弄生绡白团扇，扇手一时似玉",
+      "title": "贺新郎",
+      "author": "苏轼",
+      "type": "词",
+      "matchTier": 2,
+      "verified": true,
+      "_color": "乳白",
+      "_hex": "#f9f4dc",
+      "dynasty": "宋"
+    }
+  ],
+  "coverage": "5/5"
+}
