@@ -68,6 +68,14 @@ html, body {
   letter-spacing: 0.15em;
 }
 
+.site-note {
+  margin-top: 0.45rem;
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
 .browse-cta {
   display: inline-flex;
   align-items: center;
