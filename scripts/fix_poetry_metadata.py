@@ -31,7 +31,7 @@ def fix_entry(e: dict) -> tuple[dict, list[str]]:
         e["type"] = "词"
         changes.append(f"type 诗→词（词牌《{title}》）")
 
-    if author in AUTHORS and AUTHORS[author] == "宋" and ptype == "诗" and is_cipai(title):
+    if author in AUTHORS and ptype == "诗" and is_cipai(title):
         e["type"] = "词"
         changes.append("宋词人+词牌 → 词")
 

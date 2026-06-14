@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 VENDOR = ROOT / "vendor" / "chinese-poetry"
+AUTHOR_DYNASTY_PATH = ROOT / "data" / "author-dynasty.json"
 
 # 占位 source（批量脚本写入的假路径，不可信）
 PLACEHOLDER_SOURCES = (
@@ -32,6 +33,8 @@ CIPAI = {
     "天香", "汉宫春", "月上海棠", "庆宫春", "湘春曲", "探春慢", "醉吟仙",
     "法曲献仙音", "淡黄柳", "正宫", "越调", "双调", "中吕", "黄钟",
     "凤凰阁", "秋霁", "淡黄柳", "贺新郎", "思远人", "蝶恋花",
+    "绮寮怨", "琐窗寒", "解语花", "尉迟杯", "浪涛沙", "浪淘沙",
+    "瑞龙吟", "风流子", "花犯", "大酺", "六州歌头", "应天长",
 }
 
 # 手动补充 / 覆盖
@@ -44,6 +47,8 @@ MANUAL_AUTHOR: dict[str, str] = {
     "曹植": "汉",
     "李煜": "五代",
     "冯延巳": "五代",
+    "阎选": "五代",
+    "韦庄": "五代",
     "李弥逊": "宋",
     "陈棣": "宋",
     "太宗皇帝": "唐",
@@ -59,6 +64,10 @@ MANUAL_AUTHOR: dict[str, str] = {
     "则天皇后": "唐",
     "宋太宗": "宋",
     "宋徽宗": "宋",
+    "周邦彦": "宋",
+    "陆叡": "宋",
+    "北朝民歌": "北朝",
+    "高文秀": "元",
 }
 
 
@@ -84,11 +93,16 @@ def _load_names(path: Path, dynasty: str, out: dict[str, str]) -> None:
 
 @lru_cache(maxsize=1)
 def load_author_dynasty() -> dict[str, str]:
-    mapping: dict[str, str] = dict(MANUAL_AUTHOR)
+    mapping: dict[str, str] = {}
+    if AUTHOR_DYNASTY_PATH.exists():
+        data = json.loads(AUTHOR_DYNASTY_PATH.read_text(encoding="utf-8"))
+        if isinstance(data, dict):
+            mapping.update(data)
     _load_names(VENDOR / "全唐诗" / "authors.tang.json", "唐", mapping)
     _load_names(VENDOR / "全唐诗" / "authors.song.json", "宋", mapping)
     _load_names(VENDOR / "宋词" / "author.song.json", "宋", mapping)
     _load_names(VENDOR / "五代诗词" / "nantang" / "authors.json", "五代", mapping)
+    mapping.update(MANUAL_AUTHOR)
     return mapping
 
 
