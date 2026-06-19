@@ -1,9 +1,14 @@
 /**
- * 逐像素 RGB → 中国传统色名（CIELAB ΔE76 最近邻），统计出现次数取前五
+ * 逐像素 RGB → 中国传统色名
+ * - 高明度：降低 ΔL 权重，避免浅色坍缩为近白
+ * - 色度加权：低饱和背景票数降低，突出有彩度的主色
  */
 const ColorMatch = (() => {
   let palette = null;
   const TARGET_COUNT = 5;
+  const CHROMA_BASE = 0.05;
+  const CHROMA_REF = 35;
+  const CHROMA_POWER = 1.3;
 
   function rgbToLab(r, g, b) {
     const lin = (c) => {
@@ -19,10 +24,25 @@ const ColorMatch = (() => {
     return [(116 * fy) - 16, 500 * (fx - fy), 200 * (fy - fz)];
   }
 
-  function deltaE(l1, l2) {
-    return Math.sqrt(
-      (l1[0] - l2[0]) ** 2 + (l1[1] - l2[1]) ** 2 + (l1[2] - l2[2]) ** 2
-    );
+  function chroma(lab) {
+    return Math.hypot(lab[1], lab[2]);
+  }
+
+  /** 高明度时降低亮度差权重，保留色相/色度区分 */
+  function matchDistance(lab, plab) {
+    const avgL = (lab[0] + plab[0]) / 2;
+    let wL = 1;
+    if (avgL > 70) wL = 0.15;
+    else if (avgL > 50) wL = 0.5;
+    const dL = lab[0] - plab[0];
+    const da = lab[1] - plab[1];
+    const db = lab[2] - plab[2];
+    return Math.sqrt(wL * dL * dL + da * da + db * db);
+  }
+
+  function pixelWeight(lab) {
+    const c = chroma(lab);
+    return CHROMA_BASE + (c / CHROMA_REF) ** CHROMA_POWER;
   }
 
   function loadPalette() {
@@ -34,12 +54,11 @@ const ColorMatch = (() => {
     throw new Error('色板未加载，请确认已引入 js/palette.js');
   }
 
-  function findNearest(rgb, pal) {
-    const lab = rgbToLab(rgb[0], rgb[1], rgb[2]);
+  function findNearest(lab, pal) {
     let best = null;
     let bestD = Infinity;
     for (const c of pal) {
-      const d = deltaE(lab, c.lab);
+      const d = matchDistance(lab, c.lab);
       if (d < bestD) {
         bestD = d;
         best = c;
@@ -48,25 +67,25 @@ const ColorMatch = (() => {
     return { ...best, deltaE: bestD };
   }
 
-  /**
-   * 对每个不透明像素找最近中国色，按出现次数取前五
-   */
   function mapFromPixels(data, width, height) {
     const pal = loadPalette();
     const counts = new Map();
-    let validPixels = 0;
+    let totalWeight = 0;
 
     for (let i = 0; i < data.length; i += 4) {
       if (data[i + 3] < 128) continue;
-      validPixels++;
       const rgb = [data[i], data[i + 1], data[i + 2]];
-      const match = findNearest(rgb, pal);
+      const lab = rgbToLab(rgb[0], rgb[1], rgb[2]);
+      const w = pixelWeight(lab);
+      const match = findNearest(lab, pal);
+      totalWeight += w;
+
       const entry = counts.get(match.pinyin);
       if (entry) {
-        entry.count += 1;
+        entry.weight += w;
       } else {
         counts.set(match.pinyin, {
-          count: 1,
+          weight: w,
           name: match.name,
           pinyin: match.pinyin,
           hex: match.hex,
@@ -76,14 +95,14 @@ const ColorMatch = (() => {
       }
     }
 
-    if (validPixels === 0) return [];
+    if (totalWeight === 0) return [];
 
     return [...counts.values()]
-      .sort((a, b) => b.count - a.count)
+      .sort((a, b) => b.weight - a.weight)
       .slice(0, TARGET_COUNT)
-      .map(({ count, name, pinyin, hex, rgb, deltaE: de }) => ({
+      .map(({ weight, name, pinyin, hex, rgb, deltaE: de }) => ({
         rgb,
-        ratio: count / validPixels,
+        ratio: weight / totalWeight,
         name,
         pinyin,
         hex,
