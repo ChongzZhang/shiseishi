@@ -1,11 +1,8 @@
 /**
- * RGB → 中国传统色名（CIELAB ΔE76 最近邻）
- * 相近色名合并，输出差异明显的 5 色
+ * 逐像素 RGB → 中国传统色名（CIELAB ΔE76 最近邻），统计出现次数取前五
  */
 const ColorMatch = (() => {
   let palette = null;
-  const MERGE_DELTA = 20;
-  const MIN_SEPARATION = 25;
   const TARGET_COUNT = 5;
 
   function rgbToLab(r, g, b) {
@@ -51,85 +48,48 @@ const ColorMatch = (() => {
     return { ...best, deltaE: bestD };
   }
 
-  function dedupeAndPickDiverse(mapped) {
-    const sorted = [...mapped].sort((a, b) => b.ratio - a.ratio);
-    const clusters = [];
-
-    for (const m of sorted) {
-      const lab = m.paletteLab;
-      let target = null;
-      let bestD = Infinity;
-      for (const cluster of clusters) {
-        const d = deltaE(lab, cluster.paletteLab);
-        if ((d < MERGE_DELTA || cluster.pinyin === m.pinyin) && d < bestD) {
-          bestD = d;
-          target = cluster;
-        }
-      }
-      if (target) {
-        target.ratio += m.ratio;
-        if (m.ratio > target.peakRatio) {
-          target.peakRatio = m.ratio;
-          target.rgb = m.rgb;
-          target.name = m.name;
-          target.pinyin = m.pinyin;
-          target.hex = m.hex;
-          target.paletteLab = m.paletteLab;
-        }
-        target.merged = true;
-      } else {
-        clusters.push({ ...m, peakRatio: m.ratio, merged: false });
-      }
-    }
-
-    clusters.sort((a, b) => b.ratio - a.ratio);
-
-    const picked = [];
-    for (const c of clusters) {
-      if (picked.length >= TARGET_COUNT) break;
-      const tooClose = picked.some((p) => {
-        const d = deltaE(c.paletteLab, p.paletteLab);
-        return d < MIN_SEPARATION || c.pinyin === p.pinyin;
-      });
-      if (!tooClose) picked.push(c);
-    }
-    if (picked.length < TARGET_COUNT) {
-      for (const c of clusters) {
-        if (picked.length >= TARGET_COUNT) break;
-        if (picked.some((p) => p.pinyin === c.pinyin)) continue;
-        const tooClose = picked.some((p) => deltaE(c.paletteLab, p.paletteLab) < MIN_SEPARATION * 0.6);
-        if (!tooClose) picked.push(c);
-      }
-    }
-    if (picked.length < TARGET_COUNT) {
-      for (const c of clusters) {
-        if (picked.length >= TARGET_COUNT) break;
-        if (!picked.some((p) => p.pinyin === c.pinyin)) picked.push(c);
-      }
-    }
-
-    return picked.slice(0, TARGET_COUNT).map(({ rgb, ratio, name, pinyin, hex, deltaE: de, merged }) => ({
-      rgb, ratio, name, pinyin, hex, deltaE: de, merged,
-    }));
-  }
-
-  async function mapColors(extracted) {
+  /**
+   * 对每个不透明像素找最近中国色，按出现次数取前五
+   */
+  function mapFromPixels(data, width, height) {
     const pal = loadPalette();
-    const mapped = extracted.map((item) => {
-      const match = findNearest(item.rgb, pal);
-      return {
-        rgb: item.rgb,
-        ratio: item.ratio,
-        name: match.name,
-        pinyin: match.pinyin,
-        hex: match.hex,
-        deltaE: match.deltaE,
-        paletteLab: match.lab,
-      };
-    });
+    const counts = new Map();
+    let validPixels = 0;
 
-    return dedupeAndPickDiverse(mapped);
+    for (let i = 0; i < data.length; i += 4) {
+      if (data[i + 3] < 128) continue;
+      validPixels++;
+      const rgb = [data[i], data[i + 1], data[i + 2]];
+      const match = findNearest(rgb, pal);
+      const entry = counts.get(match.pinyin);
+      if (entry) {
+        entry.count += 1;
+      } else {
+        counts.set(match.pinyin, {
+          count: 1,
+          name: match.name,
+          pinyin: match.pinyin,
+          hex: match.hex,
+          rgb: match.rgb,
+          deltaE: match.deltaE,
+        });
+      }
+    }
+
+    if (validPixels === 0) return [];
+
+    return [...counts.values()]
+      .sort((a, b) => b.count - a.count)
+      .slice(0, TARGET_COUNT)
+      .map(({ count, name, pinyin, hex, rgb, deltaE: de }) => ({
+        rgb,
+        ratio: count / validPixels,
+        name,
+        pinyin,
+        hex,
+        deltaE: de,
+      }));
   }
 
-  return { loadPalette, mapColors };
+  return { loadPalette, mapFromPixels };
 })();

@@ -248,10 +248,10 @@
     renderEmptyPanel();
 
     try {
-      const result = await ColorExtract.extractTopColors(file);
+      const result = await ColorExtract.extractPixels(file);
 
       if (result.validPixels === 0) {
-        setStatus('图中未检出显著色，请换一张色彩更丰富的图');
+        setStatus('图中未检出有效像素，请换一张图片');
         previewPlaceholder.hidden = false;
         previewImg.hidden = true;
         return;
@@ -261,7 +261,7 @@
       previewImg.hidden = false;
       previewImg.src = result.previewUrl;
 
-      const mapped = await ColorMatch.mapColors(result.colors);
+      const mapped = ColorMatch.mapFromPixels(result.data, result.width, result.height);
       renderColors(mapped);
       setStatus('');
 
