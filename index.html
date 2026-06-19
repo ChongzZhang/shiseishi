@@ -27,14 +27,25 @@
           <img id="preview-img" class="preview-img" alt="已上传图片预览" hidden>
         </div>
         <input id="file-input" type="file" accept="image/*" hidden>
-        <a href="browse.html" class="browse-cta browse-cta-below-upload" aria-label="浏览诗词库">
-          <span class="browse-cta-icon" aria-hidden="true">诗</span>
-          <span class="browse-cta-text">
-            <span class="browse-cta-title">浏览诗词库</span>
-            <span class="browse-cta-desc">中国传统色名与古典诗句</span>
-          </span>
-          <span class="browse-cta-arrow" aria-hidden="true">→</span>
-        </a>
+        <div class="panel-cta-row">
+          <button type="button" id="achievements-cta" class="browse-cta browse-cta-below-upload achievements-cta" aria-label="成就书签" aria-haspopup="dialog">
+            <span class="browse-cta-icon" aria-hidden="true">签</span>
+            <span class="browse-cta-text">
+              <span class="browse-cta-title">成就书签</span>
+              <span class="browse-cta-desc"><span id="ach-progress-label">0 / 20</span> · 识色集签</span>
+            </span>
+            <span id="ach-badge" class="ach-badge" hidden aria-hidden="true"></span>
+            <span class="browse-cta-arrow" aria-hidden="true">→</span>
+          </button>
+          <a href="browse.html" class="browse-cta browse-cta-below-upload" aria-label="浏览诗词库">
+            <span class="browse-cta-icon" aria-hidden="true">诗</span>
+            <span class="browse-cta-text">
+              <span class="browse-cta-title">浏览诗词库</span>
+              <span class="browse-cta-desc">中国传统色名与古典诗句</span>
+            </span>
+            <span class="browse-cta-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
       </section>
 
       <section class="panel panel-right" aria-label="中国传统色名">
@@ -49,11 +60,39 @@
     </footer>
   </div>
 
+  <div id="ach-sheet" class="ach-sheet" hidden aria-hidden="true">
+    <div class="ach-sheet-backdrop" data-close-sheet></div>
+    <div class="ach-sheet-panel" role="dialog" aria-labelledby="ach-sheet-title">
+      <header class="ach-sheet-header">
+        <h2 id="ach-sheet-title">成就书签</h2>
+        <button type="button" class="ach-sheet-close" data-close-sheet aria-label="关闭">×</button>
+      </header>
+      <p id="ach-sheet-progress" class="ach-sheet-progress"></p>
+      <div id="ach-sheet-recent" class="ach-sheet-recent"></div>
+      <a href="achievements.html" class="ach-sheet-all">查看全部成就 →</a>
+    </div>
+  </div>
+
+  <div id="unlock-overlay" class="unlock-overlay" hidden aria-hidden="true">
+    <div class="unlock-backdrop"></div>
+    <div class="unlock-dialog" role="dialog" aria-labelledby="unlock-title">
+      <div class="unlock-glow" aria-hidden="true"></div>
+      <img id="unlock-img" class="unlock-img" alt="" hidden>
+      <p id="unlock-title" class="unlock-title"></p>
+      <p id="unlock-sub" class="unlock-sub"></p>
+      <div class="unlock-actions">
+        <button type="button" id="unlock-continue" class="unlock-btn unlock-btn-secondary">继续识色</button>
+        <a href="achievements.html" class="unlock-btn unlock-btn-primary">查看成就</a>
+      </div>
+    </div>
+  </div>
+
   <script src="js/poetry-ui.js"></script>
   <script src="js/palette.js"></script>
   <script src="js/poetry-bundle.js"></script>
   <script src="js/extract.js"></script>
   <script src="js/match.js"></script>
+  <script src="js/achievements.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

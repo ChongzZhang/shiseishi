@@ -1,0 +1,122 @@
+[
+  {
+    "pinyin": "c10607",
+    "name": "金色",
+    "hex": "#eacd76",
+    "file": "c10607_金色.png"
+  },
+  {
+    "pinyin": "c141ba",
+    "name": "苍翠",
+    "hex": "#519a73",
+    "file": "c141ba_苍翠.png"
+  },
+  {
+    "pinyin": "c16352",
+    "name": "嫣红",
+    "hex": "#ef7a82",
+    "file": "c16352_嫣红.png"
+  },
+  {
+    "pinyin": "c1724b",
+    "name": "鹅黄",
+    "hex": "#fff143",
+    "file": "c1724b_鹅黄.png"
+  },
+  {
+    "pinyin": "c1ce0",
+    "name": "绛紫",
+    "hex": "#8c4356",
+    "file": "c1ce0_绛紫.png"
+  },
+  {
+    "pinyin": "c3186",
+    "name": "水色",
+    "hex": "#88ada6",
+    "file": "c3186_水色.png"
+  },
+  {
+    "pinyin": "c4190",
+    "name": "水蓝",
+    "hex": "#d2f0f4",
+    "file": "c4190_水蓝.png"
+  },
+  {
+    "pinyin": "c43f3",
+    "name": "黛蓝",
+    "hex": "#425066",
+    "file": "c43f3_黛蓝.png"
+  },
+  {
+    "pinyin": "c52e9",
+    "name": "石榴红",
+    "hex": "#f20c00",
+    "file": "c52e9_石榴红.png"
+  },
+  {
+    "pinyin": "c6913",
+    "name": "丁香色",
+    "hex": "#cca4e3",
+    "file": "c6913_丁香色.png"
+  },
+  {
+    "pinyin": "c92a5",
+    "name": "殷红",
+    "hex": "#be002f",
+    "file": "c92a5_殷红.png"
+  },
+  {
+    "pinyin": "caeec",
+    "name": "青碧",
+    "hex": "#48c0a3",
+    "file": "caeec_青碧.png"
+  },
+  {
+    "pinyin": "cb2c2",
+    "name": "嫩绿",
+    "hex": "#bddd22",
+    "file": "cb2c2_嫩绿.png"
+  },
+  {
+    "pinyin": "cbc79",
+    "name": "彤",
+    "hex": "#f35336",
+    "file": "cbc79_彤.png"
+  },
+  {
+    "pinyin": "cfce2",
+    "name": "苍色",
+    "hex": "#75878a",
+    "file": "cfce2_苍色.png"
+  },
+  {
+    "pinyin": "danjianghong",
+    "name": "淡绛红",
+    "hex": "#ec7696",
+    "file": "danjianghong_淡绛红.png"
+  },
+  {
+    "pinyin": "fengfanhuang",
+    "name": "风帆黄",
+    "hex": "#dc9123",
+    "file": "fengfanhuang_风帆黄.png"
+  },
+  {
+    "pinyin": "fenhong",
+    "name": "粉红",
+    "hex": "#f2b9b2",
+    "file": "fenhong_粉红.png"
+  },
+  {
+    "pinyin": "meiguihong",
+    "name": "玫瑰红",
+    "hex": "#d2357d",
+    "file": "meiguihong_玫瑰红.png"
+  },
+  {
+    "pinyin": "weizi",
+    "name": "魏紫",
+    "hex": "#7e1671",
+    "file": "weizi_魏紫.png"
+  }
+]

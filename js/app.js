@@ -10,9 +10,23 @@
   const panelHint = document.getElementById('panel-hint');
   const panelStatus = document.getElementById('panel-status');
 
+  const achProgressLabel = document.getElementById('ach-progress-label');
+  const achBadge = document.getElementById('ach-badge');
+  const achievementsCta = document.getElementById('achievements-cta');
+  const achSheet = document.getElementById('ach-sheet');
+  const achSheetProgress = document.getElementById('ach-sheet-progress');
+  const achSheetRecent = document.getElementById('ach-sheet-recent');
+  const unlockOverlay = document.getElementById('unlock-overlay');
+  const unlockImg = document.getElementById('unlock-img');
+  const unlockTitle = document.getElementById('unlock-title');
+  const unlockSub = document.getElementById('unlock-sub');
+  const unlockContinue = document.getElementById('unlock-continue');
+
   const poetryRawCache = new Map();
   let currentColors = [];
   let expandedPinyin = null;
+  let unlockQueue = [];
+  let manifestReady = false;
 
   function setStatus(text, loading = false) {
     panelStatus.textContent = text;
@@ -144,6 +158,89 @@
     return data;
   }
 
+  function updateAchievementsUI(flashBadge = false) {
+    const { unlocked, total } = Achievements.getProgress();
+    if (achProgressLabel) achProgressLabel.textContent = `${unlocked} / ${total}`;
+    if (achSheetProgress) achSheetProgress.textContent = `已集 ${unlocked} / ${total} 枚`;
+
+    if (achSheetRecent) {
+      const recent = Achievements.getUnlocked().slice(0, 3);
+      if (recent.length === 0) {
+        achSheetRecent.innerHTML = '<p class="ach-sheet-empty">尚无解锁，上传图片识得五色即可集签</p>';
+      } else {
+        achSheetRecent.innerHTML = recent.map((b) => `
+          <div class="ach-sheet-item">
+            <img src="${escapeHtml(Achievements.assetUrl(b.file))}" alt="${escapeHtml(b.name)}" loading="lazy">
+            <span>${escapeHtml(b.name)}</span>
+          </div>
+        `).join('');
+      }
+    }
+
+    if (flashBadge && achBadge) {
+      achBadge.hidden = false;
+      achBadge.textContent = '+';
+      achievementsCta?.classList.add('ach-cta-flash');
+      setTimeout(() => {
+        achievementsCta?.classList.remove('ach-cta-flash');
+        achBadge.hidden = true;
+      }, 2400);
+    }
+  }
+
+  function openAchSheet() {
+    updateAchievementsUI();
+    achSheet.hidden = false;
+    achSheet.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('ach-sheet-open');
+  }
+
+  function closeAchSheet() {
+    achSheet.hidden = true;
+    achSheet.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('ach-sheet-open');
+  }
+
+  function showUnlockOverlay(bookmark) {
+    unlockImg.src = Achievements.assetUrl(bookmark.file);
+    unlockImg.alt = `${bookmark.name} 书签`;
+    unlockImg.hidden = false;
+    unlockTitle.textContent = `识得【${bookmark.name}】`;
+    unlockSub.textContent = '书签已入藏';
+
+    unlockOverlay.hidden = false;
+    unlockOverlay.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('unlock-open');
+    requestAnimationFrame(() => unlockOverlay.classList.add('unlock-visible'));
+  }
+
+  function hideUnlockOverlay() {
+    unlockOverlay.classList.remove('unlock-visible');
+    document.body.classList.remove('unlock-open');
+    setTimeout(() => {
+      unlockOverlay.hidden = true;
+      unlockOverlay.setAttribute('aria-hidden', 'true');
+      unlockImg.hidden = true;
+      unlockImg.src = '';
+      processUnlockQueue();
+    }, 320);
+  }
+
+  function processUnlockQueue() {
+    if (unlockQueue.length === 0) return;
+    const next = unlockQueue.shift();
+    showUnlockOverlay(next);
+  }
+
+  function enqueueUnlocks(newly) {
+    if (!newly.length) return;
+    unlockQueue.push(...newly);
+    if (!document.body.classList.contains('unlock-open')) {
+      processUnlockQueue();
+    }
+    updateAchievementsUI(true);
+  }
+
   async function handleFile(file) {
     if (!file || !file.type.startsWith('image/')) return;
 
@@ -167,6 +264,11 @@
       const mapped = await ColorMatch.mapColors(result.colors);
       renderColors(mapped);
       setStatus('');
+
+      if (manifestReady) {
+        const newly = Achievements.checkUnlocks(mapped);
+        enqueueUnlocks(newly);
+      }
     } catch (err) {
       const msg = location.protocol === 'file:'
         ? '请通过 serve.bat 启动本地服务器，不要直接双击 HTML'
@@ -192,5 +294,27 @@
     fileInput.value = '';
   });
 
+  achievementsCta?.addEventListener('click', openAchSheet);
+  achSheet?.querySelectorAll('[data-close-sheet]').forEach((el) => {
+    el.addEventListener('click', closeAchSheet);
+  });
+  unlockContinue?.addEventListener('click', hideUnlockOverlay);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (!achSheet.hidden) closeAchSheet();
+      if (!unlockOverlay.hidden) hideUnlockOverlay();
+    }
+  });
+
   renderEmptyPanel();
+
+  Achievements.loadManifest()
+    .then(() => {
+      manifestReady = true;
+      updateAchievementsUI();
+    })
+    .catch(() => {
+      if (achProgressLabel) achProgressLabel.textContent = '—';
+    });
 })();

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "湖蓝",
+    "hex": "#30dff3",
+    "file": "c3abb_湖蓝.png"
+  },
+  {
+    "name": "月白",
+    "hex": "#eef7f2",
+    "file": "yuebai_月白.png"
+  },
+  {
+    "name": "竹青",
+    "hex": "#789262",
+    "file": "c7e3a_竹青.png"
+  },
+  {
+    "name": "嫣红",
+    "hex": "#ef7a82",
+    "file": "c16352_嫣红.png"
+  },
+  {
+    "name": "海棠红",
+    "hex": "#db5a6b",
+    "file": "c15fce_海棠红.png"
+  },
+  {
+    "name": "黛蓝",
+    "hex": "#425066",
+    "file": "c43f3_黛蓝.png"
+  },
+  {
+    "name": "枫叶红",
+    "hex": "#c21f30",
+    "file": "fengyehong_枫叶红.png"
+  },
+  {
+    "name": "柳绿",
+    "hex": "#afdd22",
+    "file": "c36d8_柳绿.png"
+  },
+  {
+    "name": "海青",
+    "hex": "#22a2c3",
+    "file": "haiqing_海青.png"
+  },
+  {
+    "name": "丁香色",
+    "hex": "#cca4e3",
+    "file": "c6913_丁香色.png"
+  }
+]

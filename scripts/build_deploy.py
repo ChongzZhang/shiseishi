@@ -3,14 +3,18 @@
 
 import re
 import shutil
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
+NEW_BOOKMARKS = ROOT / "assets" / "color-bookmarks" / "new"
 
 # 明确白名单：不复制 scripts、vendor、管理工具、原始 data 源文件等
 COPY_FILES = [
     "index.html",
+    "achievements.html",
     "css/style.css",
     "js/poetry-ui.js",
     "js/palette.js",
@@ -18,6 +22,8 @@ COPY_FILES = [
     "js/extract.js",
     "js/match.js",
     "js/app.js",
+    "js/achievements.js",
+    "js/achievements-page.js",
     "js/colors-data.js",
     "js/rgb-index-data.js",
     "js/browse.js",
@@ -63,7 +69,39 @@ def patch_browse_html(src: str) -> str:
     )
 
 
+def regen_bookmark_manifest() -> None:
+    script = ROOT / "scripts" / "gen_new_bookmark_manifest.py"
+    subprocess.run([sys.executable, str(script)], check=True, cwd=ROOT)
+
+
+def copy_new_bookmarks() -> int:
+    """复制 manifest 中列出的新书签 PNG 与 manifest.json。"""
+    manifest_src = NEW_BOOKMARKS / "manifest.json"
+    if not manifest_src.is_file():
+        print("  警告 — 未找到 new/manifest.json，跳过书签资源")
+        return 0
+
+    import json
+
+    manifest = json.loads(manifest_src.read_text(encoding="utf-8"))
+    out_dir = DIST / "assets" / "color-bookmarks" / "new"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(manifest_src, out_dir / "manifest.json")
+
+    count = 1
+    for entry in manifest:
+        png = NEW_BOOKMARKS / entry["file"]
+        if not png.is_file():
+            print(f"  警告 — 缺失书签 PNG: {entry['file']}")
+            continue
+        shutil.copy2(png, out_dir / entry["file"])
+        count += 1
+    return count
+
+
 def main():
+    regen_bookmark_manifest()
+
     if DIST.exists():
         shutil.rmtree(DIST)
     DIST.mkdir(parents=True)
@@ -81,6 +119,8 @@ def main():
     browse_src = (ROOT / "browse.html").read_text(encoding="utf-8")
     (DIST / "browse.html").write_text(patch_browse_html(browse_src), encoding="utf-8")
 
+    bookmark_count = copy_new_bookmarks()
+
     (DIST / ".nojekyll").write_text("", encoding="utf-8")
     (DIST / "_headers").write_text(HEADERS, encoding="utf-8")
     (DIST / "404.html").write_text(NOT_FOUND_HTML, encoding="utf-8")
@@ -89,6 +129,7 @@ def main():
     file_count = sum(1 for _ in DIST.rglob("*") if _.is_file())
     print(f"已生成 {DIST}")
     print(f"  文件数: {file_count}")
+    print(f"  成就书签: {bookmark_count} 个文件（含 manifest）")
     print("  未包含: scripts/, vendor/, data/poetry/, data/colors.json, 管理工具等")
     if missing:
         print("  警告 — 缺失源文件:")

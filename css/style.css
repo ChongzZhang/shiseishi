@@ -798,6 +798,437 @@ html, body {
   font-size: 0.85rem;
 }
 
+/* ── 成就书签 ── */
+
+.panel-cta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.achievements-cta {
+  position: relative;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.achievements-cta.ach-cta-flash {
+  animation: ach-cta-pulse 0.6s ease 2;
+  border-color: rgba(58, 107, 74, 0.45);
+}
+
+@keyframes ach-cta-pulse {
+  0%, 100% { box-shadow: 0 4px 18px var(--shadow); }
+  50% { box-shadow: 0 6px 28px rgba(58, 107, 74, 0.22); }
+}
+
+.ach-badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: #3a6b4a;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+/* 快捷面板 */
+.ach-sheet-backdrop,
+.unlock-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(42, 40, 36, 0.35);
+  z-index: 100;
+}
+
+.ach-sheet-panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  max-height: 70vh;
+  padding: 1.25rem 1.5rem 1.75rem;
+  background: linear-gradient(180deg, var(--paper) 0%, var(--paper-mid) 100%);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -8px 32px rgba(42, 40, 36, 0.12);
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.ach-sheet-open .ach-sheet-panel {
+  transform: translateY(0);
+}
+
+.ach-sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.ach-sheet-header h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+
+.ach-sheet-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--ink-light);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+.ach-sheet-progress {
+  font-size: 0.85rem;
+  color: var(--ink-light);
+  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.ach-sheet-recent {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ach-sheet-item {
+  flex: 0 0 auto;
+  width: 5.5rem;
+  text-align: center;
+}
+
+.ach-sheet-item img {
+  width: 100%;
+  height: 7rem;
+  object-fit: contain;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.ach-sheet-item span {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--ink-light);
+  letter-spacing: 0.06em;
+}
+
+.ach-sheet-empty {
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  line-height: 1.7;
+}
+
+.ach-sheet-all {
+  display: block;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--ink);
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.35);
+  transition: background 0.2s ease;
+}
+
+.ach-sheet-all:hover {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+/* 解锁动画 */
+.unlock-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.unlock-overlay.unlock-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.unlock-dialog {
+  position: relative;
+  z-index: 201;
+  text-align: center;
+  padding: 2rem 1.75rem;
+  max-width: 320px;
+  width: 90%;
+  transform: translateY(40px) scale(0.92);
+  opacity: 0;
+  transition: transform 0.65s cubic-bezier(0.22, 1.2, 0.36, 1), opacity 0.45s ease;
+}
+
+.unlock-overlay.unlock-visible .unlock-dialog {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.unlock-glow {
+  position: absolute;
+  inset: -20%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(42, 40, 36, 0.08) 0%, transparent 70%);
+  animation: unlock-glow 1.2s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes unlock-glow {
+  0% { opacity: 0; transform: scale(0.8); }
+  40% { opacity: 1; }
+  100% { opacity: 0.4; transform: scale(1.15); }
+}
+
+.unlock-img {
+  position: relative;
+  max-height: 280px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 28px rgba(42, 40, 36, 0.18));
+  margin-bottom: 1.25rem;
+}
+
+.unlock-title {
+  font-size: 1.15rem;
+  letter-spacing: 0.25em;
+  text-indent: 0.25em;
+  color: var(--ink);
+  animation: unlock-title-in 0.8s ease 0.2s both;
+}
+
+.unlock-sub {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--ink-light);
+  letter-spacing: 0.15em;
+  animation: unlock-title-in 0.8s ease 0.35s both;
+}
+
+@keyframes unlock-title-in {
+  from { opacity: 0; letter-spacing: 0.45em; }
+  to { opacity: 1; letter-spacing: 0.25em; }
+}
+
+.unlock-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.75rem;
+  animation: unlock-title-in 0.6s ease 0.5s both;
+}
+
+.unlock-btn {
+  padding: 0.55rem 1.1rem;
+  font-family: inherit;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.unlock-btn-secondary {
+  background: rgba(255, 255, 255, 0.35);
+  color: var(--ink-light);
+}
+
+.unlock-btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.unlock-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* 成就页 */
+.achievements-page .ach-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2.5rem;
+}
+
+.ach-progress-wrap {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.ach-progress-text {
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.ach-progress-bar {
+  height: 3px;
+  background: var(--paper-dark);
+  border-radius: 2px;
+  overflow: hidden;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.ach-progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--ink-light), var(--ink));
+  border-radius: 2px;
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ach-progress-hint {
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+}
+
+.ach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.ach-card {
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, rgba(237, 232, 220, 0.85) 100%);
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ach-card-unlocked:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.ach-card-locked {
+  filter: grayscale(0.85);
+  opacity: 0.55;
+}
+
+.ach-card-img-wrap {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ach-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ach-card-placeholder {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ach-lock-icon {
+  font-size: 1.5rem;
+  color: var(--ink-faint);
+  opacity: 0.6;
+}
+
+.ach-swatch {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.ach-swatch-muted {
+  opacity: 0.7;
+}
+
+.ach-card-info {
+  margin-top: 0.65rem;
+  text-align: center;
+  width: 100%;
+}
+
+.ach-card-name {
+  display: block;
+  font-size: 0.88rem;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+}
+
+.ach-card-date,
+.ach-card-hint {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.68rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+}
+
+.ach-download-btn {
+  margin-top: 0.6rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.ach-download-btn:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.ach-storage-note {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+}
+
+.ach-error {
+  text-align: center;
+  color: var(--ink-faint);
+  padding: 2rem;
+}
+
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
@@ -821,5 +1252,23 @@ html, body {
 
   .poetry-inner {
     padding-left: 1rem;
+  }
+
+  .unlock-dialog {
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .unlock-img {
+    max-height: 220px;
+  }
+
+  .unlock-actions {
+    flex-direction: column;
+  }
+
+  .ach-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
   }
 }
