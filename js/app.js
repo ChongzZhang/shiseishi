@@ -317,4 +317,20 @@
     .catch(() => {
       if (achProgressLabel) achProgressLabel.textContent = '—';
     });
+
+  const dailyStatusLabel = document.getElementById('daily-status-label');
+  const headerDailyStatus = document.getElementById('header-daily-status');
+
+  function updateDailyUI() {
+    const label = DailyChallenge.getStatusLabel();
+    if (dailyStatusLabel) dailyStatusLabel.textContent = label;
+    if (headerDailyStatus) headerDailyStatus.textContent = label;
+  }
+
+  DailyChallenge.loadData()
+    .then(updateDailyUI)
+    .catch(() => {
+      if (dailyStatusLabel) dailyStatusLabel.textContent = '—';
+      if (headerDailyStatus) headerDailyStatus.textContent = '—';
+    });
 })();

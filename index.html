@@ -15,6 +15,7 @@
       <h1>色谱寻诗</h1>
       <p class="tagline">上传一图，观其五色，看古人如何写这颜色</p>
       <p class="site-note">古诗中的颜色常寓意境与象征，所配之色取意相近，而非精确色值。</p>
+      <p class="site-daily-link"><a href="daily.html" id="header-daily-link">每日一色挑战 · <span id="header-daily-status">加载中…</span></a></p>
     </header>
 
     <main class="layout">
@@ -28,6 +29,14 @@
         </div>
         <input id="file-input" type="file" accept="image/*" hidden>
         <div class="panel-cta-row">
+          <a href="daily.html" class="browse-cta browse-cta-below-upload daily-cta" aria-label="每日一色挑战">
+            <span class="browse-cta-icon" aria-hidden="true">日</span>
+            <span class="browse-cta-text">
+              <span class="browse-cta-title">每日一色挑战</span>
+              <span class="browse-cta-desc"><span id="daily-status-label">今日待寻色</span> · 循诗拍照打卡</span>
+            </span>
+            <span class="browse-cta-arrow" aria-hidden="true">→</span>
+          </a>
           <button type="button" id="achievements-cta" class="browse-cta browse-cta-below-upload achievements-cta" aria-label="成就书签" aria-haspopup="dialog">
             <span class="browse-cta-icon" aria-hidden="true">签</span>
             <span class="browse-cta-text">
@@ -93,6 +102,7 @@
   <script src="js/extract.js"></script>
   <script src="js/match.js"></script>
   <script src="js/achievements.js"></script>
+  <script src="js/daily.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

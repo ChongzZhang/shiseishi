@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日一色挑战 — 色谱寻诗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page daily-page">
+    <header class="site-header">
+      <h1>每日一色挑战</h1>
+      <p class="tagline">循诗寻色，拍照打卡</p>
+      <nav class="browse-nav">
+        <a href="index.html">← 返回识色赋诗</a>
+      </nav>
+    </header>
+
+    <main class="daily-main">
+      <p id="daily-date" class="daily-date"></p>
+      <span id="daily-status-badge" class="daily-done-badge" hidden></span>
+
+      <section class="daily-hint-card" aria-label="今日意象">
+        <blockquote id="daily-hint-line" class="daily-hint-line"></blockquote>
+        <p id="daily-hint-source" class="daily-hint-source"></p>
+        <p id="daily-imagery" class="daily-imagery"></p>
+      </section>
+
+      <section id="daily-done-panel" class="daily-done-panel" hidden>
+        <p class="daily-done-title">今日已打卡</p>
+        <p id="daily-done-color" class="daily-done-color"></p>
+        <img id="daily-done-img" class="daily-done-img" alt="" loading="lazy">
+        <p id="daily-done-note" class="daily-done-note"></p>
+      </section>
+
+      <section id="daily-upload-section" class="daily-upload-section">
+        <div id="daily-upload-zone" class="daily-upload-zone upload-zone" tabindex="0" role="button" aria-label="拍照或上传图片寻色">
+          <div id="daily-preview-placeholder" class="preview-placeholder">
+            <span class="hint-main">拍照或上传</span>
+            <span class="hint-sub">寻得诗中意象之色 · 图片仅在本地分析</span>
+          </div>
+          <img id="daily-preview-img" class="preview-img" alt="已上传图片预览" hidden>
+        </div>
+        <input id="daily-file-input" type="file" accept="image/*" capture="environment" hidden>
+        <p id="daily-status" class="panel-status" hidden></p>
+        <div id="daily-fail-colors" class="daily-fail-colors" hidden></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>色名参考 <a href="https://zhongguose.com/" target="_blank" rel="noopener">中国色</a> · 诗句来自开源古典文集</p>
+    </footer>
+  </div>
+
+  <div id="daily-success-overlay" class="unlock-overlay daily-success-overlay" hidden aria-hidden="true">
+    <div class="unlock-backdrop"></div>
+    <div class="unlock-dialog daily-success-dialog" role="dialog" aria-labelledby="daily-success-title">
+      <div class="daily-stamp" aria-hidden="true">打卡<br>成功</div>
+      <div class="unlock-glow" aria-hidden="true"></div>
+      <img id="daily-success-img" class="unlock-img" alt="" hidden>
+      <p id="daily-success-title" class="unlock-title"></p>
+      <p id="daily-success-sub" class="unlock-sub"></p>
+      <div class="unlock-actions">
+        <button type="button" id="daily-success-close" class="unlock-btn unlock-btn-secondary">明日再来</button>
+        <a href="achievements.html" class="unlock-btn unlock-btn-primary">查看成就</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/palette.js"></script>
+  <script src="js/extract.js"></script>
+  <script src="js/match.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/daily.js"></script>
+  <script src="js/daily-page.js"></script>
+</body>
+</html>

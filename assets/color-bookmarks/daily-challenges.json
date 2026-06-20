@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "timezone": "Asia/Shanghai",
+  "epoch": "2026-01-01",
+  "colors": [
+    {
+      "pinyin": "c10607",
+      "name": "金色",
+      "hex": "#eacd76",
+      "file": "c10607_金色.png",
+      "imagery": "初春迎春花盛开，晴空",
+      "hintLine": "金英翠萼带春寒，黄色花中有几般",
+      "hintSource": "姜夔《蓦山溪·咏黄木香》"
+    },
+    {
+      "pinyin": "c141ba",
+      "name": "苍翠",
+      "hex": "#519a73",
+      "file": "c141ba_苍翠.png",
+      "imagery": "池塘及周边",
+      "hintLine": "池上碧苔三四点，叶底黄鹂一两声",
+      "hintSource": "晏殊《破阵子·春景》"
+    },
+    {
+      "pinyin": "c16352",
+      "name": "嫣红",
+      "hex": "#ef7a82",
+      "file": "c16352_嫣红.png",
+      "imagery": "杏花",
+      "hintLine": "绿杨烟外晓寒轻，红杏枝头春意闹",
+      "hintSource": "宋祁《玉楼春·春景》"
+    },
+    {
+      "pinyin": "c1724b",
+      "name": "鹅黄",
+      "hex": "#fff143",
+      "file": "c1724b_鹅黄.png",
+      "imagery": "海棠花下黄花与绿草，晴空",
+      "hintLine": "海棠花底，鹅黄嫩绿",
+      "hintSource": "陈与义《泛舟招隐寺二首·其一》"
+    },
+    {
+      "pinyin": "c1ce0",
+      "name": "绛紫",
+      "hex": "#8c4356",
+      "file": "c1ce0_绛紫.png",
+      "imagery": "同上（由暮山紫改色）",
+      "hintLine": "潦水尽而寒潭清，烟光凝而暮山紫",
+      "hintSource": "王勃《滕王阁序》"
+    },
+    {
+      "pinyin": "c3186",
+      "name": "水色",
+      "hex": "#88ada6",
+      "file": "c3186_水色.png",
+      "imagery": "春天江水",
+      "hintLine": "日出江花红胜火，春来江水绿如蓝",
+      "hintSource": "白居易《忆江南》"
+    },
+    {
+      "pinyin": "c4190",
+      "name": "水蓝",
+      "hex": "#d2f0f4",
+      "file": "c4190_水蓝.png",
+      "imagery": "长江江水",
+      "hintLine": "孤帆远影碧空尽，唯见长江天际流",
+      "hintSource": "李白《黄鹤楼送孟浩然之广陵》"
+    },
+    {
+      "pinyin": "c43f3",
+      "name": "黛蓝",
+      "hex": "#425066",
+      "file": "c43f3_黛蓝.png",
+      "imagery": "云雨景色",
+      "hintLine": "远岫出云催薄暮，细风吹雨弄轻阴",
+      "hintSource": "周邦彦《苏幕遮·燎沉香》"
+    },
+    {
+      "pinyin": "c52e9",
+      "name": "石榴红",
+      "hex": "#f20c00",
+      "file": "c52e9_石榴红.png",
+      "imagery": "古代女子，江南元宵夜",
+      "hintLine": "眉黛夺将萱草色，红裙妒杀石榴花",
+      "hintSource": "白居易《新乐府·简简吟》"
+    },
+    {
+      "pinyin": "c6913",
+      "name": "丁香色",
+      "hex": "#cca4e3",
+      "file": "c6913_丁香色.png",
+      "imagery": "雨中丁香",
+      "hintLine": "青鸟不传云外信，丁香空结雨中愁",
+      "hintSource": "李璟《摊破浣溪沙·手卷真珠上玉钩》"
+    },
+    {
+      "pinyin": "c92a5",
+      "name": "殷红",
+      "hex": "#be002f",
+      "file": "c92a5_殷红.png",
+      "imagery": "梅花",
+      "hintLine": "疏影横斜水清浅，暗香浮动月黄昏",
+      "hintSource": "林逋《山园小梅·其一》"
+    },
+    {
+      "pinyin": "caeec",
+      "name": "青碧",
+      "hex": "#48c0a3",
+      "file": "caeec_青碧.png",
+      "imagery": "青山",
+      "hintLine": "两岸青山相对出，孤帆一片日边来",
+      "hintSource": "李白《望天门山》"
+    },
+    {
+      "pinyin": "cb2c2",
+      "name": "嫩绿",
+      "hex": "#bddd22",
+      "file": "cb2c2_嫩绿.png",
+      "imagery": "初春春柳轻拂",
+      "hintLine": "诗家清景在新春，绿柳才黄半未匀",
+      "hintSource": "杨巨源《城东早春》"
+    },
+    {
+      "pinyin": "cbc79",
+      "name": "彤",
+      "hex": "#f35336",
+      "file": "cbc79_彤.png",
+      "imagery": "江水残阳",
+      "hintLine": "一道残阳铺水中，半江瑟瑟半江红",
+      "hintSource": "白居易《暮江吟》"
+    },
+    {
+      "pinyin": "cfce2",
+      "name": "苍色",
+      "hex": "#75878a",
+      "file": "cfce2_苍色.png",
+      "imagery": "苍山",
+      "hintLine": "日暮苍山远，天寒白屋贫",
+      "hintSource": "刘长卿《逢雪宿芙蓉山主人》"
+    },
+    {
+      "pinyin": "danjianghong",
+      "name": "淡绛红",
+      "hex": "#ec7696",
+      "file": "danjianghong_淡绛红.png",
+      "imagery": "桃花（可含少许粉红）",
+      "hintLine": "桃花一簇开无主，可爱深红爱浅红",
+      "hintSource": "杜甫《江畔独步寻花·其五》"
+    },
+    {
+      "pinyin": "fengfanhuang",
+      "name": "风帆黄",
+      "hex": "#dc9123",
+      "file": "fengfanhuang_风帆黄.png",
+      "imagery": "秋水帆船",
+      "hintLine": "一舸风帆放晚秋，访君幽巷卜淹留",
+      "hintSource": "唐彦谦《索友》"
+    },
+    {
+      "pinyin": "fenhong",
+      "name": "粉红",
+      "hex": "#f2b9b2",
+      "file": "fenhong_粉红.png",
+      "imagery": "海棠花",
+      "hintLine": "秾丽最宜新着雨，娇娆全在欲开时",
+      "hintSource": "袁枚《咏海棠》"
+    },
+    {
+      "pinyin": "meiguihong",
+      "name": "玫瑰红",
+      "hex": "#d2357d",
+      "file": "meiguihong_玫瑰红.png",
+      "imagery": "牡丹",
+      "hintLine": "云想衣裳花想容，春风拂槛露华浓",
+      "hintSource": "李白《清平调·其一》"
+    },
+    {
+      "pinyin": "weizi",
+      "name": "魏紫",
+      "hex": "#7e1671",
+      "file": "weizi_魏紫.png",
+      "imagery": "秋荷残菊对照",
+      "hintLine": "紫艳半开篱菊静，红衣落尽渚莲愁",
+      "hintSource": "赵嘏《早发》"
+    }
+  ]
+}

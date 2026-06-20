@@ -15,6 +15,7 @@ NEW_BOOKMARKS = ROOT / "assets" / "color-bookmarks" / "new"
 COPY_FILES = [
     "index.html",
     "achievements.html",
+    "daily.html",
     "css/style.css",
     "js/poetry-ui.js",
     "js/palette.js",
@@ -24,6 +25,8 @@ COPY_FILES = [
     "js/app.js",
     "js/achievements.js",
     "js/achievements-page.js",
+    "js/daily.js",
+    "js/daily-page.js",
     "js/colors-data.js",
     "js/rgb-index-data.js",
     "js/browse.js",
@@ -74,6 +77,22 @@ def regen_bookmark_manifest() -> None:
     subprocess.run([sys.executable, str(script)], check=True, cwd=ROOT)
 
 
+def regen_daily_challenges() -> None:
+    script = ROOT / "scripts" / "gen_daily_challenges.py"
+    subprocess.run([sys.executable, str(script)], check=True, cwd=ROOT)
+
+
+def copy_daily_challenges() -> bool:
+    src = ROOT / "assets" / "color-bookmarks" / "daily-challenges.json"
+    if not src.is_file():
+        print("  警告 — 未找到 daily-challenges.json")
+        return False
+    dst = DIST / "assets" / "color-bookmarks" / "daily-challenges.json"
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+    return True
+
+
 def copy_new_bookmarks() -> int:
     """复制 manifest 中列出的新书签 PNG 与 manifest.json。"""
     manifest_src = NEW_BOOKMARKS / "manifest.json"
@@ -101,6 +120,7 @@ def copy_new_bookmarks() -> int:
 
 def main():
     regen_bookmark_manifest()
+    regen_daily_challenges()
 
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -120,6 +140,7 @@ def main():
     (DIST / "browse.html").write_text(patch_browse_html(browse_src), encoding="utf-8")
 
     bookmark_count = copy_new_bookmarks()
+    daily_ok = copy_daily_challenges()
 
     (DIST / ".nojekyll").write_text("", encoding="utf-8")
     (DIST / "_headers").write_text(HEADERS, encoding="utf-8")
@@ -130,6 +151,7 @@ def main():
     print(f"已生成 {DIST}")
     print(f"  文件数: {file_count}")
     print(f"  成就书签: {bookmark_count} 个文件（含 manifest）")
+    print(f"  每日挑战: {'已包含' if daily_ok else '缺失'}")
     print("  未包含: scripts/, vendor/, data/poetry/, data/colors.json, 管理工具等")
     if missing:
         print("  警告 — 缺失源文件:")
