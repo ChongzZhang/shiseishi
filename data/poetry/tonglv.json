@@ -12,27 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "东畔连尖尤秀绝，一双铜绿翠铺茸。",
-      "title": "塘闸",
-      "author": "杨万里",
-      "type": "诗",
-      "source": "全唐诗/poet.song.140000.json#460",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "何曾薰陆绮床供，但见相轮铜绿明。",
-      "title": "尧章金铜佛塔歌",
-      "author": "周文璞",
-      "type": "诗",
-      "source": "全唐诗/poet.song.183000.json#731",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

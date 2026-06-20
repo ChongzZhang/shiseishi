@@ -10,31 +10,8 @@
       "type": "诗",
       "matchTier": 1,
       "verified": true,
-      "_color": "夹竹桃红",
       "dynasty": "宋"
-    },
-    {
-      "line": "芳姿劲节本来同，绿荫红妆一样浓。",
-      "title": "夹竹桃",
-      "author": "汤清伯",
-      "type": "诗",
-      "matchTier": 1,
-      "verified": true,
-      "_color": "夹竹桃红",
-      "_hex": "#eb507e",
-      "dynasty": "宋"
-    },
-    {
-      "line": "几处落红庭院，谁家香雪帘栊",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "夹竹桃红",
-      "_hex": "#eb507e",
-      "dynasty": "清"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

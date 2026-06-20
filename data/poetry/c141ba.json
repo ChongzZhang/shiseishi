@@ -4,49 +4,15 @@
   "hex": "#519a73",
   "entries": [
     {
-      "line": "寒山转苍翠，秋水日潺湲",
-      "title": "辋川闲居赠裴秀才迪",
-      "author": "王维",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "苍翠",
-      "_hex": "#519a73",
-      "dynasty": "唐"
-    },
-    {
-      "line": "却顾所来径，苍苍横翠微",
-      "title": "下终南山遇斛斯山人宿置酒",
-      "author": "李白",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "苍翠",
-      "_hex": "#519a73",
-      "dynasty": "唐"
-    },
-    {
-      "line": "翠叶吹凉，玉容销酒",
-      "title": "念奴娇",
-      "author": "姜夔",
+      "line": "池上碧苔三四点，叶底黄鹂一两声",
+      "title": "破阵子·春景",
+      "author": "晏殊",
       "type": "词",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "_color": "苍翠",
-      "_hex": "#519a73",
       "dynasty": "宋"
-    },
-    {
-      "line": "轻烟迷曲径，冷翠滴回廊",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "苍翠",
-      "_hex": "#519a73",
-      "dynasty": "清"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }

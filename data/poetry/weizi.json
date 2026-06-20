@@ -4,35 +4,15 @@
   "hex": "#7e1671",
   "entries": [
     {
-      "line": "多少姚黄魏紫，搦成腻粉燕支。",
-      "title": "朝中措",
-      "author": "韩淲",
-      "type": "词",
-      "source": "宋词/ci.song.13000.json#25",
+      "line": "紫艳半开篱菊静，红衣落尽渚莲愁",
+      "title": "早发",
+      "author": "赵嘏",
+      "type": "诗",
+      "source": "curated:bookmark-imagery",
       "matchTier": 1,
       "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "一任姚黄魏紫，供吟赏、银烛笼纱。",
-      "title": "满庭芳",
-      "author": "王以宁",
-      "type": "词",
-      "source": "宋词/ci.song.6000.json#59",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "姚黄国艳，魏紫天香，倚风羞怯。",
-      "title": "瑞鹤仙",
-      "author": "紫姑",
-      "type": "词",
-      "source": "宋词/ci.song.3000.json#504",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
+      "dynasty": "唐"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

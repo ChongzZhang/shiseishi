@@ -4,41 +4,15 @@
   "hex": "#eacd76",
   "entries": [
     {
-      "line": "金壶翦送琼枝，看一骑红尘",
-      "title": "瑶花",
-      "author": "周密",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "金色",
-      "_hex": "#eacd76",
-      "dynasty": "宋"
-    },
-    {
-      "line": "金盘簇燕，空叹时序侵寻",
-      "title": "一萼红",
+      "line": "金英翠萼带春寒，黄色花中有几般",
+      "title": "蓦山溪·咏黄木香",
       "author": "姜夔",
-      "type": "诗",
-      "matchTier": 2,
+      "type": "词",
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "source": "宋词三百首",
-      "_color": "金色",
-      "_hex": "#eacd76",
       "dynasty": "宋"
-    },
-    {
-      "line": "金粟堆南木已拱，瞿塘石城草萧瑟",
-      "title": "观公孙大娘弟子舞剑器行并序",
-      "author": "杜甫",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "唐诗三百首",
-      "_color": "金色",
-      "_hex": "#eacd76",
-      "dynasty": "唐"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

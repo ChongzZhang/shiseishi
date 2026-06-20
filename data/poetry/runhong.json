@@ -4,16 +4,6 @@
   "hex": "#f7cdbc",
   "entries": [
     {
-      "line": "平康得意，醉踏香泥，润红沾线。",
-      "title": "瑞鹤仙",
-      "author": "吴文英",
-      "type": "词",
-      "source": "宋词/ci.song.15000.json#883",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
       "line": "兰膏媚鬓蝉，笋纤润红玉。",
       "title": "杂兴  其一",
       "author": "程垣",
@@ -22,17 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "柳暗烟霏绿，花残雨润红。",
-      "title": "送顾丞沿檄徽饶",
-      "author": "韩淲",
-      "type": "诗",
-      "source": "全唐诗/poet.song.176000.json#763",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

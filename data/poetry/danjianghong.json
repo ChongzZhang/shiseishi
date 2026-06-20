@@ -4,26 +4,15 @@
   "hex": "#ec7696",
   "entries": [
     {
-      "line": "袅袅枯藤淡绛葩，夤缘直上照残霞。",
-      "title": "凌霄花为复上人作",
-      "author": "赵汝回",
-      "type": "诗",
-      "source": "全唐诗/poet.song.196000.json#230",
-      "matchTier": 2,
+      "line": "桃花一簇开无主，可爱深红爱浅红",
+      "title": "江畔独步寻花·其五",
+      "author": "杜甫",
+      "type": "词",
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "幽梦冷随红袖笛，游仙香泛绛河槎",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "淡绛红",
-      "_hex": "#ec7696",
-      "dynasty": "清"
+      "dynasty": "唐"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

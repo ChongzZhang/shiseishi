@@ -12,28 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "白鹭飞来，点破一川明绿。",
-      "title": "凤凰阁",
-      "author": "赵师侠",
-      "type": "词",
-      "source": "宋词/ci.song.12000.json#215",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "竿竿青欲滴，个个绿生凉",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "明绿",
-      "_hex": "#9eccab",
-      "dynasty": "清"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

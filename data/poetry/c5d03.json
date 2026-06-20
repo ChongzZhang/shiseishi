@@ -11,58 +11,8 @@
       "matchTier": 2,
       "verified": true,
       "source": "唐诗三百首",
-      "_color": "秋色",
-      "_hex": "#896c39",
       "dynasty": "唐"
-    },
-    {
-      "line": "秋色连波，波上寒烟翠",
-      "title": "苏幕遮",
-      "author": "范仲淹",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "秋色",
-      "_hex": "#896c39",
-      "dynasty": "宋"
-    },
-    {
-      "line": "强携酒、小桥宅，怕梨花、落尽成秋色",
-      "title": "淡黄柳",
-      "author": "姜夔",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "秋色",
-      "_hex": "#896c39",
-      "dynasty": "宋"
-    },
-    {
-      "line": "望倦柳愁荷，共感秋色",
-      "title": "秋霁",
-      "author": "史达祖",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "秋色",
-      "_hex": "#896c39",
-      "dynasty": "宋"
-    },
-    {
-      "line": "赖有高楼百尺，看浩荡、千崖秋色。",
-      "title": "贺新郎",
-      "author": "刘克庄",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "秋色",
-      "_hex": "#896c39",
-      "dynasty": "宋"
     }
   ],
-  "coverage": "5/5"
+  "coverage": "1/5"
 }

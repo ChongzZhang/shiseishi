@@ -4,55 +4,15 @@
   "hex": "#dc9123",
   "entries": [
     {
-      "line": "买鱼斫鲙初传酒，顷刻风帆过马当。",
-      "title": "过马当山",
-      "author": "许及之",
+      "line": "一舸风帆放晚秋，访君幽巷卜淹留",
+      "title": "索友",
+      "author": "唐彦谦",
       "type": "诗",
-      "source": "全唐诗/poet.song.153000.json#504",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "五鼓歇津亭，风帆去斗城。",
-      "title": "唐诏监簿池阳市征",
-      "author": "宋祁",
-      "type": "诗",
-      "source": "全唐诗/poet.song.11000.json#564",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "一舸风帆放晚秋，访君幽巷卜淹留。",
-      "title": "比访叔才旋蒙赐诗以贫不能留客为愧次韵",
-      "author": "葛立方",
-      "type": "诗",
-      "source": "全唐诗/poet.song.113000.json#552",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "东船得风帆席高，千里瞬息轻鸿毛。",
-      "title": "东西船行",
-      "author": "李浩",
-      "type": "诗",
-      "source": "全唐诗/poet.song.122000.json#229",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
       "dynasty": "唐"
-    },
-    {
-      "line": "云树看如画，风帆去似飞。",
-      "title": "送何水部蒙出牧袁州",
-      "author": "戚维",
-      "type": "诗",
-      "source": "全唐诗/poet.song.1000.json#209",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "5/5"
+  "coverage": "1/5"
 }

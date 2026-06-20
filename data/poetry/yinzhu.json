@@ -12,29 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "忆旧游、邃馆朱扉，小园香径",
-      "title": "苏武慢",
-      "author": "蔡伸",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "银朱",
-      "_hex": "#f43e06",
-      "dynasty": "宋"
-    },
-    {
-      "line": "残灯朱幌，淡月纱窗",
-      "title": "瑞鹤仙",
-      "author": "陆淞",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "银朱",
-      "_hex": "#f43e06",
-      "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

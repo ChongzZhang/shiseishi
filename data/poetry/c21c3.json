@@ -10,21 +10,8 @@
       "type": "诗",
       "matchTier": 2,
       "verified": true,
-      "_color": "碧色",
-      "_hex": "#1bd1a5",
-      "dynasty": "唐"
-    },
-    {
-      "line": "燕草如碧丝，秦桑低绿枝",
-      "title": "春思",
-      "author": "李白",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "碧色",
-      "_hex": "#1bd1a5",
       "dynasty": "唐"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

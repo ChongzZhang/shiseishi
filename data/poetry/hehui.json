@@ -4,28 +4,6 @@
   "hex": "#4a4035",
   "entries": [
     {
-      "line": "华亭黄耳竟安在，辽东白鹤还飞来。",
-      "title": "用东坡武昌寒溪韵三篇  其三",
-      "author": "朱槔",
-      "type": "诗",
-      "source": "全唐诗/poet.song.107000.json#856",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
-    },
-    {
-      "line": "便欲披鹤氅，岂思饮银铛。",
-      "title": "人日惊蛰前数日大雪寄孙奇父韩叔夏",
-      "author": "胡寅",
-      "type": "诗",
-      "source": "全唐诗/poet.song.108000.json#710",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
-    },
-    {
       "line": "冰际绡纹绽，云边鹤影来。",
       "title": "迎春曲三阕  其一",
       "author": "宋祁",
@@ -35,18 +13,7 @@
       "verified": true,
       "matchVia": "imagery",
       "dynasty": "宋"
-    },
-    {
-      "line": "丹砂固未就，白鹤何时来。",
-      "title": "云洞",
-      "author": "韩元吉",
-      "type": "诗",
-      "source": "全唐诗/poet.song.124000.json#254",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }

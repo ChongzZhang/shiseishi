@@ -12,17 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "艾绿浓香，鹅黄新酿。",
-      "title": "踏莎行",
-      "author": "毛滂",
-      "type": "词",
-      "source": "宋词/ci.song.4000.json#757",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

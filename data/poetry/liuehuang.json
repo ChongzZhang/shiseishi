@@ -12,17 +12,7 @@
       "matchTier": 2,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "蕉心榴萼俱无頼，要与春衫相并红。",
-      "title": "偶题",
-      "author": "范成大",
-      "type": "诗",
-      "source": "全唐诗/poet.song.137000.json#562",
-      "matchTier": 3,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

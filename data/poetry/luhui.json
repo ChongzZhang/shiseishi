@@ -12,17 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "唐"
-    },
-    {
-      "line": "习习芦灰上，泠泠玉管中。",
-      "title": "八风从律",
-      "author": "蒋防",
-      "type": "诗",
-      "source": "全唐诗/poet.tang.27000.json#277",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "唐"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

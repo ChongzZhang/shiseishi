@@ -4,15 +4,14 @@
   "hex": "#be002f",
   "entries": [
     {
-      "line": "内府殷红玛瑙盘，婕妤传诏才人索",
-      "title": "韦讽录事宅观曹将军画马图",
-      "author": "杜甫",
-      "type": "诗",
-      "matchTier": 2,
+      "line": "疏影横斜水清浅，暗香浮动月黄昏",
+      "title": "山园小梅·其一",
+      "author": "林逋",
+      "type": "词",
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "_color": "殷红",
-      "_hex": "#be002f",
-      "dynasty": "唐"
+      "dynasty": "宋"
     }
   ],
   "coverage": "1/5"

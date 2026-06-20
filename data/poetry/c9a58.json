@@ -10,21 +10,8 @@
       "type": "诗",
       "matchTier": 2,
       "verified": true,
-      "_color": "胭脂",
-      "_hex": "#9d2933",
-      "dynasty": "清"
-    },
-    {
-      "line": "胭脂鲜艳何相类，花之颜色人之泪",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "胭脂",
-      "_hex": "#9d2933",
       "dynasty": "清"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

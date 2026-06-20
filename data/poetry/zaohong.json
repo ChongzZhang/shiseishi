@@ -4,26 +4,6 @@
   "hex": "#7c1823",
   "entries": [
     {
-      "line": "摇落枣红时，满园空、几株苍翠。",
-      "title": "蓦山溪",
-      "author": "晁补之",
-      "type": "词",
-      "source": "宋词/ci.song.4000.json#190",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "榆塞外，恰枣红时候，想羽书忙。",
-      "title": "沁园春",
-      "author": "刘克庄",
-      "type": "词",
-      "source": "宋词/ci.song.14000.json#529",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
       "line": "会见今年八九月，处处枣红梨子黄。",
       "title": "送秦德久守安丰",
       "author": "周紫芝",
@@ -34,5 +14,5 @@
       "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

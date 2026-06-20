@@ -4,38 +4,15 @@
   "hex": "#bddd22",
   "entries": [
     {
-      "line": "绿蜡春犹卷，红妆夜未眠",
-      "title": "红楼梦",
-      "author": "曹雪芹",
+      "line": "诗家清景在新春，绿柳才黄半未匀",
+      "title": "城东早春",
+      "author": "杨巨源",
       "type": "诗",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "_color": "嫩绿",
-      "_hex": "#bddd22",
-      "dynasty": "清"
-    },
-    {
-      "line": "一畦春韭绿，十里稻花香",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "嫩绿",
-      "_hex": "#bddd22",
-      "dynasty": "清"
-    },
-    {
-      "line": "绿萼添妆融宝炬，缟仙扶醉跨残虹",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "嫩绿",
-      "_hex": "#bddd22",
-      "dynasty": "清"
+      "dynasty": "唐"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

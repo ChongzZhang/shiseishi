@@ -12,17 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "剪剪衰兰甘草莽，朣朣华月在林皋。",
-      "title": "楼大参嘱珣起宗索孤山旧藁  其一",
-      "author": "释居简",
-      "type": "诗",
-      "source": "全唐诗/poet.song.180000.json#196",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

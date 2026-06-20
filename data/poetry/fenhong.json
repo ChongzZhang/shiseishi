@@ -4,47 +4,15 @@
   "hex": "#f2b9b2",
   "entries": [
     {
-      "line": "绛唇初点粉红新，凤镜临妆已逼真。",
-      "title": "独脚令・忆王孙",
-      "author": "莫将",
-      "type": "词",
-      "source": "宋词/ci.song.6000.json#522",
+      "line": "秾丽最宜新着雨，娇娆全在欲开时",
+      "title": "咏海棠",
+      "author": "袁枚",
+      "type": "诗",
+      "source": "curated:bookmark-imagery",
       "matchTier": 1,
       "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "粉红题字，寄与分明道。",
-      "title": "蓦山溪",
-      "author": "赵孟坚",
-      "type": "词",
-      "source": "宋词/ci.song.15000.json#800",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "坠粉飘香，日日红成阵",
-      "title": "蝶恋花",
-      "author": "赵令畤",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "粉红",
-      "_hex": "#f2b9b2",
-      "dynasty": "宋"
-    },
-    {
-      "line": "还见褪粉梅梢，试花桃树",
-      "title": "瑞龙吟",
-      "author": "周邦彦",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "粉红",
-      "_hex": "#f2b9b2",
-      "dynasty": "宋"
+      "dynasty": "唐"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }

@@ -12,17 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "他时京岘下，不比野蒿黄。",
-      "title": "寄麦门冬于符公院",
-      "author": "梅尧臣",
-      "type": "诗",
-      "source": "全唐诗/poet.song.14000.json#223",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

@@ -4,38 +4,15 @@
   "hex": "#425066",
   "entries": [
     {
-      "line": "映浓愁浅黛，遥山媚妩",
-      "title": "瑞鹤仙",
-      "author": "袁去华",
+      "line": "远岫出云催薄暮，细风吹雨弄轻阴",
+      "title": "苏幕遮·燎沉香",
+      "author": "周邦彦",
       "type": "词",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "_color": "黛蓝",
-      "_hex": "#425066",
-      "dynasty": "宋"
-    },
-    {
-      "line": "璧月初晴，黛云远澹",
-      "title": "永遇乐",
-      "author": "刘辰翁",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "黛蓝",
-      "_hex": "#425066",
-      "dynasty": "宋"
-    },
-    {
-      "line": "黛云远澹，春事谁主",
-      "title": "永遇乐",
-      "author": "刘辰翁",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "黛蓝",
-      "_hex": "#425066",
       "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

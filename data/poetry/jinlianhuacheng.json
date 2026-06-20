@@ -12,27 +12,7 @@
       "matchTier": 2,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "上有金莲花，茎叶相扶将。",
-      "title": "遗所思",
-      "author": "曹勋",
-      "type": "诗",
-      "source": "全唐诗/poet.song.109000.json#446",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "波底金莲花，万叶绿绮缛。",
-      "title": "荆门军惠泉呈李使君舜卿",
-      "author": "刘挚",
-      "type": "诗",
-      "source": "全唐诗/poet.song.38000.json#684",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

@@ -12,17 +12,7 @@
       "matchTier": 2,
       "verified": true,
       "dynasty": "唐"
-    },
-    {
-      "line": "伟才未许万牛挽，香叶拟留孤凤集。",
-      "title": "宣妙坟院古柏",
-      "author": "卫宗武",
-      "type": "诗",
-      "source": "全唐诗/poet.song.218000.json#673",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

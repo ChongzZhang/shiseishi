@@ -4,16 +4,6 @@
   "hex": "#f25a47",
   "entries": [
     {
-      "line": "壮志世难酬，丹桂红蕖又晚秋。",
-      "title": "南乡子",
-      "author": "吴潜",
-      "type": "词",
-      "source": "宋词/ci.song.15000.json#401",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
       "line": "常时月桂红，乃作素色凝。",
       "title": "赋滕彦真家玉桂",
       "author": "赵蕃",
@@ -22,17 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "唐"
-    },
-    {
-      "line": "花搴岩桂红，石擘云根翠。",
-      "title": "追咏崔奉礼小园",
-      "author": "梅尧臣",
-      "type": "诗",
-      "source": "全唐诗/poet.song.14000.json#48",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

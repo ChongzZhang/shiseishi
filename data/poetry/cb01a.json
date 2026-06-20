@@ -11,22 +11,8 @@
       "matchTier": 2,
       "verified": true,
       "source": "唐诗三百首",
-      "_color": "藕荷色",
-      "_hex": "#e4c6d0",
-      "dynasty": "唐"
-    },
-    {
-      "line": "荷风送香气，竹露滴清响",
-      "title": "夏日南亭怀辛大",
-      "author": "孟浩然",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "唐诗三百首",
-      "_color": "藕荷色",
-      "_hex": "#e4c6d0",
       "dynasty": "唐"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

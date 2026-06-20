@@ -4,28 +4,6 @@
   "hex": "#fbda41",
   "entries": [
     {
-      "line": "儿童急走追黄蝶，飞入菜花无处寻。",
-      "title": "宿新市徐公店二首  其一",
-      "author": "杨万里",
-      "type": "诗",
-      "source": "全唐诗/poet.song.142000.json#95",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
-    },
-    {
-      "line": "丧身失命知多少，满地如今号菜花。",
-      "title": "畏爱兼抱",
-      "author": "释印肃",
-      "type": "诗",
-      "source": "全唐诗/poet.song.121000.json#53",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
-    },
-    {
       "line": "油菜花间蝴蝶舞，刺桐枝上鹁鸠啼。",
       "title": "望江南・忆江南",
       "author": "黄公绍",
@@ -34,18 +12,7 @@
       "matchTier": 2,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "一宵春雨晴，满地菜花吐。",
-      "title": "村居",
-      "author": "郭仁",
-      "type": "诗",
-      "source": "全唐诗/poet.song.171000.json#957",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }

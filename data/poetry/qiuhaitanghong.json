@@ -4,35 +4,14 @@
   "hex": "#ec2b24",
   "entries": [
     {
-      "line": "海棠开后春谁主，日日催花雨。",
-      "title": "虞美人",
-      "author": "李弥逊",
-      "type": "词",
-      "matchTier": 1,
-      "verified": true,
-      "_color": "秋海棠红",
-      "dynasty": "宋"
-    },
-    {
       "line": "试问卷帘人，却道海棠依旧。",
       "title": "如梦令",
       "author": "李清照",
       "type": "词",
       "matchTier": 1,
       "verified": true,
-      "_color": "秋海棠红",
-      "dynasty": "宋"
-    },
-    {
-      "line": "海棠花谢倦红收，杨柳烟深滞碧浮。",
-      "title": "春日",
-      "author": "陈棣",
-      "type": "诗",
-      "matchTier": 1,
-      "verified": true,
-      "_color": "秋海棠红",
       "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

@@ -4,15 +4,14 @@
   "hex": "#d2f0f4",
   "entries": [
     {
-      "line": "神仙昨日降都门，种得蓝田玉一盆",
-      "title": "红楼梦",
-      "author": "曹雪芹",
+      "line": "孤帆远影碧空尽，唯见长江天际流",
+      "title": "黄鹤楼送孟浩然之广陵",
+      "author": "李白",
       "type": "诗",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "_color": "水蓝",
-      "_hex": "#d2f0f4",
-      "dynasty": "清"
+      "dynasty": "唐"
     }
   ],
   "coverage": "1/5"

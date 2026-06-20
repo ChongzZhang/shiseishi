@@ -4,15 +4,14 @@
   "hex": "#f35336",
   "entries": [
     {
-      "line": "彤云又吐，一竿残照",
-      "title": "青门饮",
-      "author": "时彦",
+      "line": "一道残阳铺水中，半江瑟瑟半江红",
+      "title": "暮江吟",
+      "author": "白居易",
       "type": "诗",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "_color": "彤",
-      "_hex": "#f35336",
-      "dynasty": "宋"
+      "dynasty": "唐"
     }
   ],
   "coverage": "1/5"

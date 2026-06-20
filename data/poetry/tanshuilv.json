@@ -4,26 +4,6 @@
   "hex": "#645822",
   "entries": [
     {
-      "line": "一陂潭水绕花身，渌浄分明照得人。",
-      "title": "所忆",
-      "author": "苏泂",
-      "type": "诗",
-      "source": "全唐诗/poet.song.185000.json#435",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "万古玉潭水，君何独擅名。",
-      "title": "题刘玉潭诗",
-      "author": "王谌",
-      "type": "诗",
-      "source": "全唐诗/poet.song.214000.json#847",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
       "line": "雪消潭水绿，轻舸下滩时。",
       "title": "留别乐和之",
       "author": "梅尧臣",
@@ -34,5 +14,5 @@
       "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

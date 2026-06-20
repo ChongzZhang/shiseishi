@@ -12,37 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "圆山信作漳南镇，想恋枇杷玉色醺。",
-      "title": "圆山谢雨二首  其二",
-      "author": "郭祥正",
-      "type": "诗",
-      "source": "全唐诗/poet.song.43000.json#362",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "东园载酒西园醉，摘尽枇杷一树金。",
-      "title": "初夏游张园",
-      "author": "戴复古",
-      "type": "诗",
-      "source": "全唐诗/poet.song.183000.json#125",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "僧房斋院门门闭，梅子枇杷树树垂。",
-      "title": "归憩仁王寺",
-      "author": "周文璞",
-      "type": "诗",
-      "source": "全唐诗/poet.song.183000.json#798",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }

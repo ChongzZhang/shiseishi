@@ -4,15 +4,13 @@
   "hex": "#fff143",
   "entries": [
     {
-      "line": "看尽鹅黄嫩绿，都是江南旧相识",
-      "title": "淡黄柳",
-      "author": "姜夔",
+      "line": "海棠花底，鹅黄嫩绿",
+      "title": "泛舟招隐寺二首·其一",
+      "author": "陈与义",
       "type": "词",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "source": "宋词三百首",
-      "_color": "鹅黄",
-      "_hex": "#fff143",
       "dynasty": "宋"
     }
   ],

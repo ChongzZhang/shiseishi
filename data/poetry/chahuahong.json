@@ -12,17 +12,7 @@
       "matchTier": 2,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "中置短尾铫，细煑茶花熟。",
-      "title": "黎伯英解元赠予一大缶封泥如法初谓酒也至乃西山泉云暑中时可一酌珍重其意为赋此章",
-      "author": "郑刚中",
-      "type": "诗",
-      "source": "全唐诗/poet.song.98000.json#39",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

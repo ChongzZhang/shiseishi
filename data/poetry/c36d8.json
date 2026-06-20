@@ -11,34 +11,8 @@
       "matchTier": 2,
       "verified": true,
       "source": "宋词三百首",
-      "_color": "柳绿",
-      "_hex": "#afdd22",
-      "dynasty": "宋"
-    },
-    {
-      "line": "柳下系舟犹未稳，能几日、又中秋",
-      "title": "唐多令",
-      "author": "刘过",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "柳绿",
-      "_hex": "#afdd22",
-      "dynasty": "宋"
-    },
-    {
-      "line": "柳困桃慵，杏青梅小",
-      "title": "水龙吟",
-      "author": "程垓",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "柳绿",
-      "_hex": "#afdd22",
       "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

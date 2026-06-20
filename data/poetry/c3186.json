@@ -4,15 +4,13 @@
   "hex": "#88ada6",
   "entries": [
     {
-      "line": "水为沼，酒徒历历坐洲鸟",
-      "title": "石鱼湖上醉歌并序",
-      "author": "元结",
+      "line": "日出江花红胜火，春来江水绿如蓝",
+      "title": "忆江南",
+      "author": "白居易",
       "type": "诗",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "source": "唐诗三百首",
-      "_color": "水色",
-      "_hex": "#88ada6",
       "dynasty": "唐"
     }
   ],

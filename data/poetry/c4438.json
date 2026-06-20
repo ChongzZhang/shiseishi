@@ -10,32 +10,8 @@
       "type": "诗",
       "matchTier": 2,
       "verified": true,
-      "_color": "花白",
-      "_hex": "#c2ccd0",
       "dynasty": "唐"
-    },
-    {
-      "line": "雨中黄叶树，灯下白头人",
-      "title": "喜外弟卢纶见宿",
-      "author": "司空曙",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "花白",
-      "_hex": "#c2ccd0",
-      "dynasty": "唐"
-    },
-    {
-      "line": "偷来梨蕊三分白，借得梅花一缕魂",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "花白",
-      "_hex": "#c2ccd0",
-      "dynasty": "清"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

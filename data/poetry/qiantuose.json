@@ -13,18 +13,7 @@
       "verified": true,
       "matchVia": "imagery",
       "dynasty": "宋"
-    },
-    {
-      "line": "世悦邹骆驼，我贤扬执㦸。",
-      "title": "侨居一首",
-      "author": "苏籀",
-      "type": "诗",
-      "source": "全唐诗/poet.song.101000.json#7",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

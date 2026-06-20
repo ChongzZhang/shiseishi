@@ -11,22 +11,8 @@
       "matchTier": 2,
       "verified": true,
       "source": "唐诗三百首",
-      "_color": "火红",
-      "_hex": "#ff2d51",
       "dynasty": "唐"
-    },
-    {
-      "line": "红叶黄花秋意晚，千里念行客",
-      "title": "思远人",
-      "author": "晏几道",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "火红",
-      "_hex": "#ff2d51",
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

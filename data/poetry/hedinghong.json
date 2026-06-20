@@ -12,17 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "仿佛芙蓉箭镞形，涩如鹤顶红如火。",
-      "title": "张户部惠山杨梅",
-      "author": "张镃",
-      "type": "诗",
-      "source": "全唐诗/poet.song.171000.json#5",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

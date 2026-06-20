@@ -12,17 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "今兹此宝世莫识，但爱金字毛绿鲜。",
-      "title": "和沈潜诚崔氏园九尾龟",
-      "author": "李复",
-      "type": "诗",
-      "source": "全唐诗/poet.song.61000.json#333",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

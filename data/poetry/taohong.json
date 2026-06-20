@@ -12,37 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "不吟柳绿与桃红，久要论交十八公。",
-      "title": "题左举善郊居四绝 听松",
-      "author": "史浩",
-      "type": "诗",
-      "source": "全唐诗/poet.song.115000.json#609",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "一川晴日破春容，柳絮桃红赴望中。",
-      "title": "春日途中",
-      "author": "李若水",
-      "type": "诗",
-      "source": "全唐诗/poet.song.104000.json#12",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "半雨半晴，桃红李白。",
-      "title": "偈颂一百二十三首  其六四",
-      "author": "释崇岳",
-      "type": "诗",
-      "source": "全唐诗/poet.song.149000.json#675",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }

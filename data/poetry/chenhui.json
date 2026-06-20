@@ -12,18 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "春心莫共花争发，一寸想思一寸灰",
-      "title": "无题二首之二",
-      "author": "李商隐",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "尘灰",
-      "_hex": "#b6a476",
-      "dynasty": "唐"
     }
   ],
-  "coverage": "2/5"
+  "coverage": "1/5"
 }

@@ -4,53 +4,15 @@
   "hex": "#75878a",
   "entries": [
     {
-      "line": "道人庭宇静，苍色连深竹",
-      "title": "晨诣超师院读禅经",
-      "author": "柳宗元",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "唐诗三百首",
-      "_color": "苍色",
-      "_hex": "#75878a",
-      "dynasty": "唐"
-    },
-    {
-      "line": "苍苍竹林寺，杳杳钟声晚",
-      "title": "送灵澈",
+      "line": "日暮苍山远，天寒白屋贫",
+      "title": "逢雪宿芙蓉山主人",
       "author": "刘长卿",
       "type": "诗",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "source": "唐诗三百首",
-      "_color": "苍色",
-      "_hex": "#75878a",
       "dynasty": "唐"
-    },
-    {
-      "line": "苍茫古木连穷巷，寥落寒山对虚牖",
-      "title": "老将行",
-      "author": "王维",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "唐诗三百首",
-      "_color": "苍色",
-      "_hex": "#75878a",
-      "dynasty": "唐"
-    },
-    {
-      "line": "一帘淡月，仿佛照颜色",
-      "title": "霓裳中序第一",
-      "author": "姜夔",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "苍色",
-      "_hex": "#75878a",
-      "dynasty": "宋"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }

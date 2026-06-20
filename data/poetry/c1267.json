@@ -4,18 +4,6 @@
   "hex": "#00e09e",
   "entries": [
     {
-      "line": "青丝勒马，风流云散",
-      "title": "水龙吟",
-      "author": "陈亮",
-      "type": "词",
-      "matchTier": 2,
-      "verified": true,
-      "source": "宋词三百首",
-      "_color": "青色",
-      "_hex": "#00e09e",
-      "dynasty": "宋"
-    },
-    {
       "line": "青冥浩荡不见底，日月照耀金银台",
       "title": "梦游天姥吟留别",
       "author": "李白",
@@ -23,34 +11,8 @@
       "matchTier": 2,
       "verified": true,
       "source": "唐诗三百首",
-      "_color": "青色",
-      "_hex": "#00e09e",
-      "dynasty": "唐"
-    },
-    {
-      "line": "青山朝别暮还见，嘶马出门思旧乡",
-      "title": "送陈章甫",
-      "author": "李颀",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "唐诗三百首",
-      "_color": "青色",
-      "_hex": "#00e09e",
-      "dynasty": "唐"
-    },
-    {
-      "line": "青山隐隐水迢迢，秋尽江南草未凋",
-      "title": "寄扬州韩绰判官",
-      "author": "杜牧",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "唐诗三百首",
-      "_color": "青色",
-      "_hex": "#00e09e",
       "dynasty": "唐"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }

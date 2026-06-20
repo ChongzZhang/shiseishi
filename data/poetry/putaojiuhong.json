@@ -4,16 +4,6 @@
   "hex": "#62102e",
   "entries": [
     {
-      "line": "你那里葡萄酒设销金帐，罗绮筵开白玉堂。",
-      "title": "须贾大夫谇范叔・隔尾",
-      "author": "高文秀",
-      "type": "曲",
-      "source": "元曲/yuanqu.json#1048",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "元"
-    },
-    {
       "line": "主人今醉葡萄酒，篱下秋风菊自疏。",
       "title": "题承诏亭",
       "author": "胡宿",
@@ -22,17 +12,7 @@
       "matchTier": 2,
       "verified": true,
       "dynasty": "唐"
-    },
-    {
-      "line": "七宝杯酌葡萄酒，金花纸写清平词。",
-      "title": "颂古二十七首  其二○",
-      "author": "释昙贲",
-      "type": "诗",
-      "source": "全唐诗/poet.song.99000.json#883",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

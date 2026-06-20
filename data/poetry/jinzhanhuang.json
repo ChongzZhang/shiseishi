@@ -4,46 +4,6 @@
   "hex": "#fcc307",
   "entries": [
     {
-      "line": "唯有未能忘酒在，手倾金盏斗垂莲。",
-      "title": "次韵毛君烧松花六绝  其一",
-      "author": "苏辙",
-      "type": "诗",
-      "source": "全唐诗/poet.song.48000.json#465",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "独有绮罗知此意，故拈金盏十分斟。",
-      "title": "延之置酒当利楼侍人劝酒",
-      "author": "李之仪",
-      "type": "诗",
-      "source": "全唐诗/poet.song.55000.json#182",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "危弦脆筦催金盏，芳草青山照画簷。",
-      "title": "饯别劝饮",
-      "author": "韦骧",
-      "type": "诗",
-      "source": "全唐诗/poet.song.41000.json#555",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
-      "line": "把酒不辞金盏溢，预将离索就消磨。",
-      "title": "别张从道",
-      "author": "韦骧",
-      "type": "诗",
-      "source": "全唐诗/poet.song.42000.json#8",
-      "matchTier": 2,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
       "line": "此乐想公应未暇，且持金盏醉红颜。",
       "title": "答和王宣徽",
       "author": "欧阳修",
@@ -52,18 +12,7 @@
       "matchTier": 2,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "朱户黏鸡，金盘簇燕",
-      "title": "一萼红",
-      "author": "姜夔",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "金盏黄",
-      "_hex": "#fcc307",
-      "dynasty": "宋"
     }
   ],
-  "coverage": "5/5"
+  "coverage": "1/5"
 }

@@ -4,14 +4,13 @@
   "hex": "#48c0a3",
   "entries": [
     {
-      "line": "蜀江水碧蜀山青，圣主朝朝暮暮情",
-      "title": "长恨歌",
-      "author": "白居易",
+      "line": "两岸青山相对出，孤帆一片日边来",
+      "title": "望天门山",
+      "author": "李白",
       "type": "诗",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "_color": "青碧",
-      "_hex": "#48c0a3",
       "dynasty": "唐"
     }
   ],

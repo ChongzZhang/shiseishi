@@ -4,16 +4,6 @@
   "hex": "#43b244",
   "entries": [
     {
-      "line": "一朝罗致来幕下，鲜鲜绿水同红莲。",
-      "title": "麻姑山七古寿主簿母",
-      "author": "卓田",
-      "type": "诗",
-      "source": "全唐诗/poet.song.188000.json#226",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
-    },
-    {
       "line": "烟梢矗矗青围屋，露叶鲜鲜绿满篱。",
       "title": "题查山林氏庵",
       "author": "范成大",
@@ -22,17 +12,7 @@
       "matchTier": 1,
       "verified": true,
       "dynasty": "宋"
-    },
-    {
-      "line": "芦根爱溪水，余润长鲜绿。",
-      "title": "赋园中所有十首  其三",
-      "author": "苏辙",
-      "type": "诗",
-      "source": "全唐诗/poet.song.47000.json#803",
-      "matchTier": 1,
-      "verified": true,
-      "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

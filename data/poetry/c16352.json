@@ -4,38 +4,15 @@
   "hex": "#ef7a82",
   "entries": [
     {
-      "line": "怅望西风抱闷思，蓼红苇白断肠时",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
+      "line": "绿杨烟外晓寒轻，红杏枝头春意闹",
+      "title": "玉楼春·春景",
+      "author": "宋祁",
+      "type": "词",
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "_color": "嫣红",
-      "_hex": "#ef7a82",
-      "dynasty": "清"
-    },
-    {
-      "line": "绿裁歌扇迷芳草，红衬湘裙舞落梅",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "嫣红",
-      "_hex": "#ef7a82",
-      "dynasty": "清"
-    },
-    {
-      "line": "桃花桃叶乱纷纷，花绽新红叶凝碧",
-      "title": "红楼梦",
-      "author": "曹雪芹",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "_color": "嫣红",
-      "_hex": "#ef7a82",
-      "dynasty": "清"
+      "dynasty": "宋"
     }
   ],
-  "coverage": "3/5"
+  "coverage": "1/5"
 }

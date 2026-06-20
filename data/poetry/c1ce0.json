@@ -4,15 +4,14 @@
   "hex": "#8c4356",
   "entries": [
     {
-      "line": "酣酣日脚紫烟浮，妍暖破轻裘。",
-      "title": "眼儿媚",
-      "author": "范成大",
-      "type": "词",
-      "matchTier": 2,
+      "line": "潦水尽而寒潭清，烟光凝而暮山紫",
+      "title": "滕王阁序",
+      "author": "王勃",
+      "type": "文",
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "_color": "绛紫",
-      "_hex": "#8c4356",
-      "dynasty": "宋"
+      "dynasty": "唐"
     }
   ],
   "coverage": "1/5"

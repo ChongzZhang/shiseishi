@@ -11,46 +11,8 @@
       "matchTier": 2,
       "verified": true,
       "source": "唐诗三百首",
-      "_color": "松柏绿",
-      "_hex": "#21a675",
-      "dynasty": "唐"
-    },
-    {
-      "line": "森然魄动下马拜，松柏一径趋灵宫",
-      "title": "谒衡岳庙遂宿岳寺题门楼",
-      "author": "韩愈",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "唐诗三百首",
-      "_color": "松柏绿",
-      "_hex": "#21a675",
-      "dynasty": "唐"
-    },
-    {
-      "line": "松月生夜凉，风泉满清听",
-      "title": "宿业师山房期丁大不至",
-      "author": "孟浩然",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "唐诗三百首",
-      "_color": "松柏绿",
-      "_hex": "#21a675",
-      "dynasty": "唐"
-    },
-    {
-      "line": "松际露微月，清光犹为君",
-      "title": "宿王昌龄隐居",
-      "author": "常建",
-      "type": "诗",
-      "matchTier": 2,
-      "verified": true,
-      "source": "唐诗三百首",
-      "_color": "松柏绿",
-      "_hex": "#21a675",
       "dynasty": "唐"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }

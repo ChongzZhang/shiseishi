@@ -13,40 +13,7 @@
       "verified": true,
       "matchVia": "imagery",
       "dynasty": "宋"
-    },
-    {
-      "line": "千岁海棠死铁色，因君光彩会如新。",
-      "title": "送陈成伯出牧陕府",
-      "author": "刘攽",
-      "type": "诗",
-      "source": "全唐诗/poet.song.35000.json#647",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
-    },
-    {
-      "line": "古柏槎牙不记年，柯如屈铁色苍藓。",
-      "title": "题南翔寺",
-      "author": "葛天民",
-      "type": "诗",
-      "source": "全唐诗/poet.song.174000.json#74",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
-    },
-    {
-      "line": "含精古铁色沈沈，质白玉兮价黄金。",
-      "title": "和关子东铁尺歌",
-      "author": "王之望",
-      "type": "诗",
-      "source": "全唐诗/poet.song.112000.json#877",
-      "matchTier": 4,
-      "verified": true,
-      "matchVia": "imagery",
-      "dynasty": "宋"
     }
   ],
-  "coverage": "4/5"
+  "coverage": "1/5"
 }
