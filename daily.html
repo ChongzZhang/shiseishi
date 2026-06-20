@@ -13,7 +13,7 @@
   <div class="page daily-page">
     <header class="site-header">
       <h1>每日一色挑战</h1>
-      <p class="tagline">循诗寻色，拍照打卡</p>
+      <p class="tagline">循诗寻色，拍照或选图打卡</p>
       <nav class="browse-nav">
         <a href="index.html">← 返回识色赋诗</a>
       </nav>
@@ -37,14 +37,19 @@
       </section>
 
       <section id="daily-upload-section" class="daily-upload-section">
-        <div id="daily-upload-zone" class="daily-upload-zone upload-zone" tabindex="0" role="button" aria-label="拍照或上传图片寻色">
+        <div id="daily-upload-zone" class="daily-upload-zone upload-zone" tabindex="0" role="button" aria-label="选择已有照片寻色">
           <div id="daily-preview-placeholder" class="preview-placeholder">
-            <span class="hint-main">拍照或上传</span>
-            <span class="hint-sub">寻得诗中意象之色 · 图片仅在本地分析</span>
+            <span class="hint-main">选择已有照片</span>
+            <span class="hint-sub">或拖放图片至此 · 图片仅在本地分析</span>
           </div>
           <img id="daily-preview-img" class="preview-img" alt="已上传图片预览" hidden>
         </div>
-        <input id="daily-file-input" type="file" accept="image/*" capture="environment" hidden>
+        <div class="daily-upload-actions">
+          <button type="button" id="daily-pick-btn" class="daily-upload-btn">选择已有照片</button>
+          <button type="button" id="daily-camera-btn" class="daily-upload-btn daily-upload-btn-secondary">拍照</button>
+        </div>
+        <input id="daily-file-input" type="file" accept="image/*" hidden>
+        <input id="daily-camera-input" type="file" accept="image/*" capture="environment" hidden>
         <p id="daily-status" class="panel-status" hidden></p>
         <div id="daily-fail-colors" class="daily-fail-colors" hidden></div>
       </section>

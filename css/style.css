@@ -1317,6 +1317,35 @@ body.ach-sheet-open .ach-sheet-panel {
   margin-top: 0.5rem;
 }
 
+.daily-upload-actions {
+  display: flex;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+}
+
+.daily-upload-btn {
+  flex: 1;
+  padding: 0.65rem 0.85rem;
+  font-family: inherit;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.daily-upload-btn:hover,
+.daily-upload-btn:focus-visible {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(42, 40, 36, 0.28);
+}
+
+.daily-upload-btn-secondary {
+  background: rgba(255, 255, 255, 0.28);
+}
+
 .daily-upload-zone {
   min-height: 280px;
 }

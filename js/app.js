@@ -13,9 +13,6 @@
   const achProgressLabel = document.getElementById('ach-progress-label');
   const achBadge = document.getElementById('ach-badge');
   const achievementsCta = document.getElementById('achievements-cta');
-  const achSheet = document.getElementById('ach-sheet');
-  const achSheetProgress = document.getElementById('ach-sheet-progress');
-  const achSheetRecent = document.getElementById('ach-sheet-recent');
   const unlockOverlay = document.getElementById('unlock-overlay');
   const unlockImg = document.getElementById('unlock-img');
   const unlockTitle = document.getElementById('unlock-title');
@@ -161,21 +158,6 @@
   function updateAchievementsUI(flashBadge = false) {
     const { unlocked, total } = Achievements.getProgress();
     if (achProgressLabel) achProgressLabel.textContent = `${unlocked} / ${total}`;
-    if (achSheetProgress) achSheetProgress.textContent = `已集 ${unlocked} / ${total} 枚`;
-
-    if (achSheetRecent) {
-      const recent = Achievements.getUnlocked().slice(0, 3);
-      if (recent.length === 0) {
-        achSheetRecent.innerHTML = '<p class="ach-sheet-empty">尚无解锁，上传图片识得五色即可集签</p>';
-      } else {
-        achSheetRecent.innerHTML = recent.map((b) => `
-          <div class="ach-sheet-item">
-            <img src="${escapeHtml(Achievements.assetUrl(b.file))}" alt="${escapeHtml(b.name)}" loading="lazy">
-            <span>${escapeHtml(b.name)}</span>
-          </div>
-        `).join('');
-      }
-    }
 
     if (flashBadge && achBadge) {
       achBadge.hidden = false;
@@ -186,19 +168,6 @@
         achBadge.hidden = true;
       }, 2400);
     }
-  }
-
-  function openAchSheet() {
-    updateAchievementsUI();
-    achSheet.hidden = false;
-    achSheet.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('ach-sheet-open');
-  }
-
-  function closeAchSheet() {
-    achSheet.hidden = true;
-    achSheet.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('ach-sheet-open');
   }
 
   function showUnlockOverlay(bookmark) {
@@ -294,17 +263,10 @@
     fileInput.value = '';
   });
 
-  achievementsCta?.addEventListener('click', openAchSheet);
-  achSheet?.querySelectorAll('[data-close-sheet]').forEach((el) => {
-    el.addEventListener('click', closeAchSheet);
-  });
   unlockContinue?.addEventListener('click', hideUnlockOverlay);
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      if (!achSheet.hidden) closeAchSheet();
-      if (!unlockOverlay.hidden) hideUnlockOverlay();
-    }
+    if (e.key === 'Escape' && !unlockOverlay.hidden) hideUnlockOverlay();
   });
 
   renderEmptyPanel();

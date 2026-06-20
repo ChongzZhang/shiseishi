@@ -1,0 +1,18 @@
+{
+  "color": "黑色",
+  "pinyin": "heise",
+  "hex": "#000000",
+  "entries": [
+    {
+      "line": "野径云俱黑，江船火独明",
+      "title": "春夜喜雨",
+      "author": "杜甫",
+      "type": "诗",
+      "matchTier": 1,
+      "verified": true,
+      "dynasty": "唐",
+      "source": "curated:zhongguose"
+    }
+  ],
+  "coverage": "1/5"
+}

@@ -14,6 +14,9 @@
   const uploadSection = document.getElementById('daily-upload-section');
   const uploadZone = document.getElementById('daily-upload-zone');
   const fileInput = document.getElementById('daily-file-input');
+  const cameraInput = document.getElementById('daily-camera-input');
+  const pickBtn = document.getElementById('daily-pick-btn');
+  const cameraBtn = document.getElementById('daily-camera-btn');
   const previewImg = document.getElementById('daily-preview-img');
   const previewPlaceholder = document.getElementById('daily-preview-placeholder');
   const statusEl = document.getElementById('daily-status');
@@ -157,6 +160,14 @@
   }
 
   uploadZone.addEventListener('click', () => fileInput.click());
+  pickBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    fileInput.click();
+  });
+  cameraBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    cameraInput?.click();
+  });
   uploadZone.addEventListener('dragover', (e) => {
     e.preventDefault();
     uploadZone.classList.add('drag-over');
@@ -170,6 +181,10 @@
   fileInput.addEventListener('change', () => {
     handleFile(fileInput.files[0]);
     fileInput.value = '';
+  });
+  cameraInput?.addEventListener('change', () => {
+    handleFile(cameraInput.files[0]);
+    cameraInput.value = '';
   });
   successClose?.addEventListener('click', hideSuccessOverlay);
   document.addEventListener('keydown', (e) => {

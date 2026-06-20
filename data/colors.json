@@ -2191,5 +2191,22 @@
       64
     ],
     "namePinyin": "an"
+  },
+  {
+    "name": "黑色",
+    "pinyin": "heise",
+    "hex": "#000000",
+    "RGB": [
+      0,
+      0,
+      0
+    ],
+    "CMYK": [
+      0,
+      0,
+      0,
+      100
+    ],
+    "namePinyin": "heise"
   }
 ]
