@@ -38,6 +38,17 @@
     </footer>
   </div>
 
+  <div id="ach-preview-overlay" class="ach-preview-overlay" hidden aria-hidden="true">
+    <div class="ach-preview-backdrop" data-close-preview></div>
+    <div class="ach-preview-dialog" role="dialog" aria-modal="true" aria-labelledby="ach-preview-title">
+      <button type="button" class="ach-preview-close" data-close-preview aria-label="关闭预览">×</button>
+      <img id="ach-preview-img" class="ach-preview-img" alt="">
+      <p id="ach-preview-title" class="ach-preview-title"></p>
+      <p id="ach-preview-meta" class="ach-preview-meta"></p>
+      <a id="ach-preview-download" class="ach-download-btn ach-preview-download" href="#" download>下载书签</a>
+    </div>
+  </div>
+
   <script src="js/achievements.js"></script>
   <script src="js/achievements-page.js"></script>
 </body>

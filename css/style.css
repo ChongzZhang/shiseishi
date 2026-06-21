@@ -1146,6 +1146,21 @@ body.ach-sheet-open .ach-sheet-panel {
   overflow: hidden;
 }
 
+.ach-card-preview-btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  cursor: zoom-in;
+  transition: background 0.2s ease;
+}
+
+.ach-card-preview-btn:hover,
+.ach-card-preview-btn:focus-visible {
+  background: rgba(255, 255, 255, 0.55);
+  outline: 2px solid rgba(42, 40, 36, 0.15);
+  outline-offset: 2px;
+}
+
 .ach-card-img {
   max-width: 100%;
   max-height: 100%;
@@ -1221,6 +1236,102 @@ body.ach-sheet-open .ach-sheet-panel {
   font-size: 0.72rem;
   color: var(--ink-faint);
   letter-spacing: 0.04em;
+}
+
+.ach-preview-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.ach-preview-overlay.ach-preview-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ach-preview-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(42, 40, 36, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.ach-preview-dialog {
+  position: relative;
+  z-index: 301;
+  width: min(92vw, 420px);
+  max-height: 90vh;
+  overflow: auto;
+  padding: 1.5rem 1.25rem 1.35rem;
+  text-align: center;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.96) 0%, rgba(237, 232, 220, 0.98) 100%);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 18px 48px rgba(42, 40, 36, 0.22);
+  transform: translateY(16px) scale(0.96);
+  transition: transform 0.32s cubic-bezier(0.22, 1.1, 0.36, 1);
+}
+
+.ach-preview-overlay.ach-preview-visible .ach-preview-dialog {
+  transform: translateY(0) scale(1);
+}
+
+.ach-preview-close {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.65rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-size: 1.45rem;
+  line-height: 1;
+  color: var(--ink-faint);
+  cursor: pointer;
+}
+
+.ach-preview-close:hover,
+.ach-preview-close:focus-visible {
+  color: var(--ink);
+}
+
+.ach-preview-img {
+  max-width: 100%;
+  max-height: min(62vh, 520px);
+  object-fit: contain;
+  filter: drop-shadow(0 10px 24px rgba(42, 40, 36, 0.16));
+}
+
+.ach-preview-title {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.18em;
+  text-indent: 0.18em;
+  color: var(--ink);
+}
+
+.ach-preview-meta {
+  margin-top: 0.45rem;
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+}
+
+.ach-preview-download {
+  display: inline-block;
+  margin-top: 0.85rem;
+}
+
+body.ach-preview-open {
+  overflow: hidden;
 }
 
 .ach-error {
