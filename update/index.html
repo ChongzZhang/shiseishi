@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>色谱寻诗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>色谱寻诗</h1>
+      <p class="tagline">上传一图，观其五色，看古人如何写这颜色</p>
+      <p class="site-note">古诗中的颜色常寓意境与象征，所配之色取意相近，而非精确色值。</p>
+      <p class="site-daily-link"><a href="daily.html" id="header-daily-link">每日一色挑战 · <span id="header-daily-status">加载中…</span></a></p>
+    </header>
+
+    <main class="layout">
+      <section class="panel panel-left" aria-label="图片上传">
+        <div id="upload-zone" class="upload-zone" tabindex="0" role="button" aria-label="点击或拖放上传图片">
+          <div id="preview-placeholder" class="preview-placeholder">
+            <span class="hint-main">拖放图片至此</span>
+            <span class="hint-sub">或点击选择 · 图片仅在本地分析</span>
+          </div>
+          <img id="preview-img" class="preview-img" alt="已上传图片预览" hidden>
+        </div>
+        <input id="file-input" type="file" accept="image/*" hidden>
+        <div class="panel-cta-row">
+          <a href="daily.html" class="browse-cta browse-cta-below-upload daily-cta" aria-label="每日一色挑战">
+            <span class="browse-cta-icon" aria-hidden="true">日</span>
+            <span class="browse-cta-text">
+              <span class="browse-cta-title">每日一色挑战</span>
+              <span class="browse-cta-desc"><span id="daily-status-label">今日待寻色</span> · 循诗拍照打卡</span>
+            </span>
+            <span class="browse-cta-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="achievements.html" id="achievements-cta" class="browse-cta browse-cta-below-upload achievements-cta" aria-label="查看全部成就书签">
+            <span class="browse-cta-icon" aria-hidden="true">签</span>
+            <span class="browse-cta-text">
+              <span class="browse-cta-title">成就书签</span>
+              <span class="browse-cta-desc"><span id="ach-progress-label">0 / 25</span> · 查看全部成就</span>
+            </span>
+            <span id="ach-badge" class="ach-badge" hidden aria-hidden="true"></span>
+            <span class="browse-cta-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="browse.html" class="browse-cta browse-cta-below-upload" aria-label="浏览诗词库">
+            <span class="browse-cta-icon" aria-hidden="true">诗</span>
+            <span class="browse-cta-text">
+              <span class="browse-cta-title">浏览诗词库</span>
+              <span class="browse-cta-desc">中国传统色名与古典诗句</span>
+            </span>
+            <span class="browse-cta-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="panel panel-right" aria-label="中国传统色名">
+        <p id="panel-hint" class="panel-hint">待上传图片后，此处将显示图中前五主色及其中国色名</p>
+        <p id="panel-status" class="panel-status" hidden></p>
+        <div id="color-list" class="color-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>色名参考 <a href="https://zhongguose.com/" target="_blank" rel="noopener">中国色</a> · 诗句来自开源古典文集</p>
+    </footer>
+  </div>
+
+  <div id="unlock-overlay" class="unlock-overlay" hidden aria-hidden="true">
+    <div class="unlock-backdrop"></div>
+    <div class="unlock-dialog" role="dialog" aria-labelledby="unlock-title">
+      <div class="unlock-glow" aria-hidden="true"></div>
+      <img id="unlock-img" class="unlock-img" alt="" hidden>
+      <p id="unlock-title" class="unlock-title"></p>
+      <p id="unlock-sub" class="unlock-sub"></p>
+      <div class="unlock-actions">
+        <button type="button" id="unlock-continue" class="unlock-btn unlock-btn-secondary">继续识色</button>
+        <a href="achievements.html" class="unlock-btn unlock-btn-primary">查看成就</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/poetry-ui.js"></script>
+  <script src="js/palette.js"></script>
+  <script src="js/poetry-bundle.js"></script>
+  <script src="js/extract.js"></script>
+  <script src="js/match.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/daily.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

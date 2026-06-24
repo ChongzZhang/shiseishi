@@ -26,7 +26,7 @@ const Achievements = (() => {
 
   async function loadManifest() {
     if (manifest) return manifest;
-    const res = await fetch(MANIFEST_URL);
+    const res = await fetch(MANIFEST_URL, { cache: 'no-store' });
     if (!res.ok) throw new Error('书签清单加载失败');
     manifest = await res.json();
     manifestByPinyin = new Map(manifest.map((b) => [b.pinyin, b]));

@@ -42,6 +42,12 @@ HEADERS = """/*
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/assets/color-bookmarks/new/manifest.json
+  Cache-Control: no-cache
+
+/assets/color-bookmarks/daily-challenges.json
+  Cache-Control: no-cache
 """
 
 NOT_FOUND_HTML = """<!DOCTYPE html>

@@ -25,7 +25,7 @@ const DailyChallenge = (() => {
 
   async function loadData() {
     if (data) return data;
-    const res = await fetch(DATA_URL);
+    const res = await fetch(DATA_URL, { cache: 'no-store' });
     if (!res.ok) throw new Error('每日挑战数据加载失败');
     data = await res.json();
     colors = data.colors || [];
