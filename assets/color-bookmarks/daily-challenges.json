@@ -49,6 +49,15 @@
       "hintSource": "王勃《滕王阁序》"
     },
     {
+      "pinyin": "c2cc1",
+      "name": "银白",
+      "hex": "#e9e7ef",
+      "file": "c2cc1_银白.png",
+      "imagery": "江水月色，夜晚花林",
+      "hintLine": "江流宛转绕芳甸，月照花林皆似霰",
+      "hintSource": "张若虚《春江花月夜》"
+    },
+    {
       "pinyin": "c3186",
       "name": "水色",
       "hex": "#88ada6",
@@ -92,6 +101,24 @@
       "imagery": "雨中丁香",
       "hintLine": "青鸟不传云外信，丁香空结雨中愁",
       "hintSource": "李璟《摊破浣溪沙·手卷真珠上玉钩》"
+    },
+    {
+      "pinyin": "c6e02",
+      "name": "青葱",
+      "hex": "#0aa344",
+      "file": "c6e02_青葱.png",
+      "imagery": "城中梨花柳色，无柳絮",
+      "hintLine": "梨花淡白柳深青，柳絮飞时花满城",
+      "hintSource": "苏轼《东栏梨花》"
+    },
+    {
+      "pinyin": "c847f",
+      "name": "黯",
+      "hex": "#41555d",
+      "file": "c847f_黯.png",
+      "imagery": "远眺扬州，群山白云，晴空无水流",
+      "hintLine": "黯黯青山天际头，白云归处是扬州",
+      "hintSource": "薛逢《九日曲池游眺》"
     },
     {
       "pinyin": "c92a5",
@@ -139,6 +166,15 @@
       "hintSource": "刘长卿《逢雪宿芙蓉山主人》"
     },
     {
+      "pinyin": "chenhui",
+      "name": "尘灰",
+      "hex": "#b6a476",
+      "file": "chenhui_尘灰.png",
+      "imagery": "闺房伤春女子凭窗，桃花一两枝",
+      "hintLine": "春心莫共花争发，一寸相思一寸灰",
+      "hintSource": "李商隐《无题·飒飒东风细雨来》"
+    },
+    {
       "pinyin": "danjianghong",
       "name": "淡绛红",
       "hex": "#ec7696",
@@ -182,6 +218,15 @@
       "imagery": "秋荷残菊对照",
       "hintLine": "紫艳半开篱菊静，红衣落尽渚莲愁",
       "hintSource": "赵嘏《早发》"
+    },
+    {
+      "pinyin": "yuebai",
+      "name": "月白",
+      "hex": "#eef7f2",
+      "file": "yuebai_月白.png",
+      "imagery": "秦淮河夜，酒幌",
+      "hintLine": "烟笼寒水月笼沙，夜泊秦淮近酒家",
+      "hintSource": "杜牧《泊秦淮》"
     }
   ]
 }

@@ -4,11 +4,12 @@
   "hex": "#eef7f2",
   "entries": [
     {
-      "line": "东船西舫悄无言，唯见江心秋月白",
-      "title": "琵琶行并序",
-      "author": "白居易",
+      "line": "烟笼寒水月笼沙，夜泊秦淮近酒家",
+      "title": "泊秦淮",
+      "author": "杜牧",
       "type": "诗",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
       "dynasty": "唐"
     }

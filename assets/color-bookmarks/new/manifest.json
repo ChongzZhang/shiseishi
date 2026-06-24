@@ -30,6 +30,12 @@
     "file": "c1ce0_绛紫.png"
   },
   {
+    "pinyin": "c2cc1",
+    "name": "银白",
+    "hex": "#e9e7ef",
+    "file": "c2cc1_银白.png"
+  },
+  {
     "pinyin": "c3186",
     "name": "水色",
     "hex": "#88ada6",
@@ -58,6 +64,18 @@
     "name": "丁香色",
     "hex": "#cca4e3",
     "file": "c6913_丁香色.png"
+  },
+  {
+    "pinyin": "c6e02",
+    "name": "青葱",
+    "hex": "#0aa344",
+    "file": "c6e02_青葱.png"
+  },
+  {
+    "pinyin": "c847f",
+    "name": "黯",
+    "hex": "#41555d",
+    "file": "c847f_黯.png"
   },
   {
     "pinyin": "c92a5",
@@ -90,6 +108,12 @@
     "file": "cfce2_苍色.png"
   },
   {
+    "pinyin": "chenhui",
+    "name": "尘灰",
+    "hex": "#b6a476",
+    "file": "chenhui_尘灰.png"
+  },
+  {
     "pinyin": "danjianghong",
     "name": "淡绛红",
     "hex": "#ec7696",
@@ -118,5 +142,11 @@
     "name": "魏紫",
     "hex": "#7e1671",
     "file": "weizi_魏紫.png"
+  },
+  {
+    "pinyin": "yuebai",
+    "name": "月白",
+    "hex": "#eef7f2",
+    "file": "yuebai_月白.png"
   }
 ]

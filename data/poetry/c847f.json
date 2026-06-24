@@ -4,14 +4,14 @@
   "hex": "#41555d",
   "entries": [
     {
-      "line": "冻云黯淡天气，扁舟一叶",
-      "title": "夜半乐",
-      "author": "柳永",
+      "line": "黯黯青山天际头，白云归处是扬州",
+      "title": "九日曲池游眺",
+      "author": "薛逢",
       "type": "诗",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
-      "source": "宋词三百首",
-      "dynasty": "宋"
+      "dynasty": "唐"
     }
   ],
   "coverage": "1/5"

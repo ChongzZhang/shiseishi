@@ -4,11 +4,12 @@
   "hex": "#e9e7ef",
   "entries": [
     {
-      "line": "迟迟钟鼓初长夜，耿耿星河欲曙天。",
-      "title": "长恨歌",
-      "author": "白居易",
+      "line": "江流宛转绕芳甸，月照花林皆似霰",
+      "title": "春江花月夜",
+      "author": "张若虚",
       "type": "诗",
-      "matchTier": 2,
+      "source": "curated:bookmark-imagery",
+      "matchTier": 1,
       "verified": true,
       "dynasty": "唐"
     }

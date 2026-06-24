@@ -4,14 +4,14 @@
   "hex": "#b6a476",
   "entries": [
     {
-      "line": "何事冤仇结青女，一朝收拾付尘灰。",
-      "title": "藕花",
-      "author": "华岳",
-      "type": "诗",
-      "source": "全唐诗/poet.song.187000.json#916",
+      "line": "春心莫共花争发，一寸相思一寸灰",
+      "title": "无题·飒飒东风细雨来",
+      "author": "李商隐",
+      "type": "词",
+      "source": "curated:bookmark-imagery",
       "matchTier": 1,
       "verified": true,
-      "dynasty": "宋"
+      "dynasty": "唐"
     }
   ],
   "coverage": "1/5"
