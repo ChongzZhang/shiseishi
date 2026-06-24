@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""每种颜色只保留一条最贴切诗句；20 种书签色固定为 daily-challenges 意象句。"""
+"""每种颜色只保留一条最贴切诗句；书签色固定为 daily-challenges 意象句。"""
 
 from __future__ import annotations
 

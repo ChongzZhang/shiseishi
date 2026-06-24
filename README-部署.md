@@ -16,7 +16,7 @@
 | `browse.html` | 诗词库 / RGB 索引浏览 |
 | `css/` | 样式 |
 | `js/` | 前端逻辑与内嵌诗词数据（`poetry-bundle.js` 等） |
-| `assets/color-bookmarks/new/` | 成就书签图片（20 种） |
+| `assets/color-bookmarks/new/` | 成就书签图片（25 种） |
 | `assets/color-bookmarks/daily-challenges.json` | 每日挑战意象诗句数据 |
 | `data/poetry-preview.txt` | 诗句预览文本 |
 | `404.html` | 404 页 |
