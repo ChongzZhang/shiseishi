@@ -1,0 +1,1062 @@
+{
+  "version": 1,
+  "format": "取○○之○○。",
+  "count": 130,
+  "classical_count": 26,
+  "colors": [
+    {
+      "name": "丁香棕",
+      "pinyin": "dingxiangzong",
+      "hex": "#71361d",
+      "tier": "丙",
+      "gloss": "取丁香花之棕紫。",
+      "source": "manual"
+    },
+    {
+      "name": "丁香色",
+      "pinyin": "c6913",
+      "hex": "#cca4e3",
+      "tier": "丙",
+      "gloss": "取丁香花之淡紫。",
+      "source": "manual"
+    },
+    {
+      "name": "乳白",
+      "pinyin": "rubai",
+      "hex": "#f9f4dc",
+      "tier": "丙",
+      "gloss": "取乳色之白。",
+      "source": "manual"
+    },
+    {
+      "name": "佛手黄",
+      "pinyin": "foshouhuang",
+      "hex": "#fed71a",
+      "tier": "丙",
+      "gloss": "取佛手柑之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "凋叶棕",
+      "pinyin": "diaoyezong",
+      "hex": "#e7a23f",
+      "tier": "丙",
+      "gloss": "取凋叶之棕黄。",
+      "source": "manual"
+    },
+    {
+      "name": "北瓜黄",
+      "pinyin": "beiguahuang",
+      "hex": "#fc8c23",
+      "tier": "丙",
+      "gloss": "取北瓜之橙黄。",
+      "source": "manual"
+    },
+    {
+      "name": "墨灰",
+      "pinyin": "c12e18",
+      "hex": "#758a99",
+      "tier": "丙",
+      "gloss": "取墨染之灰。",
+      "source": "manual"
+    },
+    {
+      "name": "夹竹桃红",
+      "pinyin": "jiazhutaohong",
+      "hex": "#eb507e",
+      "tier": "丙",
+      "gloss": "取夹竹桃花之红。",
+      "source": "manual"
+    },
+    {
+      "name": "姚黄",
+      "pinyin": "yaohuang",
+      "hex": "#d0deaa",
+      "tier": "丙",
+      "gloss": "取姚黄牡丹之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "嫣红",
+      "pinyin": "c16352",
+      "hex": "#ef7a82",
+      "tier": "丙",
+      "gloss": "取娇媚之红。",
+      "source": "manual"
+    },
+    {
+      "name": "嫩绿",
+      "pinyin": "cb2c2",
+      "hex": "#bddd22",
+      "tier": "丙",
+      "gloss": "取嫩叶之初绿。",
+      "source": "manual"
+    },
+    {
+      "name": "尘灰",
+      "pinyin": "chenhui",
+      "hex": "#b6a476",
+      "tier": "丙",
+      "gloss": "取尘土之灰黄。",
+      "source": "manual"
+    },
+    {
+      "name": "山鸡褐",
+      "pinyin": "shanjihe",
+      "hex": "#986524",
+      "tier": "丙",
+      "gloss": "取山鸡羽之褐。",
+      "source": "manual"
+    },
+    {
+      "name": "岩石棕",
+      "pinyin": "yanshizong",
+      "hex": "#964d22",
+      "tier": "丙",
+      "gloss": "取岩石之棕。",
+      "source": "manual"
+    },
+    {
+      "name": "彤",
+      "pinyin": "cbc79",
+      "hex": "#f35336",
+      "tier": "甲",
+      "gloss": "取丹饰之赤色。",
+      "source": "manual"
+    },
+    {
+      "name": "新禾绿",
+      "pinyin": "xinhelv",
+      "hex": "#d2b116",
+      "tier": "丙",
+      "gloss": "取新禾之黄绿。",
+      "source": "manual"
+    },
+    {
+      "name": "明绿",
+      "pinyin": "minglv",
+      "hex": "#9eccab",
+      "tier": "丙",
+      "gloss": "取晴波之浅绿。",
+      "source": "manual"
+    },
+    {
+      "name": "暗海水绿",
+      "pinyin": "anhaishuilv",
+      "hex": "#584717",
+      "tier": "丙",
+      "gloss": "取暗海泥之绿褐。",
+      "source": "manual"
+    },
+    {
+      "name": "月灰",
+      "pinyin": "yuehui",
+      "hex": "#b7ae8f",
+      "tier": "丙",
+      "gloss": "取月影之灰。",
+      "source": "manual"
+    },
+    {
+      "name": "月白",
+      "pinyin": "yuebai",
+      "hex": "#eef7f2",
+      "tier": "丙",
+      "gloss": "取月华之白。",
+      "source": "manual"
+    },
+    {
+      "name": "朱红",
+      "pinyin": "c4b6c",
+      "hex": "#ff4c00",
+      "tier": "甲",
+      "gloss": "取朱砂之正红。",
+      "source": "manual"
+    },
+    {
+      "name": "杏红",
+      "pinyin": "cad74",
+      "hex": "#ff8c31",
+      "tier": "丙",
+      "gloss": "取杏子之偏红。",
+      "source": "manual"
+    },
+    {
+      "name": "松柏绿",
+      "pinyin": "c176f1",
+      "hex": "#21a675",
+      "tier": "丙",
+      "gloss": "取松柏叶之深绿。",
+      "source": "manual"
+    },
+    {
+      "name": "枇杷黄",
+      "pinyin": "pipahuang",
+      "hex": "#fca106",
+      "tier": "丙",
+      "gloss": "取枇杷之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "枣红",
+      "pinyin": "zaohong",
+      "hex": "#7c1823",
+      "tier": "丙",
+      "gloss": "取枣实之深红。",
+      "source": "manual"
+    },
+    {
+      "name": "枫叶红",
+      "pinyin": "fengyehong",
+      "hex": "#c21f30",
+      "tier": "丙",
+      "gloss": "取枫叶之红。",
+      "source": "manual"
+    },
+    {
+      "name": "柳绿",
+      "pinyin": "c36d8",
+      "hex": "#afdd22",
+      "tier": "丙",
+      "gloss": "取柳叶之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "栗紫",
+      "pinyin": "lizi",
+      "hex": "#5a191b",
+      "tier": "丙",
+      "gloss": "取栗壳之紫褐。",
+      "source": "manual"
+    },
+    {
+      "name": "桂红",
+      "pinyin": "guihong",
+      "hex": "#f25a47",
+      "tier": "丙",
+      "gloss": "取丹桂之红。",
+      "source": "manual"
+    },
+    {
+      "name": "桃红",
+      "pinyin": "taohong",
+      "hex": "#f0ada0",
+      "tier": "丙",
+      "gloss": "取桃花之红。",
+      "source": "manual"
+    },
+    {
+      "name": "榴萼黄",
+      "pinyin": "liuehuang",
+      "hex": "#f9a633",
+      "tier": "丙",
+      "gloss": "取榴萼之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "槟榔综",
+      "pinyin": "binglangzong",
+      "hex": "#c1651a",
+      "tier": "丙",
+      "gloss": "取槟榔果之褐。",
+      "source": "manual"
+    },
+    {
+      "name": "殷红",
+      "pinyin": "c92a5",
+      "hex": "#be002f",
+      "tier": "乙",
+      "gloss": "取殷染之深红。",
+      "source": "manual"
+    },
+    {
+      "name": "毛绿",
+      "pinyin": "maolv",
+      "hex": "#66c18c",
+      "tier": "丙",
+      "gloss": "取鸭翎之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "水绿",
+      "pinyin": "shuilv",
+      "hex": "#8cc269",
+      "tier": "丙",
+      "gloss": "取春水之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "水色",
+      "pinyin": "c3186",
+      "hex": "#88ada6",
+      "tier": "丙",
+      "gloss": "取秋水之浅青。",
+      "source": "manual"
+    },
+    {
+      "name": "水蓝",
+      "pinyin": "c4190",
+      "hex": "#d2f0f4",
+      "tier": "丙",
+      "gloss": "取江水之浅蓝。",
+      "source": "manual"
+    },
+    {
+      "name": "油菜花黄",
+      "pinyin": "youcaihuahuang",
+      "hex": "#fbda41",
+      "tier": "丙",
+      "gloss": "取油菜花之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "浅驼色",
+      "pinyin": "qiantuose",
+      "hex": "#e2c17c",
+      "tier": "丙",
+      "gloss": "取浅驼毛之褐。",
+      "source": "manual"
+    },
+    {
+      "name": "海棠红",
+      "pinyin": "c15fce",
+      "hex": "#db5a6b",
+      "tier": "丙",
+      "gloss": "取海棠花之红。",
+      "source": "manual"
+    },
+    {
+      "name": "海青",
+      "pinyin": "haiqing",
+      "hex": "#22a2c3",
+      "tier": "丙",
+      "gloss": "取海青羽之青。",
+      "source": "manual"
+    },
+    {
+      "name": "润红",
+      "pinyin": "runhong",
+      "hex": "#f7cdbc",
+      "tier": "丙",
+      "gloss": "取珠晕之浅红。",
+      "source": "manual"
+    },
+    {
+      "name": "淡灰绿",
+      "pinyin": "danhuilv",
+      "hex": "#ad9e5f",
+      "tier": "丙",
+      "gloss": "取苔痕之灰绿。",
+      "source": "manual"
+    },
+    {
+      "name": "淡绛红",
+      "pinyin": "danjianghong",
+      "hex": "#ec7696",
+      "tier": "丙",
+      "gloss": "取淡绛之红。",
+      "source": "manual"
+    },
+    {
+      "name": "淡绿",
+      "pinyin": "danlv",
+      "hex": "#61ac85",
+      "tier": "丙",
+      "gloss": null,
+      "gloss_skip": true,
+      "skip_reason": "释义与色名同义复读",
+      "source": "skip"
+    },
+    {
+      "name": "淡罂粟红",
+      "pinyin": "danyingsuhong",
+      "hex": "#eea08c",
+      "tier": "丙",
+      "gloss": "取淡罂粟之红。",
+      "source": "manual"
+    },
+    {
+      "name": "淡豆沙",
+      "pinyin": "dandousha",
+      "hex": "#873d24",
+      "tier": "丙",
+      "gloss": "取淡豆沙之红。",
+      "source": "manual"
+    },
+    {
+      "name": "淡银灰",
+      "pinyin": "danyinhui",
+      "hex": "#c1b2a3",
+      "tier": "丙",
+      "gloss": "取淡银之灰。",
+      "source": "manual"
+    },
+    {
+      "name": "湖蓝",
+      "pinyin": "c3abb",
+      "hex": "#30dff3",
+      "tier": "丙",
+      "gloss": "取湖水之蓝。",
+      "source": "manual"
+    },
+    {
+      "name": "潭水绿",
+      "pinyin": "tanshuilv",
+      "hex": "#645822",
+      "tier": "丙",
+      "gloss": "取深潭藻色之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "火红",
+      "pinyin": "c2ff3",
+      "hex": "#ff2d51",
+      "tier": "乙",
+      "gloss": "取火焰之红。",
+      "source": "manual"
+    },
+    {
+      "name": "燕羽灰",
+      "pinyin": "yanyuhui",
+      "hex": "#685e48",
+      "tier": "丙",
+      "gloss": "取燕羽之灰。",
+      "source": "manual"
+    },
+    {
+      "name": "玄色",
+      "pinyin": "c8cbf",
+      "hex": "#622a1d",
+      "tier": "甲",
+      "gloss": "取天玄之赤黑。",
+      "source": "manual"
+    },
+    {
+      "name": "玉红",
+      "pinyin": "yuhong",
+      "hex": "#c04851",
+      "tier": "丙",
+      "gloss": "取旧玉沁之红。",
+      "source": "manual"
+    },
+    {
+      "name": "玫瑰灰",
+      "pinyin": "meiguihui",
+      "hex": "#4b2e2b",
+      "tier": "丙",
+      "gloss": "取枯玫瑰之灰。",
+      "source": "manual"
+    },
+    {
+      "name": "玫瑰紫",
+      "pinyin": "meiguizi",
+      "hex": "#ba2f7b",
+      "tier": "丙",
+      "gloss": "取玫瑰之紫。",
+      "source": "manual"
+    },
+    {
+      "name": "玫瑰红",
+      "pinyin": "meiguihong",
+      "hex": "#d2357d",
+      "tier": "丙",
+      "gloss": "取玫瑰之红。",
+      "source": "manual"
+    },
+    {
+      "name": "玳瑁黄",
+      "pinyin": "daimaohuang",
+      "hex": "#daa45a",
+      "tier": "丙",
+      "gloss": "取玳瑁之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "甘草黄",
+      "pinyin": "gancaohuang",
+      "hex": "#f3bf4c",
+      "tier": "丙",
+      "gloss": "取甘草之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "石板灰",
+      "pinyin": "shibanhui",
+      "hex": "#624941",
+      "tier": "丙",
+      "gloss": "取石板之灰。",
+      "source": "manual"
+    },
+    {
+      "name": "石榴红",
+      "pinyin": "c52e9",
+      "hex": "#f20c00",
+      "tier": "乙",
+      "gloss": "取石榴花之浓红。",
+      "source": "manual"
+    },
+    {
+      "name": "碧绿",
+      "pinyin": "c7163",
+      "hex": "#2add9c",
+      "tier": "丙",
+      "gloss": "取碧玉之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "碧色",
+      "pinyin": "c21c3",
+      "hex": "#1bd1a5",
+      "tier": "甲",
+      "gloss": "取碧玉之色。",
+      "source": "manual"
+    },
+    {
+      "name": "碧蓝",
+      "pinyin": "c1bf6",
+      "hex": "#3eede7",
+      "tier": "丙",
+      "gloss": "取碧空之蓝。",
+      "source": "manual"
+    },
+    {
+      "name": "秋海棠红",
+      "pinyin": "qiuhaitanghong",
+      "hex": "#ec2b24",
+      "tier": "丙",
+      "gloss": "取秋海棠之红。",
+      "source": "manual"
+    },
+    {
+      "name": "秋色",
+      "pinyin": "c5d03",
+      "hex": "#896c39",
+      "tier": "丙",
+      "gloss": "取秋林之枯黄。",
+      "source": "manual"
+    },
+    {
+      "name": "秋香色",
+      "pinyin": "c89fd",
+      "hex": "#d9b611",
+      "tier": "丙",
+      "gloss": "取秋香之浅黄绿。",
+      "source": "manual"
+    },
+    {
+      "name": "竹青",
+      "pinyin": "c7e3a",
+      "hex": "#789262",
+      "tier": "乙",
+      "gloss": "取竹色之青。",
+      "source": "manual"
+    },
+    {
+      "name": "粉红",
+      "pinyin": "fenhong",
+      "hex": "#f2b9b2",
+      "tier": "乙",
+      "gloss": "取帛赤白之浅红。",
+      "source": "manual"
+    },
+    {
+      "name": "粉绿",
+      "pinyin": "fenlv",
+      "hex": "#83cbac",
+      "tier": "丙",
+      "gloss": null,
+      "gloss_skip": true,
+      "skip_reason": "释义与色名同义复读",
+      "source": "skip"
+    },
+    {
+      "name": "紫色",
+      "pinyin": "ccb3c",
+      "hex": "#8d4bbb",
+      "tier": "甲",
+      "gloss": "取赤蓝相间之紫。",
+      "source": "manual"
+    },
+    {
+      "name": "绛紫",
+      "pinyin": "c1ce0",
+      "hex": "#8c4356",
+      "tier": "乙",
+      "gloss": "取紫中带红之色。",
+      "source": "manual"
+    },
+    {
+      "name": "绯红",
+      "pinyin": "cfc9e",
+      "hex": "#c83c23",
+      "tier": "乙",
+      "gloss": "取绯帛之深红。",
+      "source": "manual"
+    },
+    {
+      "name": "缟",
+      "pinyin": "c128ec",
+      "hex": "#f2ecde",
+      "tier": "甲",
+      "gloss": "取素缯之白。",
+      "source": "manual"
+    },
+    {
+      "name": "翠绿",
+      "pinyin": "cuilv",
+      "hex": "#20a162",
+      "tier": "丙",
+      "gloss": "取翠羽之深绿。",
+      "source": "manual"
+    },
+    {
+      "name": "翡翠色",
+      "pinyin": "c889b",
+      "hex": "#3de1ad",
+      "tier": "丙",
+      "gloss": "取翡翠羽之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "肉色",
+      "pinyin": "rouse",
+      "hex": "#f7c173",
+      "tier": "丙",
+      "gloss": "取肌肤之浅黄。",
+      "source": "manual"
+    },
+    {
+      "name": "胭脂",
+      "pinyin": "c9a58",
+      "hex": "#9d2933",
+      "tier": "乙",
+      "gloss": "取胭脂之深红。",
+      "source": "manual"
+    },
+    {
+      "name": "艳红",
+      "pinyin": "yanhong",
+      "hex": "#ed5a65",
+      "tier": "丙",
+      "gloss": null,
+      "gloss_skip": true,
+      "skip_reason": "释义与色名同义复读",
+      "source": "skip"
+    },
+    {
+      "name": "艾绿",
+      "pinyin": "ailv",
+      "hex": "#cad3c3",
+      "tier": "乙",
+      "gloss": "取艾草之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "芦灰",
+      "pinyin": "luhui",
+      "hex": "#856d72",
+      "tier": "丙",
+      "gloss": "取芦花之灰。",
+      "source": "manual"
+    },
+    {
+      "name": "花白",
+      "pinyin": "c4438",
+      "hex": "#c2ccd0",
+      "tier": "丙",
+      "gloss": "取花发之斑白。",
+      "source": "manual"
+    },
+    {
+      "name": "芽绿",
+      "pinyin": "yalv",
+      "hex": "#96c24e",
+      "tier": "丙",
+      "gloss": "取新芽之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "苍白",
+      "pinyin": "c10c6d",
+      "hex": "#d1d9e0",
+      "tier": "丙",
+      "gloss": "取病容之灰白。",
+      "source": "manual"
+    },
+    {
+      "name": "苍绿",
+      "pinyin": "canglv",
+      "hex": "#223e36",
+      "tier": "丙",
+      "gloss": "取苍色之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "苍翠",
+      "pinyin": "c141ba",
+      "hex": "#519a73",
+      "tier": "乙",
+      "gloss": "取青松之苍翠。",
+      "source": "manual"
+    },
+    {
+      "name": "苍色",
+      "pinyin": "cfce2",
+      "hex": "#75878a",
+      "tier": "甲",
+      "gloss": "取苍色之灰蓝。",
+      "source": "manual"
+    },
+    {
+      "name": "苍黄",
+      "pinyin": "canghuang",
+      "hex": "#806332",
+      "tier": "丙",
+      "gloss": "取日暮之苍黄。",
+      "source": "manual"
+    },
+    {
+      "name": "苔绿",
+      "pinyin": "tailv",
+      "hex": "#887322",
+      "tier": "丙",
+      "gloss": "取苔色之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "茉莉黄",
+      "pinyin": "molihuang",
+      "hex": "#f8df72",
+      "tier": "丙",
+      "gloss": "取茉莉花之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "茶花红",
+      "pinyin": "chahuahong",
+      "hex": "#ee3f4d",
+      "tier": "丙",
+      "gloss": "取茶花之红。",
+      "source": "manual"
+    },
+    {
+      "name": "草灰绿",
+      "pinyin": "caohuilv",
+      "hex": "#8e804b",
+      "tier": "丙",
+      "gloss": "取草灰之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "菊蕾白",
+      "pinyin": "juleibai",
+      "hex": "#e9ddb6",
+      "tier": "丙",
+      "gloss": "取菊蕾之白。",
+      "source": "manual"
+    },
+    {
+      "name": "葡萄酒红",
+      "pinyin": "putaojiuhong",
+      "hex": "#62102e",
+      "tier": "丙",
+      "gloss": "取葡萄酒之红。",
+      "source": "manual"
+    },
+    {
+      "name": "蒿黄",
+      "pinyin": "haohuang",
+      "hex": "#dfc243",
+      "tier": "丙",
+      "gloss": "取蒿草之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "蓝绿",
+      "pinyin": "lanlv",
+      "hex": "#12a182",
+      "tier": "丙",
+      "gloss": "取蓝绿相间之色。",
+      "source": "manual"
+    },
+    {
+      "name": "蔚蓝",
+      "pinyin": "weilan",
+      "hex": "#29b7cb",
+      "tier": "丙",
+      "gloss": "取晴空之蓝。",
+      "source": "manual"
+    },
+    {
+      "name": "藕荷色",
+      "pinyin": "cb01a",
+      "hex": "#e4c6d0",
+      "tier": "丙",
+      "gloss": "取藕荷之浅紫。",
+      "source": "manual"
+    },
+    {
+      "name": "虾壳青",
+      "pinyin": "xiakeqing",
+      "hex": "#869d9d",
+      "tier": "丙",
+      "gloss": "取虾壳之青。",
+      "source": "manual"
+    },
+    {
+      "name": "蜻蜓红",
+      "pinyin": "qingtinghong",
+      "hex": "#f1441d",
+      "tier": "丙",
+      "gloss": "取蜻蜓翅之红。",
+      "source": "manual"
+    },
+    {
+      "name": "蟹壳红",
+      "pinyin": "xiekehong",
+      "hex": "#f27635",
+      "tier": "丙",
+      "gloss": "取蟹壳之红。",
+      "source": "manual"
+    },
+    {
+      "name": "醉瓜肉",
+      "pinyin": "zuiguarou",
+      "hex": "#db8540",
+      "tier": "丙",
+      "gloss": null,
+      "gloss_skip": true,
+      "skip_reason": "释义与色名同义复读",
+      "source": "skip"
+    },
+    {
+      "name": "金盏黄",
+      "pinyin": "jinzhanhuang",
+      "hex": "#fcc307",
+      "tier": "丙",
+      "gloss": "取金盏花之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "金色",
+      "pinyin": "c10607",
+      "hex": "#eacd76",
+      "tier": "丙",
+      "gloss": "取黄金之深黄。",
+      "source": "manual"
+    },
+    {
+      "name": "金莲花橙",
+      "pinyin": "jinlianhuacheng",
+      "hex": "#f86b1d",
+      "tier": "丙",
+      "gloss": "取金莲花之橙。",
+      "source": "manual"
+    },
+    {
+      "name": "金驼",
+      "pinyin": "jintuo",
+      "hex": "#e46828",
+      "tier": "丙",
+      "gloss": "取驼毛之金黄。",
+      "source": "manual"
+    },
+    {
+      "name": "铁棕",
+      "pinyin": "tiezong",
+      "hex": "#d85916",
+      "tier": "丙",
+      "gloss": "取锻铁之棕。",
+      "source": "manual"
+    },
+    {
+      "name": "铜绿",
+      "pinyin": "tonglv",
+      "hex": "#2bae85",
+      "tier": "丙",
+      "gloss": "取铜锈之绿。",
+      "source": "manual"
+    },
+    {
+      "name": "银朱",
+      "pinyin": "yinzhu",
+      "hex": "#f43e06",
+      "tier": "乙",
+      "gloss": "取银朱颜料之红。",
+      "source": "manual"
+    },
+    {
+      "name": "银灰",
+      "pinyin": "yinhui",
+      "hex": "#918072",
+      "tier": "丙",
+      "gloss": null,
+      "gloss_skip": true,
+      "skip_reason": "释义与色名同义复读",
+      "source": "skip"
+    },
+    {
+      "name": "银白",
+      "pinyin": "c2cc1",
+      "hex": "#e9e7ef",
+      "tier": "丙",
+      "gloss": "取银光之白。",
+      "source": "manual"
+    },
+    {
+      "name": "雪白",
+      "pinyin": "c10501",
+      "hex": "#f2fdff",
+      "tier": "丙",
+      "gloss": "取积雪之白。",
+      "source": "manual"
+    },
+    {
+      "name": "霜色",
+      "pinyin": "c2f2a",
+      "hex": "#e9f1f6",
+      "tier": "丙",
+      "gloss": "取秋霜之白。",
+      "source": "manual"
+    },
+    {
+      "name": "青白",
+      "pinyin": "c21b2",
+      "hex": "#c0ebd7",
+      "tier": "丙",
+      "gloss": "取青白相间之色。",
+      "source": "manual"
+    },
+    {
+      "name": "青碧",
+      "pinyin": "caeec",
+      "hex": "#48c0a3",
+      "tier": "乙",
+      "gloss": "取碧玉青天之碧。",
+      "source": "manual"
+    },
+    {
+      "name": "青翠",
+      "pinyin": "cfbab",
+      "hex": "#00e079",
+      "tier": "丙",
+      "gloss": "取春筠之青翠。",
+      "source": "manual"
+    },
+    {
+      "name": "青色",
+      "pinyin": "c1267",
+      "hex": "#00e09e",
+      "tier": "甲",
+      "gloss": "取东方青之色。",
+      "source": "manual"
+    },
+    {
+      "name": "青葱",
+      "pinyin": "c6e02",
+      "hex": "#0aa344",
+      "tier": "乙",
+      "gloss": "取葱叶之深绿。",
+      "source": "manual"
+    },
+    {
+      "name": "靛蓝",
+      "pinyin": "cdae7",
+      "hex": "#065279",
+      "tier": "乙",
+      "gloss": "取靛蓝染之蓝。",
+      "source": "manual"
+    },
+    {
+      "name": "风帆黄",
+      "pinyin": "fengfanhuang",
+      "hex": "#dc9123",
+      "tier": "丙",
+      "gloss": "取落日帆影之黄。",
+      "source": "manual"
+    },
+    {
+      "name": "香叶红",
+      "pinyin": "xiangyehong",
+      "hex": "#f07c82",
+      "tier": "丙",
+      "gloss": "取香叶花之浅红。",
+      "source": "manual"
+    },
+    {
+      "name": "魏紫",
+      "pinyin": "weizi",
+      "hex": "#7e1671",
+      "tier": "丙",
+      "gloss": "取魏紫牡丹之紫。",
+      "source": "manual"
+    },
+    {
+      "name": "鲜绿",
+      "pinyin": "xianlv",
+      "hex": "#43b244",
+      "tier": "丙",
+      "gloss": null,
+      "gloss_skip": true,
+      "skip_reason": "释义与色名同义复读",
+      "source": "skip"
+    },
+    {
+      "name": "鹅黄",
+      "pinyin": "c1724b",
+      "hex": "#fff143",
+      "tier": "乙",
+      "gloss": "取鹅雏嘴之浅黄。",
+      "source": "manual"
+    },
+    {
+      "name": "鹤灰",
+      "pinyin": "hehui",
+      "hex": "#4a4035",
+      "tier": "丙",
+      "gloss": "取鹤羽之灰。",
+      "source": "manual"
+    },
+    {
+      "name": "鹤顶红",
+      "pinyin": "hedinghong",
+      "hex": "#d42517",
+      "tier": "丙",
+      "gloss": "取鹤顶之红。",
+      "source": "manual"
+    },
+    {
+      "name": "黛",
+      "pinyin": "c5ea1",
+      "hex": "#4a4266",
+      "tier": "甲",
+      "gloss": "取画眉黛之青黑。",
+      "source": "manual"
+    },
+    {
+      "name": "黛蓝",
+      "pinyin": "c43f3",
+      "hex": "#425066",
+      "tier": "丙",
+      "gloss": "取黛色之深蓝。",
+      "source": "manual"
+    },
+    {
+      "name": "黯",
+      "pinyin": "c847f",
+      "hex": "#41555d",
+      "tier": "甲",
+      "gloss": null,
+      "gloss_skip": true,
+      "skip_reason": "单色字义即色名",
+      "source": "skip"
+    },
+    {
+      "name": "黑色",
+      "pinyin": "heise",
+      "hex": "#000000",
+      "tier": "甲",
+      "gloss": "取熏火之纯黑。",
+      "source": "manual"
+    }
+  ]
+}

@@ -18,6 +18,8 @@ COPY_FILES = [
     "daily.html",
     "css/style.css",
     "js/poetry-ui.js",
+    "js/glosses-data.js",
+    "js/glosses.js",
     "js/palette.js",
     "js/poetry-bundle.js",
     "js/extract.js",
@@ -124,9 +126,16 @@ def copy_new_bookmarks() -> int:
     return count
 
 
+def regen_glosses_data() -> None:
+    script = ROOT / "scripts" / "gen_glosses_data.py"
+    if script.is_file():
+        subprocess.run([sys.executable, str(script)], check=True, cwd=ROOT)
+
+
 def main():
     regen_bookmark_manifest()
     regen_daily_challenges()
+    regen_glosses_data()
 
     if DIST.exists():
         shutil.rmtree(DIST)

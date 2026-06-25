@@ -15,7 +15,7 @@ def regen_frontend(verbose=True):
         if verbose:
             print("Running fix_poetry_metadata.py...")
         subprocess.run([sys.executable, str(fix)], cwd=str(SCRIPTS), check=True)
-    for name in ("fix_name_pinyin.py", "gen_browse_data.py", "gen_rgb_index.py", "gen_palette.py"):
+    for name in ("fix_name_pinyin.py", "gen_browse_data.py", "gen_rgb_index.py", "gen_palette.py", "gen_glosses_data.py"):
         if verbose:
             print(f"Running {name}...")
         subprocess.run(

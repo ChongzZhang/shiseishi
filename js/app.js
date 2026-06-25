@@ -64,13 +64,22 @@
 
       const rgbText = `RGB(${c.rgb[0]}, ${c.rgb[1]}, ${c.rgb[2]})`;
       const pct = c.ratio != null ? `${Math.round(c.ratio * 100)}%` : '';
+      const gloss = ColorGlosses.get(c.pinyin);
+      const glossHtml = gloss
+        ? `<span class="color-gloss">${escapeHtml(gloss)}</span>`
+        : '';
 
       card.innerHTML = `
         <div class="color-header-wrap">
           <button class="color-header" type="button" aria-expanded="false">
             <span class="swatch" style="background:${c.hex}"></span>
-            <span class="color-name">${escapeHtml(c.name)}</span>
-            <span class="color-rgb">${rgbText}${pct ? ` · ${pct}` : ''}</span>
+            <span class="color-ident">
+              <span class="color-ident-top">
+                <span class="color-name">${escapeHtml(c.name)}</span>
+                <span class="color-rgb">${rgbText}${pct ? ` · ${pct}` : ''}</span>
+              </span>
+              ${glossHtml}
+            </span>
             <span class="chevron" aria-hidden="true"></span>
           </button>
         </div>
