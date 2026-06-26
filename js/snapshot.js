@@ -1,27 +1,30 @@
 /**
- * 识色快照 — 左图 + 五色盘 / 右栏色名与诗句（极简排版）
+ * 识色快照 — 左图 / 五色盘 / 右栏题跋式诗句
  */
 const ColorSnapshot = (() => {
   const W = 720;
-  const PAD = 24;
-  const COL_GAP = 18;
-  const LEFT_W = 268;
+  const PAD = 26;
+  const COL_GAP = 20;
+  const LEFT_W = 272;
   const RIGHT_X = PAD + LEFT_W + COL_GAP;
   const RIGHT_W = W - PAD - RIGHT_X;
-  const HEADER_H = 58;
-  const BODY_PAD_BOTTOM = 20;
+  const HEADER_H = 54;
+  const BODY_PAD_BOTTOM = 22;
+
+  const PALETTE_GRAPH_H = 112;
+  const PALETTE_LEGEND_H = 86;
+  const PALETTE_GAP = 6;
+  const PALETTE_H = PALETTE_GRAPH_H + PALETTE_LEGEND_H + PALETTE_GAP;
+  const PHOTO_GAP = 12;
+  const PHOTO_MAX_H = 176;
 
   const C = {
     paper: '#F4F0E6',
     ink: '#2A2824',
-    inkLight: '#5C5650',
-    inkFaint: '#A8A098',
-    border: 'rgba(42, 40, 36, 0.12)',
+    inkLight: '#5A544E',
+    inkFaint: '#9E968E',
+    border: 'rgba(42, 40, 36, 0.1)',
   };
-
-  const PALETTE_H = 200;
-  const PHOTO_GAP = 10;
-  const PHOTO_MAX_H = 188;
 
   let overlayEl = null;
   let previewImgEl = null;
@@ -46,9 +49,9 @@ const ColorSnapshot = (() => {
   async function ensureFonts() {
     if (!document.fonts) return;
     await Promise.all([
-      document.fonts.load('400 34px "Noto Serif SC"'),
-      document.fonts.load('400 19px "Noto Serif SC"'),
-      document.fonts.load('300 17px "Noto Serif SC"'),
+      document.fonts.load('400 32px "Noto Serif SC"'),
+      document.fonts.load('400 17px "Noto Serif SC"'),
+      document.fonts.load('300 16px "Noto Serif SC"'),
     ]).catch(() => {});
   }
 
@@ -105,110 +108,75 @@ const ColorSnapshot = (() => {
     ctx.closePath();
   }
 
-  function typeScale(count) {
-    if (count >= 5) {
-      return { name: 18, line: 16, swatch: 20, pad: 12, gap: 10 };
-    }
-    return { name: 20, line: 17, swatch: 22, pad: 14, gap: 12 };
-  }
-
   function poemLine(poetry) {
     return poetry?.entries?.[0]?.line || '';
   }
 
+  function typeScale(count) {
+    if (count >= 5) {
+      return { name: 17, line: 15, pad: 16, gap: 14, lead: 9 };
+    }
+    return { name: 18, line: 16, pad: 18, gap: 16, lead: 10 };
+  }
+
   function measureColorBlock(ctx, poetry, innerW, ts) {
-    let h = ts.pad * 2 + ts.name;
+    let h = ts.pad + ts.name + ts.lead;
     const line = poemLine(poetry);
     if (line) {
       ctx.font = `300 ${ts.line}px "Noto Serif SC", STSong, serif`;
-      h += wrapText(ctx, line, innerW).length * (ts.line + 7) + 4;
-    } else {
-      h += ts.line + 4;
+      h += wrapText(ctx, line, innerW).length * (ts.line + 8);
     }
     return h + ts.gap;
   }
 
-  function drawColorBlock(ctx, x, y, color, poetry, cardW, ts) {
-    const innerW = cardW - ts.pad * 2 - ts.swatch - 12;
+  /** 右栏：题跋式，无框，留白与细线 */
+  function drawColorBlock(ctx, x, y, color, poetry, colW, ts, isFirst) {
+    const innerW = colW - ts.pad * 2;
     const blockH = measureColorBlock(ctx, poetry, innerW, ts) - ts.gap;
 
-    drawRoundedRect(ctx, x, y, cardW, blockH, 6);
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.62)';
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(42, 40, 36, 0.1)';
-    ctx.lineWidth = 1;
-    ctx.stroke();
+    if (!isFirst) {
+      ctx.strokeStyle = C.border;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(x + ts.pad, y);
+      ctx.lineTo(x + colW - ts.pad, y);
+      ctx.stroke();
+    }
+
+    const baseY = y + (isFirst ? ts.pad * 0.5 : ts.pad);
+    const nameY = baseY + ts.name;
 
     ctx.fillStyle = color.hex;
-    drawRoundedRect(ctx, x + 1, y + 10, 4, blockH - 20, 2);
-    ctx.fill();
+    ctx.fillRect(x + ts.pad, baseY + 3, 3, ts.name - 6);
 
-    const ix = x + ts.pad + 2;
-    const rowY = y + ts.pad;
-    const swatchCy = rowY + ts.swatch / 2 + 2;
-
-    ctx.beginPath();
-    ctx.arc(ix + ts.swatch / 2, swatchCy, ts.swatch / 2, 0, Math.PI * 2);
-    ctx.fillStyle = color.hex;
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(42, 40, 36, 0.18)';
-    ctx.lineWidth = 1;
-    ctx.stroke();
-
-    const tx = ix + ts.swatch + 10;
     ctx.textAlign = 'left';
     ctx.fillStyle = C.ink;
     ctx.font = `400 ${ts.name}px "Noto Serif SC", STSong, serif`;
-    ctx.fillText(color.name, tx, rowY + ts.name);
+    ctx.fillText(color.name, x + ts.pad + 11, nameY);
 
-    let ty = rowY + ts.name + 12;
+    let ty = nameY + ts.lead + ts.line;
     const line = poemLine(poetry);
     if (line) {
       ctx.fillStyle = C.inkLight;
       ctx.font = `300 ${ts.line}px "Noto Serif SC", STSong, serif`;
-      wrapText(ctx, line, innerW).forEach((ln) => {
-        ctx.fillText(ln, tx, ty);
-        ty += ts.line + 7;
+      wrapText(ctx, line, innerW - 4).forEach((ln) => {
+        ctx.fillText(ln, x + ts.pad, ty);
+        ty += ts.line + 8;
       });
     }
 
     return blockH + ts.gap;
   }
 
-  function vertexLabelStyle(angle) {
-    const c = Math.cos(angle);
-    const s = Math.sin(angle);
-    if (s < -0.4) return { align: 'center', baseline: 'bottom', pad: 7 };
-    if (s > 0.4) return { align: 'center', baseline: 'top', pad: 7 };
-    if (c < 0) return { align: 'right', baseline: 'middle', pad: 5 };
-    return { align: 'left', baseline: 'middle', pad: 5 };
-  }
-
-  function labelFontSize(name) {
-    const n = [...(name || '')].length;
-    if (n <= 2) return 13;
-    if (n === 3) return 12;
-    return 11;
-  }
-
-  /** 五色盘 — 无标题字，图形为主 */
-  function drawFiveColorPalette(ctx, colors, boxX, boxY, boxW, boxH) {
+  /** 五色盘图形区：仅色点与五边形，不写色名 */
+  function drawPaletteGraph(ctx, colors, boxX, boxY, boxW, boxH) {
     const n = Math.min(colors.length, 5);
     if (n < 1) return;
 
     const cx = boxX + boxW / 2;
-    const cy = boxY + boxH / 2 + 2;
-    const R = Math.min(boxW, boxH) * 0.38;
-    const nodeR = 16;
-
-    ctx.save();
-
-    drawRoundedRect(ctx, boxX, boxY, boxW, boxH, 8);
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(42, 40, 36, 0.16)';
-    ctx.lineWidth = 1.2;
-    ctx.stroke();
+    const cy = boxY + boxH / 2;
+    const R = Math.min(boxW, boxH) * 0.34;
+    const nodeR = 11;
 
     const verts = [];
     for (let i = 0; i < n; i++) {
@@ -216,7 +184,6 @@ const ColorSnapshot = (() => {
       verts.push({
         x: cx + R * Math.cos(angle),
         y: cy + R * Math.sin(angle),
-        angle,
         color: colors[i],
       });
     }
@@ -230,7 +197,7 @@ const ColorSnapshot = (() => {
         ctx.lineTo(v0.x, v0.y);
         ctx.lineTo(v1.x, v1.y);
         ctx.closePath();
-        ctx.fillStyle = hexToRgba(colors[i].hex, 0.14);
+        ctx.fillStyle = hexToRgba(colors[i].hex, 0.09);
         ctx.fill();
       }
     }
@@ -241,61 +208,86 @@ const ColorSnapshot = (() => {
       else ctx.lineTo(v.x, v.y);
     });
     ctx.closePath();
-    ctx.strokeStyle = 'rgba(42, 40, 36, 0.28)';
-    ctx.lineWidth = 1.2;
+    ctx.strokeStyle = 'rgba(42, 40, 36, 0.2)';
+    ctx.lineWidth = 1;
     ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, 3, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(42, 40, 36, 0.15)';
+    ctx.fill();
 
     verts.forEach((v) => {
       ctx.beginPath();
-      ctx.moveTo(cx, cy);
-      ctx.lineTo(v.x, v.y);
-      ctx.strokeStyle = 'rgba(42, 40, 36, 0.12)';
+      ctx.arc(v.x, v.y, nodeR + 2, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(255,255,255,0.9)';
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(v.x, v.y, nodeR, 0, Math.PI * 2);
+      ctx.fillStyle = v.color.hex;
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(42, 40, 36, 0.22)';
       ctx.lineWidth = 1;
       ctx.stroke();
     });
+  }
 
-    ctx.beginPath();
-    ctx.arc(cx, cy, 6, 0, Math.PI * 2);
-    ctx.fillStyle = C.paper;
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(42, 40, 36, 0.22)';
-    ctx.stroke();
+  /** 色名图例：竖排对齐，与图形分离，绝不叠字 */
+  function drawPaletteLegend(ctx, colors, boxX, boxY, boxW, boxH) {
+    const n = Math.min(colors.length, 5);
+    if (n < 1) return;
 
-    verts.forEach((v) => {
-      const { color, x, y, angle } = v;
-      const name = color.name || '';
+    const rowH = boxH / n;
+    const dotR = 4.5;
 
-      ctx.beginPath();
-      ctx.arc(x, y, nodeR + 3, 0, Math.PI * 2);
-      ctx.fillStyle = '#fff';
-      ctx.fill();
+    for (let i = 0; i < n; i++) {
+      const rowCy = boxY + rowH * i + rowH / 2;
+      const dotX = boxX + 16;
 
       ctx.beginPath();
-      ctx.arc(x, y, nodeR, 0, Math.PI * 2);
-      ctx.fillStyle = color.hex;
+      ctx.arc(dotX, rowCy, dotR, 0, Math.PI * 2);
+      ctx.fillStyle = colors[i].hex;
       ctx.fill();
-      ctx.strokeStyle = 'rgba(42, 40, 36, 0.35)';
-      ctx.lineWidth = 1.2;
+      ctx.strokeStyle = 'rgba(42, 40, 36, 0.15)';
       ctx.stroke();
 
-      const fs = labelFontSize(name);
-      const labelR = R + nodeR + 12;
-      let lx = cx + labelR * Math.cos(angle);
-      let ly = cy + labelR * Math.sin(angle);
-      const st = vertexLabelStyle(angle);
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+      ctx.fillStyle = C.inkLight;
+      ctx.font = '400 12px "Noto Serif SC", STSong, serif';
+      ctx.fillText(colors[i].name, dotX + 12, rowCy);
+    }
+  }
 
-      ctx.font = `400 ${fs}px "Noto Serif SC", STSong, serif`;
-      ctx.fillStyle = C.ink;
-      ctx.textAlign = st.align;
-      ctx.textBaseline = st.baseline;
-      if (st.align === 'center' && st.baseline === 'bottom') ly -= st.pad;
-      if (st.align === 'center' && st.baseline === 'top') ly += st.pad;
-      if (st.align === 'right') lx -= st.pad;
-      if (st.align === 'left') lx += st.pad;
-      ctx.fillText(name, lx, ly);
-    });
+  function drawPalettePanel(ctx, colors, boxX, boxY, boxW) {
+    drawRoundedRect(ctx, boxX, boxY, boxW, PALETTE_H, 6);
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.55)';
+    ctx.fill();
+    ctx.strokeStyle = C.border;
+    ctx.lineWidth = 1;
+    ctx.stroke();
 
-    ctx.restore();
+    const innerX = boxX + 4;
+    const innerW = boxW - 8;
+    const graphY = boxY + 4;
+
+    drawPaletteGraph(ctx, colors, innerX, graphY, innerW, PALETTE_GRAPH_H - 4);
+
+    const divY = graphY + PALETTE_GRAPH_H - 2;
+    ctx.strokeStyle = C.border;
+    ctx.beginPath();
+    ctx.moveTo(boxX + 12, divY);
+    ctx.lineTo(boxX + boxW - 12, divY);
+    ctx.stroke();
+
+    drawPaletteLegend(
+      ctx,
+      colors,
+      innerX,
+      divY + 4,
+      innerW,
+      PALETTE_LEGEND_H - 6,
+    );
   }
 
   function fitPhoto(sourceImg, boxW, boxH) {
@@ -308,77 +300,60 @@ const ColorSnapshot = (() => {
   }
 
   function measureLeftColumn(sourceImg) {
-    const photo = fitPhoto(sourceImg, LEFT_W - 8, PHOTO_MAX_H);
-    return photo.h + PHOTO_GAP + PALETTE_H + 8;
+    const photo = fitPhoto(sourceImg, LEFT_W - 16, PHOTO_MAX_H);
+    return photo.h + PHOTO_GAP + PALETTE_H + 12;
   }
 
   function drawLeftColumn(ctx, sourceImg, colors, bodyY) {
     const panelX = PAD;
     const panelW = LEFT_W;
-    const photo = fitPhoto(sourceImg, panelW - 12, PHOTO_MAX_H);
-    const photoTop = bodyY + 6;
+    const photo = fitPhoto(sourceImg, panelW - 16, PHOTO_MAX_H);
+    const photoTop = bodyY + 8;
     const paletteY = photoTop + Math.max(photo.h, 0) + PHOTO_GAP;
-    const panelH = paletteY - bodyY + PALETTE_H + 6;
+    const panelH = paletteY - bodyY + PALETTE_H + 8;
 
     drawRoundedRect(ctx, panelX, bodyY, panelW, panelH, 8);
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.35)';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.28)';
     ctx.fill();
     ctx.strokeStyle = C.border;
-    ctx.lineWidth = 1;
     ctx.stroke();
 
     if (photo.w && photo.h) {
-      const px = panelX + 6;
+      const px = panelX + 8;
       const py = photoTop;
       ctx.save();
-      drawRoundedRect(ctx, px, py, photo.w, photo.h, 4);
+      drawRoundedRect(ctx, px, py, photo.w, photo.h, 3);
       ctx.clip();
       ctx.drawImage(sourceImg, px, py, photo.w, photo.h);
       ctx.restore();
-      ctx.strokeStyle = 'rgba(42, 40, 36, 0.14)';
-      drawRoundedRect(ctx, px, py, photo.w, photo.h, 4);
+      ctx.strokeStyle = 'rgba(42, 40, 36, 0.12)';
+      drawRoundedRect(ctx, px, py, photo.w, photo.h, 3);
       ctx.stroke();
     }
 
-    drawFiveColorPalette(
-      ctx,
-      colors,
-      panelX + 6,
-      paletteY,
-      panelW - 12,
-      PALETTE_H,
-    );
-
+    drawPalettePanel(ctx, colors, panelX + 8, paletteY, panelW - 16);
     return panelH;
   }
 
   function drawHeader(ctx) {
     ctx.fillStyle = C.ink;
-    ctx.font = '400 34px "Noto Serif SC", STSong, serif';
+    ctx.font = '400 32px "Noto Serif SC", STSong, serif';
     ctx.textAlign = 'center';
-    ctx.fillText('色谱寻诗', W / 2, 40);
-
+    ctx.fillText('色谱寻诗', W / 2, 36);
     ctx.strokeStyle = C.border;
-    ctx.lineWidth = 1;
     ctx.beginPath();
-    ctx.moveTo(PAD * 1.5, HEADER_H - 4);
-    ctx.lineTo(W - PAD * 1.5, HEADER_H - 4);
+    ctx.moveTo(W * 0.22, HEADER_H - 2);
+    ctx.lineTo(W * 0.78, HEADER_H - 2);
     ctx.stroke();
   }
 
   function drawColumnDivider(ctx, bodyY, bodyH) {
     const x = RIGHT_X - COL_GAP / 2;
-    ctx.strokeStyle = 'rgba(42, 40, 36, 0.08)';
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.moveTo(x, bodyY);
-    ctx.lineTo(x, bodyY + bodyH);
-    ctx.stroke();
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
+    ctx.strokeStyle = 'rgba(42, 40, 36, 0.06)';
     ctx.lineWidth = 1;
     ctx.beginPath();
-    ctx.moveTo(x + 1, bodyY);
-    ctx.lineTo(x + 1, bodyY + bodyH);
+    ctx.moveTo(x, bodyY + 4);
+    ctx.lineTo(x, bodyY + bodyH - 4);
     ctx.stroke();
   }
 
@@ -388,15 +363,14 @@ const ColorSnapshot = (() => {
     const poems = await Promise.all(colors.map((c) => loadPoetry(c.pinyin, c)));
     const ts = typeScale(colors.length);
     const measureCtx = document.createElement('canvas').getContext('2d');
-    const innerW = RIGHT_W - ts.pad * 2 - ts.swatch - 12;
+    const innerW = RIGHT_W - ts.pad * 2;
 
     let rightH = 0;
     colors.forEach((_, i) => {
       rightH += measureColorBlock(measureCtx, poems[i], innerW, ts);
     });
 
-    const leftH = measureLeftColumn(sourceImg);
-    const bodyH = Math.max(rightH, leftH);
+    const bodyH = Math.max(rightH, measureLeftColumn(sourceImg));
     const totalH = HEADER_H + bodyH + BODY_PAD_BOTTOM;
 
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -410,13 +384,13 @@ const ColorSnapshot = (() => {
     ctx.fillRect(0, 0, W, totalH);
     drawHeader(ctx);
 
-    const bodyY = HEADER_H + 6;
+    const bodyY = HEADER_H + 8;
     drawLeftColumn(ctx, sourceImg, colors, bodyY);
     drawColumnDivider(ctx, bodyY, bodyH);
 
     let cy = bodyY;
     colors.forEach((c, i) => {
-      cy += drawColorBlock(ctx, RIGHT_X, cy, c, poems[i], RIGHT_W, ts);
+      cy += drawColorBlock(ctx, RIGHT_X, cy, c, poems[i], RIGHT_W, ts, i === 0);
     });
 
     return canvas;
@@ -434,14 +408,8 @@ const ColorSnapshot = (() => {
   function updateSaveUi() {
     const wechat = isWeChat();
     overlayEl?.classList.toggle('snapshot-overlay--wechat', wechat);
-    if (hintEl) {
-      hintEl.textContent = wechat
-        ? '长按图片保存'
-        : '长按图片可保存';
-    }
-    if (saveBtnEl) {
-      saveBtnEl.textContent = wechat ? '保存提示' : '保存图片';
-    }
+    if (hintEl) hintEl.textContent = wechat ? '长按图片保存' : '长按图片可保存';
+    if (saveBtnEl) saveBtnEl.textContent = wechat ? '保存提示' : '保存图片';
   }
 
   function bindDom() {
@@ -481,14 +449,12 @@ const ColorSnapshot = (() => {
     revokeLastUrl();
     lastBlob = blob;
     lastDataUrl = dataUrl;
-
     if (isWeChat() && dataUrl) {
       previewImgEl.src = dataUrl;
     } else {
       lastBlobUrl = URL.createObjectURL(blob);
       previewImgEl.src = lastBlobUrl;
     }
-
     previewImgEl.hidden = false;
     overlayEl.hidden = false;
     overlayEl.setAttribute('aria-hidden', 'false');
