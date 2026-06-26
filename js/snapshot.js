@@ -13,12 +13,211 @@ const ColorSnapshot = (() => {
 
   const C = {
     paper: '#F4F0E6',
+    paperMid: '#EDE8DC',
     ink: '#2A2824',
     inkLight: '#6B6560',
     inkFaint: '#A8A098',
     border: 'rgba(42, 40, 36, 0.14)',
     accent: 'rgba(42, 40, 36, 0.06)',
   };
+
+  const PALETTE_ZONE_H = 178;
+  const PHOTO_PALETTE_GAP = 10;
+
+  function hexToRgba(hex, alpha) {
+    const h = (hex || '#888').replace('#', '');
+    const full = h.length === 3 ? h.split('').map((c) => c + c).join('') : h;
+    const n = parseInt(full, 16);
+    const r = (n >> 16) & 255;
+    const g = (n >> 8) & 255;
+    const b = n & 255;
+    return `rgba(${r},${g},${b},${alpha})`;
+  }
+
+  function nameFontSize(name) {
+    const len = [...(name || '')].length;
+    if (len <= 2) return 12;
+    if (len === 3) return 11;
+    return 10;
+  }
+
+  function vertexLabelStyle(angle) {
+    const c = Math.cos(angle);
+    const s = Math.sin(angle);
+    if (s < -0.42) return { align: 'center', baseline: 'bottom', pad: 8 };
+    if (s > 0.42) return { align: 'center', baseline: 'top', pad: 8 };
+    if (c < 0) return { align: 'right', baseline: 'middle', pad: 6 };
+    return { align: 'left', baseline: 'middle', pad: 6 };
+  }
+
+  /** 左下「五色盘」— 五顶点围合，水墨意 */
+  function drawFiveColorPalette(ctx, colors, boxX, boxY, boxW, boxH) {
+    const n = Math.min(colors.length, 5);
+    if (n === 0) return;
+
+    const cx = boxX + boxW / 2;
+    const cy = boxY + boxH / 2 + 4;
+    const R = Math.min(boxW, boxH) * 0.34;
+    const nodeR = n >= 5 ? 13 : 15;
+
+    ctx.save();
+
+    drawRoundedRect(ctx, boxX + 2, boxY + 2, boxW - 4, boxH - 4, 6);
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.38)';
+    ctx.fill();
+    ctx.strokeStyle = C.border;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    ctx.fillStyle = C.inkFaint;
+    ctx.font = '300 11px "Noto Serif SC", STSong, serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('五 色 盘', cx, boxY + 16);
+
+    const verts = [];
+    for (let i = 0; i < n; i++) {
+      const angle = -Math.PI / 2 + (i * 2 * Math.PI) / n;
+      verts.push({
+        x: cx + R * Math.cos(angle),
+        y: cy + R * Math.sin(angle),
+        angle,
+        color: colors[i],
+      });
+    }
+
+    ctx.setLineDash([2, 4]);
+    ctx.beginPath();
+    ctx.arc(cx, cy, R * 0.52, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(42, 40, 36, 0.08)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    if (n === 5) {
+      for (let i = 0; i < 5; i++) {
+        const v0 = verts[i];
+        const v1 = verts[(i + 1) % 5];
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.lineTo(v0.x, v0.y);
+        ctx.lineTo(v1.x, v1.y);
+        ctx.closePath();
+        ctx.fillStyle = hexToRgba(colors[i].hex, 0.1);
+        ctx.fill();
+      }
+    }
+
+    ctx.beginPath();
+    verts.forEach((v, i) => {
+      if (i === 0) ctx.moveTo(v.x, v.y);
+      else ctx.lineTo(v.x, v.y);
+    });
+    ctx.closePath();
+    ctx.strokeStyle = 'rgba(42, 40, 36, 0.22)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    verts.forEach((v) => {
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(v.x, v.y);
+      ctx.strokeStyle = 'rgba(42, 40, 36, 0.1)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    });
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, 5, 0, Math.PI * 2);
+    ctx.fillStyle = C.paper;
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(42, 40, 36, 0.25)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(cx, cy, 1.8, 0, Math.PI * 2);
+    ctx.fillStyle = C.inkFaint;
+    ctx.fill();
+
+    verts.forEach((v) => {
+      const { color, x, y, angle } = v;
+      const name = color.name || '';
+
+      ctx.beginPath();
+      ctx.arc(x + 0.6, y + 1.2, nodeR, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(42, 40, 36, 0.07)';
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(x, y, nodeR + 2.5, 0, Math.PI * 2);
+      ctx.fillStyle = C.paper;
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(x, y, nodeR, 0, Math.PI * 2);
+      ctx.fillStyle = color.hex;
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(42, 40, 36, 0.28)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      const fs = nameFontSize(name);
+      const labelR = R + nodeR + 10;
+      let lx = cx + labelR * Math.cos(angle);
+      let ly = cy + labelR * Math.sin(angle);
+      const style = vertexLabelStyle(angle);
+
+      ctx.font = `400 ${fs}px "Noto Serif SC", STSong, serif`;
+      ctx.fillStyle = C.ink;
+      ctx.textAlign = style.align;
+      ctx.textBaseline = style.baseline;
+
+      if (style.align === 'center' && style.baseline === 'bottom') ly -= style.pad;
+      if (style.align === 'center' && style.baseline === 'top') ly += style.pad;
+      if (style.align === 'right') lx -= style.pad;
+      if (style.align === 'left') lx += style.pad;
+
+      const chars = [...name];
+      const tracking = fs >= 12 ? 2 : 1;
+      if (chars.length <= 2) {
+        chars.forEach((ch, ci) => {
+          ctx.fillText(ch, lx + (ci - (chars.length - 1) / 2) * (fs + tracking), ly);
+        });
+      } else {
+        ctx.fillText(name, lx, ly);
+      }
+    });
+
+    ctx.restore();
+  }
+
+  function drawLeftColumn(ctx, sourceImg, colors, bodyY, bodyH) {
+    const photoMaxH = Math.max(72, bodyH - PALETTE_ZONE_H - PHOTO_PALETTE_GAP);
+    const photo = fitPhoto(sourceImg, LEFT_W, photoMaxH);
+    const px = PAD;
+    const py = bodyY;
+
+    if (photo.w && photo.h) {
+      ctx.save();
+      drawRoundedRect(ctx, px, py, photo.w, photo.h, 4);
+      ctx.clip();
+      ctx.drawImage(sourceImg, px, py, photo.w, photo.h);
+      ctx.restore();
+      ctx.strokeStyle = C.border;
+      ctx.lineWidth = 1;
+      drawRoundedRect(ctx, px, py, photo.w, photo.h, 4);
+      ctx.stroke();
+    }
+
+    const ruleY = bodyY + photoMaxH + PHOTO_PALETTE_GAP * 0.35;
+    ctx.strokeStyle = C.border;
+    ctx.beginPath();
+    ctx.moveTo(PAD + 6, ruleY);
+    ctx.lineTo(PAD + LEFT_W - 6, ruleY);
+    ctx.stroke();
+
+    const paletteY = bodyY + bodyH - PALETTE_ZONE_H;
+    drawFiveColorPalette(ctx, colors, PAD, paletteY, LEFT_W, PALETTE_ZONE_H - 4);
+  }
 
   let overlayEl = null;
   let previewImgEl = null;
@@ -225,7 +424,7 @@ const ColorSnapshot = (() => {
 
     ctx.fillStyle = C.inkLight;
     ctx.font = '300 17px "Noto Serif SC", STSong, serif';
-    ctx.fillText('左图右色 · 观其五色', W / 2, 64);
+    ctx.fillText('左图右色 · 五方成色', W / 2, 64);
 
     const dateStr = new Date().toLocaleDateString('zh-CN', {
       year: 'numeric',
@@ -265,10 +464,8 @@ const ColorSnapshot = (() => {
       );
     });
 
-    const bodyH = Math.max(rightH, 200);
+    const bodyH = Math.max(rightH, PALETTE_ZONE_H + 100);
     const totalH = HEADER_H + bodyH + FOOTER_H + PAD;
-
-    const photo = fitPhoto(sourceImg, LEFT_W, bodyH);
 
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     const canvas = document.createElement('canvas');
@@ -283,19 +480,7 @@ const ColorSnapshot = (() => {
 
     const bodyY = HEADER_H + PAD * 0.35;
 
-    if (photo.w && photo.h) {
-      const px = PAD + (LEFT_W - photo.w) / 2;
-      const py = bodyY + (bodyH - photo.h) / 2;
-      ctx.save();
-      drawRoundedRect(ctx, px, py, photo.w, photo.h, 4);
-      ctx.clip();
-      ctx.drawImage(sourceImg, px, py, photo.w, photo.h);
-      ctx.restore();
-      ctx.strokeStyle = C.border;
-      ctx.lineWidth = 1;
-      drawRoundedRect(ctx, px, py, photo.w, photo.h, 4);
-      ctx.stroke();
-    }
+    drawLeftColumn(ctx, sourceImg, colors, bodyY, bodyH);
 
     ctx.strokeStyle = C.border;
     ctx.beginPath();
