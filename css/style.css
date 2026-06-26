@@ -380,6 +380,41 @@ body.snapshot-open {
   height: auto;
   border: 1px solid var(--border);
   box-shadow: 0 6px 24px var(--shadow);
+  -webkit-touch-callout: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.snapshot-hint-flash {
+  color: var(--ink);
+  animation: snapshot-hint-pulse 0.8s ease 2;
+}
+
+@keyframes snapshot-hint-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+.snapshot-overlay--wechat .snapshot-dialog {
+  max-width: 100%;
+  max-height: 96vh;
+}
+
+.snapshot-overlay--wechat .snapshot-preview-wrap {
+  padding: 0.5rem 0.65rem;
+}
+
+.snapshot-overlay--wechat .snapshot-hint {
+  font-size: 0.82rem;
+  color: var(--ink-light);
+  padding: 0.65rem 1rem 0.25rem;
+  line-height: 1.65;
+}
+
+.snapshot-overlay--wechat .snapshot-save-btn {
+  background: var(--paper-mid);
+  color: var(--ink);
+  border: 1px solid var(--border);
 }
 
 .snapshot-hint {
