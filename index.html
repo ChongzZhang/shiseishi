@@ -60,6 +60,13 @@
       <section class="panel panel-right" aria-label="中国传统色名">
         <p id="panel-hint" class="panel-hint">待上传图片后，此处将显示图中前五主色及其中国色名</p>
         <p id="panel-status" class="panel-status" hidden></p>
+        <div id="snapshot-bar" class="snapshot-bar" hidden>
+          <button type="button" id="snapshot-btn" class="snapshot-btn" aria-label="生成识色快照">
+            <span class="snapshot-btn-icon" aria-hidden="true">◫</span>
+            <span class="snapshot-btn-text">快照</span>
+          </button>
+          <p class="snapshot-bar-note">保存图片、五色与诗句，便于分享</p>
+        </div>
         <div id="color-list" class="color-list"></div>
       </section>
     </main>
@@ -67,6 +74,23 @@
     <footer class="site-footer">
       <p>色名参考 <a href="https://zhongguose.com/" target="_blank" rel="noopener">中国色</a> · 诗句来自开源古典文集</p>
     </footer>
+  </div>
+
+  <div id="snapshot-overlay" class="snapshot-overlay" hidden aria-hidden="true">
+    <div class="snapshot-backdrop"></div>
+    <div class="snapshot-dialog" role="dialog" aria-labelledby="snapshot-dialog-title">
+      <header class="snapshot-dialog-head">
+        <h2 id="snapshot-dialog-title" class="snapshot-dialog-title">识色快照</h2>
+        <button type="button" id="snapshot-close" class="snapshot-close" aria-label="关闭">×</button>
+      </header>
+      <div class="snapshot-preview-wrap">
+        <img id="snapshot-preview" class="snapshot-preview" alt="色谱寻诗快照预览" hidden>
+      </div>
+      <p class="snapshot-hint">手机上可长按图片保存到相册</p>
+      <div class="snapshot-actions">
+        <button type="button" id="snapshot-save" class="snapshot-save-btn">保存图片</button>
+      </div>
+    </div>
   </div>
 
   <div id="unlock-overlay" class="unlock-overlay" hidden aria-hidden="true">
@@ -92,6 +116,7 @@
   <script src="js/match.js"></script>
   <script src="js/achievements.js"></script>
   <script src="js/daily.js"></script>
+  <script src="js/snapshot.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

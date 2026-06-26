@@ -9,6 +9,8 @@
   const colorList = document.getElementById('color-list');
   const panelHint = document.getElementById('panel-hint');
   const panelStatus = document.getElementById('panel-status');
+  const snapshotBar = document.getElementById('snapshot-bar');
+  const snapshotBtn = document.getElementById('snapshot-btn');
 
   const achProgressLabel = document.getElementById('ach-progress-label');
   const achBadge = document.getElementById('ach-badge');
@@ -36,6 +38,7 @@
     currentColors = [];
     panelHint.hidden = false;
     panelHint.textContent = '待上传图片后，此处将显示图中前五主色及其中国色名';
+    if (snapshotBar) snapshotBar.hidden = true;
     setStatus('');
   }
 
@@ -99,9 +102,11 @@
       colorList.innerHTML = '';
       panelHint.hidden = false;
       panelHint.textContent = '待上传图片后，此处将显示图中前五主色及其中国色名';
+      if (snapshotBar) snapshotBar.hidden = true;
       return;
     }
     paintColorList();
+    if (snapshotBar) snapshotBar.hidden = false;
   }
 
   async function togglePoetry(color, card) {
@@ -273,6 +278,25 @@
   });
 
   unlockContinue?.addEventListener('click', hideUnlockOverlay);
+
+  snapshotBtn?.addEventListener('click', async () => {
+    if (!currentColors.length || previewImg.hidden) return;
+    snapshotBtn.disabled = true;
+    const prevLabel = snapshotBtn.querySelector('.snapshot-btn-text')?.textContent;
+    const labelEl = snapshotBtn.querySelector('.snapshot-btn-text');
+    try {
+      await ColorSnapshot.open(previewImg, currentColors, (msg) => {
+        if (labelEl) labelEl.textContent = msg.replace(/…$/, '');
+      });
+    } catch (err) {
+      setStatus(err.message || '快照生成失败');
+    } finally {
+      snapshotBtn.disabled = false;
+      if (labelEl && prevLabel) labelEl.textContent = prevLabel;
+    }
+  });
+
+  ColorSnapshot.bindDom();
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !unlockOverlay.hidden) hideUnlockOverlay();

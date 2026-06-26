@@ -29,6 +29,7 @@ COPY_FILES = [
     "js/achievements-page.js",
     "js/daily.js",
     "js/daily-page.js",
+    "js/snapshot.js",
     "js/colors-data.js",
     "js/rgb-index-data.js",
     "js/browse.js",
