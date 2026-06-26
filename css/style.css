@@ -238,6 +238,10 @@ html, body {
 }
 
 /* —— 快照 —— */
+.snapshot-bar[hidden] {
+  display: none !important;
+}
+
 .snapshot-bar {
   display: flex;
   align-items: center;
@@ -299,11 +303,17 @@ body.snapshot-open {
   justify-content: center;
   padding: 0;
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.28s ease;
+}
+
+.snapshot-overlay[hidden] {
+  display: none !important;
 }
 
 .snapshot-overlay.snapshot-visible {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .snapshot-backdrop {
@@ -1180,6 +1190,10 @@ body.ach-sheet-open .ach-sheet-panel {
 }
 
 /* 解锁动画 */
+.unlock-overlay[hidden] {
+  display: none !important;
+}
+
 .unlock-overlay {
   position: fixed;
   inset: 0;
