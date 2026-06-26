@@ -489,6 +489,63 @@ body.snapshot-open {
   gap: 0.5rem;
 }
 
+.rare-color-spot {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 1rem;
+  max-width: 100%;
+}
+
+.rare-color-spot[hidden] {
+  display: none !important;
+}
+
+.rare-color-label {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.22em;
+  text-align: right;
+}
+
+.rare-color-body {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.32);
+  margin-left: auto;
+}
+
+.rare-color-swatch {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 3px;
+  border: 1px solid rgba(42, 40, 36, 0.14);
+  flex-shrink: 0;
+}
+
+.rare-color-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+}
+
+.rare-color-name {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+}
+
+.rare-color-score {
+  font-size: 0.78rem;
+  color: var(--ink-light);
+  letter-spacing: 0.08em;
+}
+
 .color-card {
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.2);

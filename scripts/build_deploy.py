@@ -21,6 +21,8 @@ COPY_FILES = [
     "js/glosses-data.js",
     "js/glosses.js",
     "js/palette.js",
+    "js/rarity-data.js",
+    "js/rarity.js",
     "js/poetry-bundle.js",
     "js/extract.js",
     "js/match.js",
@@ -133,10 +135,17 @@ def regen_glosses_data() -> None:
         subprocess.run([sys.executable, str(script)], check=True, cwd=ROOT)
 
 
+def regen_rarity_data() -> None:
+    script = ROOT / "scripts" / "gen_rarity.py"
+    if script.is_file():
+        subprocess.run([sys.executable, str(script)], check=True, cwd=ROOT)
+
+
 def main():
     regen_bookmark_manifest()
     regen_daily_challenges()
     regen_glosses_data()
+    regen_rarity_data()
 
     if DIST.exists():
         shutil.rmtree(DIST)

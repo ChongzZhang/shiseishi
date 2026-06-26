@@ -1,0 +1,1042 @@
+[
+  {
+    "rank": 0,
+    "name": "雪白",
+    "pinyin": "c10501",
+    "hex": "#f2fdff",
+    "volume": 0.000104,
+    "score": 100
+  },
+  {
+    "rank": 1,
+    "name": "霜色",
+    "pinyin": "c2f2a",
+    "hex": "#e9f1f6",
+    "volume": 0.0002105,
+    "score": 99
+  },
+  {
+    "rank": 2,
+    "name": "朱红",
+    "pinyin": "c4b6c",
+    "hex": "#ff4c00",
+    "volume": 0.000285,
+    "score": 98
+  },
+  {
+    "rank": 3,
+    "name": "月白",
+    "pinyin": "yuebai",
+    "hex": "#eef7f2",
+    "volume": 0.000694,
+    "score": 98
+  },
+  {
+    "rank": 4,
+    "name": "缟",
+    "pinyin": "c128ec",
+    "hex": "#f2ecde",
+    "volume": 0.0009005,
+    "score": 97
+  },
+  {
+    "rank": 5,
+    "name": "银朱",
+    "pinyin": "yinzhu",
+    "hex": "#f43e06",
+    "volume": 0.001006,
+    "score": 96
+  },
+  {
+    "rank": 6,
+    "name": "乳白",
+    "pinyin": "rubai",
+    "hex": "#f9f4dc",
+    "volume": 0.001019,
+    "score": 95
+  },
+  {
+    "rank": 7,
+    "name": "枇杷黄",
+    "pinyin": "pipahuang",
+    "hex": "#fca106",
+    "volume": 0.001066,
+    "score": 95
+  },
+  {
+    "rank": 8,
+    "name": "嫣红",
+    "pinyin": "c16352",
+    "hex": "#ef7a82",
+    "volume": 0.0011655,
+    "score": 94
+  },
+  {
+    "rank": 9,
+    "name": "佛手黄",
+    "pinyin": "foshouhuang",
+    "hex": "#fed71a",
+    "volume": 0.0012285,
+    "score": 93
+  },
+  {
+    "rank": 10,
+    "name": "肉色",
+    "pinyin": "rouse",
+    "hex": "#f7c173",
+    "volume": 0.0012985,
+    "score": 92
+  },
+  {
+    "rank": 11,
+    "name": "杏红",
+    "pinyin": "cad74",
+    "hex": "#ff8c31",
+    "volume": 0.001306,
+    "score": 92
+  },
+  {
+    "rank": 12,
+    "name": "秋香色",
+    "pinyin": "c89fd",
+    "hex": "#d9b611",
+    "volume": 0.0013895,
+    "score": 91
+  },
+  {
+    "rank": 13,
+    "name": "金盏黄",
+    "pinyin": "jinzhanhuang",
+    "hex": "#fcc307",
+    "volume": 0.0015175,
+    "score": 90
+  },
+  {
+    "rank": 14,
+    "name": "彤",
+    "pinyin": "cbc79",
+    "hex": "#f35336",
+    "volume": 0.00154,
+    "score": 89
+  },
+  {
+    "rank": 15,
+    "name": "蟹壳红",
+    "pinyin": "xiekehong",
+    "hex": "#f27635",
+    "volume": 0.001559,
+    "score": 88
+  },
+  {
+    "rank": 16,
+    "name": "虾壳青",
+    "pinyin": "xiakeqing",
+    "hex": "#869d9d",
+    "volume": 0.0015905,
+    "score": 88
+  },
+  {
+    "rank": 17,
+    "name": "金驼",
+    "pinyin": "jintuo",
+    "hex": "#e46828",
+    "volume": 0.001653,
+    "score": 87
+  },
+  {
+    "rank": 18,
+    "name": "苍黄",
+    "pinyin": "canghuang",
+    "hex": "#806332",
+    "volume": 0.0016575,
+    "score": 86
+  },
+  {
+    "rank": 19,
+    "name": "油菜花黄",
+    "pinyin": "youcaihuahuang",
+    "hex": "#fbda41",
+    "volume": 0.00178,
+    "score": 85
+  },
+  {
+    "rank": 20,
+    "name": "北瓜黄",
+    "pinyin": "beiguahuang",
+    "hex": "#fc8c23",
+    "volume": 0.0018165,
+    "score": 85
+  },
+  {
+    "rank": 21,
+    "name": "花白",
+    "pinyin": "c4438",
+    "hex": "#c2ccd0",
+    "volume": 0.001925,
+    "score": 84
+  },
+  {
+    "rank": 22,
+    "name": "石榴红",
+    "pinyin": "c52e9",
+    "hex": "#f20c00",
+    "volume": 0.001945,
+    "score": 83
+  },
+  {
+    "rank": 23,
+    "name": "榴萼黄",
+    "pinyin": "liuehuang",
+    "hex": "#f9a633",
+    "volume": 0.001949,
+    "score": 82
+  },
+  {
+    "rank": 24,
+    "name": "秋色",
+    "pinyin": "c5d03",
+    "hex": "#896c39",
+    "volume": 0.001957,
+    "score": 82
+  },
+  {
+    "rank": 25,
+    "name": "海棠红",
+    "pinyin": "c15fce",
+    "hex": "#db5a6b",
+    "volume": 0.0020115,
+    "score": 81
+  },
+  {
+    "rank": 26,
+    "name": "铜绿",
+    "pinyin": "tonglv",
+    "hex": "#2bae85",
+    "volume": 0.002037,
+    "score": 80
+  },
+  {
+    "rank": 27,
+    "name": "金莲花橙",
+    "pinyin": "jinlianhuacheng",
+    "hex": "#f86b1d",
+    "volume": 0.002042,
+    "score": 79
+  },
+  {
+    "rank": 28,
+    "name": "新禾绿",
+    "pinyin": "xinhelv",
+    "hex": "#d2b116",
+    "volume": 0.0020495,
+    "score": 79
+  },
+  {
+    "rank": 29,
+    "name": "淡银灰",
+    "pinyin": "danyinhui",
+    "hex": "#c1b2a3",
+    "volume": 0.002051,
+    "score": 78
+  },
+  {
+    "rank": 30,
+    "name": "铁棕",
+    "pinyin": "tiezong",
+    "hex": "#d85916",
+    "volume": 0.0021405,
+    "score": 77
+  },
+  {
+    "rank": 31,
+    "name": "菊蕾白",
+    "pinyin": "juleibai",
+    "hex": "#e9ddb6",
+    "volume": 0.002149,
+    "score": 76
+  },
+  {
+    "rank": 32,
+    "name": "蜻蜓红",
+    "pinyin": "qingtinghong",
+    "hex": "#f1441d",
+    "volume": 0.002168,
+    "score": 75
+  },
+  {
+    "rank": 33,
+    "name": "月灰",
+    "pinyin": "yuehui",
+    "hex": "#b7ae8f",
+    "volume": 0.002178,
+    "score": 75
+  },
+  {
+    "rank": 34,
+    "name": "银白",
+    "pinyin": "c2cc1",
+    "hex": "#e9e7ef",
+    "volume": 0.0021945,
+    "score": 74
+  },
+  {
+    "rank": 35,
+    "name": "玄色",
+    "pinyin": "c8cbf",
+    "hex": "#622a1d",
+    "volume": 0.002266,
+    "score": 73
+  },
+  {
+    "rank": 36,
+    "name": "草灰绿",
+    "pinyin": "caohuilv",
+    "hex": "#8e804b",
+    "volume": 0.002314,
+    "score": 72
+  },
+  {
+    "rank": 37,
+    "name": "桃红",
+    "pinyin": "taohong",
+    "hex": "#f0ada0",
+    "volume": 0.002324,
+    "score": 72
+  },
+  {
+    "rank": 38,
+    "name": "丁香棕",
+    "pinyin": "dingxiangzong",
+    "hex": "#71361d",
+    "volume": 0.0023705,
+    "score": 71
+  },
+  {
+    "rank": 39,
+    "name": "枫叶红",
+    "pinyin": "fengyehong",
+    "hex": "#c21f30",
+    "volume": 0.0024365,
+    "score": 70
+  },
+  {
+    "rank": 40,
+    "name": "凋叶棕",
+    "pinyin": "diaoyezong",
+    "hex": "#e7a23f",
+    "volume": 0.002492,
+    "score": 69
+  },
+  {
+    "rank": 41,
+    "name": "殷红",
+    "pinyin": "c92a5",
+    "hex": "#be002f",
+    "volume": 0.0025835,
+    "score": 69
+  },
+  {
+    "rank": 42,
+    "name": "艾绿",
+    "pinyin": "ailv",
+    "hex": "#cad3c3",
+    "volume": 0.0028065,
+    "score": 68
+  },
+  {
+    "rank": 43,
+    "name": "桂红",
+    "pinyin": "guihong",
+    "hex": "#f25a47",
+    "volume": 0.002833,
+    "score": 67
+  },
+  {
+    "rank": 44,
+    "name": "石板灰",
+    "pinyin": "shibanhui",
+    "hex": "#624941",
+    "volume": 0.0029055,
+    "score": 66
+  },
+  {
+    "rank": 45,
+    "name": "苍白",
+    "pinyin": "c10c6d",
+    "hex": "#d1d9e0",
+    "volume": 0.0029165,
+    "score": 65
+  },
+  {
+    "rank": 46,
+    "name": "松柏绿",
+    "pinyin": "c176f1",
+    "hex": "#21a675",
+    "volume": 0.002983,
+    "score": 65
+  },
+  {
+    "rank": 47,
+    "name": "香叶红",
+    "pinyin": "xiangyehong",
+    "hex": "#f07c82",
+    "volume": 0.002998,
+    "score": 64
+  },
+  {
+    "rank": 48,
+    "name": "苍色",
+    "pinyin": "cfce2",
+    "hex": "#75878a",
+    "volume": 0.003038,
+    "score": 63
+  },
+  {
+    "rank": 49,
+    "name": "艳红",
+    "pinyin": "yanhong",
+    "hex": "#ed5a65",
+    "volume": 0.003108,
+    "score": 62
+  },
+  {
+    "rank": 50,
+    "name": "润红",
+    "pinyin": "runhong",
+    "hex": "#f7cdbc",
+    "volume": 0.003128,
+    "score": 62
+  },
+  {
+    "rank": 51,
+    "name": "栗紫",
+    "pinyin": "lizi",
+    "hex": "#5a191b",
+    "volume": 0.0031475,
+    "score": 61
+  },
+  {
+    "rank": 52,
+    "name": "风帆黄",
+    "pinyin": "fengfanhuang",
+    "hex": "#dc9123",
+    "volume": 0.003199,
+    "score": 60
+  },
+  {
+    "rank": 53,
+    "name": "茶花红",
+    "pinyin": "chahuahong",
+    "hex": "#ee3f4d",
+    "volume": 0.0032765,
+    "score": 59
+  },
+  {
+    "rank": 54,
+    "name": "淡豆沙",
+    "pinyin": "dandousha",
+    "hex": "#873d24",
+    "volume": 0.003277,
+    "score": 59
+  },
+  {
+    "rank": 55,
+    "name": "燕羽灰",
+    "pinyin": "yanyuhui",
+    "hex": "#685e48",
+    "volume": 0.003282,
+    "score": 58
+  },
+  {
+    "rank": 56,
+    "name": "银灰",
+    "pinyin": "yinhui",
+    "hex": "#918072",
+    "volume": 0.003378,
+    "score": 57
+  },
+  {
+    "rank": 57,
+    "name": "鹤灰",
+    "pinyin": "hehui",
+    "hex": "#4a4035",
+    "volume": 0.003392,
+    "score": 56
+  },
+  {
+    "rank": 58,
+    "name": "金色",
+    "pinyin": "c10607",
+    "hex": "#eacd76",
+    "volume": 0.003421,
+    "score": 55
+  },
+  {
+    "rank": 59,
+    "name": "浅驼色",
+    "pinyin": "qiantuose",
+    "hex": "#e2c17c",
+    "volume": 0.003433,
+    "score": 55
+  },
+  {
+    "rank": 60,
+    "name": "暗海水绿",
+    "pinyin": "anhaishuilv",
+    "hex": "#584717",
+    "volume": 0.0034985,
+    "score": 54
+  },
+  {
+    "rank": 61,
+    "name": "玳瑁黄",
+    "pinyin": "daimaohuang",
+    "hex": "#daa45a",
+    "volume": 0.003539,
+    "score": 53
+  },
+  {
+    "rank": 62,
+    "name": "玉红",
+    "pinyin": "yuhong",
+    "hex": "#c04851",
+    "volume": 0.0037185,
+    "score": 52
+  },
+  {
+    "rank": 63,
+    "name": "青白",
+    "pinyin": "c21b2",
+    "hex": "#c0ebd7",
+    "volume": 0.003728,
+    "score": 52
+  },
+  {
+    "rank": 64,
+    "name": "尘灰",
+    "pinyin": "chenhui",
+    "hex": "#b6a476",
+    "volume": 0.003731,
+    "score": 51
+  },
+  {
+    "rank": 65,
+    "name": "粉红",
+    "pinyin": "fenhong",
+    "hex": "#f2b9b2",
+    "volume": 0.0037725,
+    "score": 50
+  },
+  {
+    "rank": 66,
+    "name": "鹤顶红",
+    "pinyin": "hedinghong",
+    "hex": "#d42517",
+    "volume": 0.003776,
+    "score": 49
+  },
+  {
+    "rank": 67,
+    "name": "枣红",
+    "pinyin": "zaohong",
+    "hex": "#7c1823",
+    "volume": 0.003841,
+    "score": 49
+  },
+  {
+    "rank": 68,
+    "name": "淡绿",
+    "pinyin": "danlv",
+    "hex": "#61ac85",
+    "volume": 0.003856,
+    "score": 48
+  },
+  {
+    "rank": 69,
+    "name": "黛蓝",
+    "pinyin": "c43f3",
+    "hex": "#425066",
+    "volume": 0.0038975,
+    "score": 47
+  },
+  {
+    "rank": 70,
+    "name": "甘草黄",
+    "pinyin": "gancaohuang",
+    "hex": "#f3bf4c",
+    "volume": 0.0039895,
+    "score": 46
+  },
+  {
+    "rank": 71,
+    "name": "秋海棠红",
+    "pinyin": "qiuhaitanghong",
+    "hex": "#ec2b24",
+    "volume": 0.004073,
+    "score": 46
+  },
+  {
+    "rank": 72,
+    "name": "槟榔综",
+    "pinyin": "binglangzong",
+    "hex": "#c1651a",
+    "volume": 0.004119,
+    "score": 45
+  },
+  {
+    "rank": 73,
+    "name": "火红",
+    "pinyin": "c2ff3",
+    "hex": "#ff2d51",
+    "volume": 0.0043845,
+    "score": 44
+  },
+  {
+    "rank": 74,
+    "name": "黑色",
+    "pinyin": "heise",
+    "hex": "#000000",
+    "volume": 0.004403,
+    "score": 43
+  },
+  {
+    "rank": 75,
+    "name": "青色",
+    "pinyin": "c1267",
+    "hex": "#00e09e",
+    "volume": 0.00444,
+    "score": 42
+  },
+  {
+    "rank": 76,
+    "name": "水蓝",
+    "pinyin": "c4190",
+    "hex": "#d2f0f4",
+    "volume": 0.0045255,
+    "score": 42
+  },
+  {
+    "rank": 77,
+    "name": "胭脂",
+    "pinyin": "c9a58",
+    "hex": "#9d2933",
+    "volume": 0.004552,
+    "score": 41
+  },
+  {
+    "rank": 78,
+    "name": "山鸡褐",
+    "pinyin": "shanjihe",
+    "hex": "#986524",
+    "volume": 0.0047485,
+    "score": 40
+  },
+  {
+    "rank": 79,
+    "name": "明绿",
+    "pinyin": "minglv",
+    "hex": "#9eccab",
+    "volume": 0.004803,
+    "score": 39
+  },
+  {
+    "rank": 80,
+    "name": "绯红",
+    "pinyin": "cfc9e",
+    "hex": "#c83c23",
+    "volume": 0.0048055,
+    "score": 39
+  },
+  {
+    "rank": 81,
+    "name": "翡翠色",
+    "pinyin": "c889b",
+    "hex": "#3de1ad",
+    "volume": 0.004856,
+    "score": 38
+  },
+  {
+    "rank": 82,
+    "name": "岩石棕",
+    "pinyin": "yanshizong",
+    "hex": "#964d22",
+    "volume": 0.004901,
+    "score": 37
+  },
+  {
+    "rank": 83,
+    "name": "蓝绿",
+    "pinyin": "lanlv",
+    "hex": "#12a182",
+    "volume": 0.0049735,
+    "score": 36
+  },
+  {
+    "rank": 84,
+    "name": "玫瑰灰",
+    "pinyin": "meiguihui",
+    "hex": "#4b2e2b",
+    "volume": 0.005192,
+    "score": 36
+  },
+  {
+    "rank": 85,
+    "name": "醉瓜肉",
+    "pinyin": "zuiguarou",
+    "hex": "#db8540",
+    "volume": 0.0053365,
+    "score": 35
+  },
+  {
+    "rank": 86,
+    "name": "湖蓝",
+    "pinyin": "c3abb",
+    "hex": "#30dff3",
+    "volume": 0.0053425,
+    "score": 34
+  },
+  {
+    "rank": 87,
+    "name": "芦灰",
+    "pinyin": "luhui",
+    "hex": "#856d72",
+    "volume": 0.0057765,
+    "score": 33
+  },
+  {
+    "rank": 88,
+    "name": "黯",
+    "pinyin": "c847f",
+    "hex": "#41555d",
+    "volume": 0.0058325,
+    "score": 32
+  },
+  {
+    "rank": 89,
+    "name": "粉绿",
+    "pinyin": "fenlv",
+    "hex": "#83cbac",
+    "volume": 0.005895,
+    "score": 32
+  },
+  {
+    "rank": 90,
+    "name": "淡灰绿",
+    "pinyin": "danhuilv",
+    "hex": "#ad9e5f",
+    "volume": 0.006057,
+    "score": 31
+  },
+  {
+    "rank": 91,
+    "name": "潭水绿",
+    "pinyin": "tanshuilv",
+    "hex": "#645822",
+    "volume": 0.006271,
+    "score": 30
+  },
+  {
+    "rank": 92,
+    "name": "淡罂粟红",
+    "pinyin": "danyingsuhong",
+    "hex": "#eea08c",
+    "volume": 0.006303,
+    "score": 29
+  },
+  {
+    "rank": 93,
+    "name": "碧色",
+    "pinyin": "c21c3",
+    "hex": "#1bd1a5",
+    "volume": 0.00649,
+    "score": 29
+  },
+  {
+    "rank": 94,
+    "name": "蒿黄",
+    "pinyin": "haohuang",
+    "hex": "#dfc243",
+    "volume": 0.006512,
+    "score": 28
+  },
+  {
+    "rank": 95,
+    "name": "苔绿",
+    "pinyin": "tailv",
+    "hex": "#887322",
+    "volume": 0.006776,
+    "score": 27
+  },
+  {
+    "rank": 96,
+    "name": "碧绿",
+    "pinyin": "c7163",
+    "hex": "#2add9c",
+    "volume": 0.006948,
+    "score": 26
+  },
+  {
+    "rank": 97,
+    "name": "水色",
+    "pinyin": "c3186",
+    "hex": "#88ada6",
+    "volume": 0.007003,
+    "score": 26
+  },
+  {
+    "rank": 98,
+    "name": "葡萄酒红",
+    "pinyin": "putaojiuhong",
+    "hex": "#62102e",
+    "volume": 0.007177,
+    "score": 25
+  },
+  {
+    "rank": 99,
+    "name": "茉莉黄",
+    "pinyin": "molihuang",
+    "hex": "#f8df72",
+    "volume": 0.0076625,
+    "score": 24
+  },
+  {
+    "rank": 100,
+    "name": "夹竹桃红",
+    "pinyin": "jiazhutaohong",
+    "hex": "#eb507e",
+    "volume": 0.007958,
+    "score": 23
+  },
+  {
+    "rank": 101,
+    "name": "姚黄",
+    "pinyin": "yaohuang",
+    "hex": "#d0deaa",
+    "volume": 0.0079625,
+    "score": 22
+  },
+  {
+    "rank": 102,
+    "name": "苍翠",
+    "pinyin": "c141ba",
+    "hex": "#519a73",
+    "volume": 0.0082025,
+    "score": 22
+  },
+  {
+    "rank": 103,
+    "name": "毛绿",
+    "pinyin": "maolv",
+    "hex": "#66c18c",
+    "volume": 0.0083215,
+    "score": 21
+  },
+  {
+    "rank": 104,
+    "name": "鹅黄",
+    "pinyin": "c1724b",
+    "hex": "#fff143",
+    "volume": 0.0084255,
+    "score": 20
+  },
+  {
+    "rank": 105,
+    "name": "竹青",
+    "pinyin": "c7e3a",
+    "hex": "#789262",
+    "volume": 0.008671,
+    "score": 19
+  },
+  {
+    "rank": 106,
+    "name": "青碧",
+    "pinyin": "caeec",
+    "hex": "#48c0a3",
+    "volume": 0.008742,
+    "score": 19
+  },
+  {
+    "rank": 107,
+    "name": "淡绛红",
+    "pinyin": "danjianghong",
+    "hex": "#ec7696",
+    "volume": 0.009355,
+    "score": 18
+  },
+  {
+    "rank": 108,
+    "name": "藕荷色",
+    "pinyin": "cb01a",
+    "hex": "#e4c6d0",
+    "volume": 0.0094285,
+    "score": 17
+  },
+  {
+    "rank": 109,
+    "name": "绛紫",
+    "pinyin": "c1ce0",
+    "hex": "#8c4356",
+    "volume": 0.009455,
+    "score": 16
+  },
+  {
+    "rank": 110,
+    "name": "青葱",
+    "pinyin": "c6e02",
+    "hex": "#0aa344",
+    "volume": 0.009629,
+    "score": 16
+  },
+  {
+    "rank": 111,
+    "name": "翠绿",
+    "pinyin": "cuilv",
+    "hex": "#20a162",
+    "volume": 0.0104145,
+    "score": 15
+  },
+  {
+    "rank": 112,
+    "name": "嫩绿",
+    "pinyin": "cb2c2",
+    "hex": "#bddd22",
+    "volume": 0.010771,
+    "score": 14
+  },
+  {
+    "rank": 113,
+    "name": "苍绿",
+    "pinyin": "canglv",
+    "hex": "#223e36",
+    "volume": 0.0107925,
+    "score": 13
+  },
+  {
+    "rank": 114,
+    "name": "墨灰",
+    "pinyin": "c12e18",
+    "hex": "#758a99",
+    "volume": 0.0108945,
+    "score": 13
+  },
+  {
+    "rank": 115,
+    "name": "碧蓝",
+    "pinyin": "c1bf6",
+    "hex": "#3eede7",
+    "volume": 0.0130435,
+    "score": 12
+  },
+  {
+    "rank": 116,
+    "name": "蔚蓝",
+    "pinyin": "weilan",
+    "hex": "#29b7cb",
+    "volume": 0.0142935,
+    "score": 11
+  },
+  {
+    "rank": 117,
+    "name": "玫瑰红",
+    "pinyin": "meiguihong",
+    "hex": "#d2357d",
+    "volume": 0.0151215,
+    "score": 10
+  },
+  {
+    "rank": 118,
+    "name": "靛蓝",
+    "pinyin": "cdae7",
+    "hex": "#065279",
+    "volume": 0.0182365,
+    "score": 9
+  },
+  {
+    "rank": 119,
+    "name": "水绿",
+    "pinyin": "shuilv",
+    "hex": "#8cc269",
+    "volume": 0.0183235,
+    "score": 9
+  },
+  {
+    "rank": 120,
+    "name": "芽绿",
+    "pinyin": "yalv",
+    "hex": "#96c24e",
+    "volume": 0.022905,
+    "score": 8
+  },
+  {
+    "rank": 121,
+    "name": "黛",
+    "pinyin": "c5ea1",
+    "hex": "#4a4266",
+    "volume": 0.02309,
+    "score": 7
+  },
+  {
+    "rank": 122,
+    "name": "魏紫",
+    "pinyin": "weizi",
+    "hex": "#7e1671",
+    "volume": 0.0233295,
+    "score": 6
+  },
+  {
+    "rank": 123,
+    "name": "玫瑰紫",
+    "pinyin": "meiguizi",
+    "hex": "#ba2f7b",
+    "volume": 0.027974,
+    "score": 6
+  },
+  {
+    "rank": 124,
+    "name": "青翠",
+    "pinyin": "cfbab",
+    "hex": "#00e079",
+    "volume": 0.0301365,
+    "score": 5
+  },
+  {
+    "rank": 125,
+    "name": "柳绿",
+    "pinyin": "c36d8",
+    "hex": "#afdd22",
+    "volume": 0.031377,
+    "score": 4
+  },
+  {
+    "rank": 126,
+    "name": "海青",
+    "pinyin": "haiqing",
+    "hex": "#22a2c3",
+    "volume": 0.031441,
+    "score": 3
+  },
+  {
+    "rank": 127,
+    "name": "丁香色",
+    "pinyin": "c6913",
+    "hex": "#cca4e3",
+    "volume": 0.0394425,
+    "score": 3
+  },
+  {
+    "rank": 128,
+    "name": "鲜绿",
+    "pinyin": "xianlv",
+    "hex": "#43b244",
+    "volume": 0.050358,
+    "score": 2
+  },
+  {
+    "rank": 129,
+    "name": "紫色",
+    "pinyin": "ccb3c",
+    "hex": "#8d4bbb",
+    "volume": 0.1735055,
+    "score": 1
+  }
+]

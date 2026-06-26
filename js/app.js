@@ -7,6 +7,7 @@
   const previewImg = document.getElementById('preview-img');
   const previewPlaceholder = document.getElementById('preview-placeholder');
   const colorList = document.getElementById('color-list');
+  const rareColorSpot = document.getElementById('rare-color-spot');
   const panelHint = document.getElementById('panel-hint');
   const panelStatus = document.getElementById('panel-status');
   const snapshotBar = document.getElementById('snapshot-bar');
@@ -39,6 +40,7 @@
     panelHint.hidden = false;
     panelHint.textContent = '待上传图片后，此处将显示图中前五主色及其中国色名';
     if (snapshotBar) snapshotBar.hidden = true;
+    if (rareColorSpot) rareColorSpot.hidden = true;
     setStatus('');
   }
 
@@ -96,6 +98,26 @@
     });
   }
 
+  function paintRareColorSpot(rare) {
+    if (!rareColorSpot) return;
+    if (!rare) {
+      rareColorSpot.hidden = true;
+      rareColorSpot.innerHTML = '';
+      return;
+    }
+    rareColorSpot.hidden = false;
+    rareColorSpot.innerHTML = `
+      <p class="rare-color-label">稀有色</p>
+      <div class="rare-color-body">
+        <span class="rare-color-swatch" style="background:${rare.hex}"></span>
+        <span class="rare-color-meta">
+          <span class="rare-color-name">${escapeHtml(rare.name)}</span>
+          <span class="rare-color-score">稀有度 ${rare.rarityScore}</span>
+        </span>
+      </div>
+    `;
+  }
+
   function renderColors(colors) {
     currentColors = colors;
     if (currentColors.length === 0) {
@@ -103,9 +125,11 @@
       panelHint.hidden = false;
       panelHint.textContent = '待上传图片后，此处将显示图中前五主色及其中国色名';
       if (snapshotBar) snapshotBar.hidden = true;
+      if (rareColorSpot) rareColorSpot.hidden = true;
       return;
     }
     paintColorList();
+    paintRareColorSpot(ColorRarity.pickRarest(colors));
     if (snapshotBar) snapshotBar.hidden = false;
   }
 

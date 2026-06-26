@@ -13,6 +13,8 @@ const ColorSnapshot = (() => {
 
   const RIBBON_H = 58;
   const RIBBON_GAP = 10;
+  const RARE_H = 52;
+  const RARE_GAP = 8;
   const PHOTO_GAP = 12;
   const PHOTO_MAX_H = 196;
 
@@ -306,6 +308,44 @@ const ColorSnapshot = (() => {
     ctx.stroke();
   }
 
+  /** 稀有色 — 五色横条下方 */
+  function drawRareColorSpot(ctx, rare, boxX, boxY, boxW, boxH) {
+    if (!rare) return;
+
+    const r = 4;
+    drawRoundedRect(ctx, boxX, boxY, boxW, boxH, r);
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.38)';
+    ctx.fill();
+    ctx.strokeStyle = C.border;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    const seal = 28;
+    const pad = 10;
+    const sealY = boxY + (boxH - seal) / 2;
+
+    drawRoundedRect(ctx, boxX + pad, sealY, seal, seal, 3);
+    ctx.fillStyle = rare.hex;
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(42, 40, 36, 0.18)';
+    ctx.stroke();
+
+    const textX = boxX + pad + seal + 10;
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillStyle = C.inkFaint;
+    ctx.font = '400 11px "Noto Serif SC", STSong, serif';
+    ctx.fillText('稀有色', textX, sealY + 10);
+
+    ctx.fillStyle = C.ink;
+    ctx.font = '400 15px "Noto Serif SC", STSong, serif';
+    ctx.fillText(rare.name, textX, sealY + 28);
+
+    ctx.fillStyle = C.inkLight;
+    ctx.font = '300 12px "Noto Serif SC", STSong, serif';
+    ctx.fillText(`稀有度 ${rare.rarityScore}`, textX, sealY + 44);
+  }
+
   function fitPhoto(sourceImg, boxW, boxH) {
     if (!sourceImg?.naturalWidth) return { w: 0, h: 0 };
     const scale = Math.min(boxW / sourceImg.naturalWidth, boxH / sourceImg.naturalHeight);
@@ -315,12 +355,14 @@ const ColorSnapshot = (() => {
     };
   }
 
-  function measureLeftPanelH(sourceImg) {
+  function measureLeftPanelH(sourceImg, hasRare = true) {
     const photo = fitPhoto(sourceImg, LEFT_W - 16, PHOTO_MAX_H);
-    return 8 + photo.h + PHOTO_GAP + RIBBON_H + RIBBON_GAP + 4;
+    let h = 8 + photo.h + PHOTO_GAP + RIBBON_H + RIBBON_GAP;
+    if (hasRare) h += RARE_H + RARE_GAP;
+    return h + 4;
   }
 
-  function drawLeftColumn(ctx, sourceImg, colors, bodyY) {
+  function drawLeftColumn(ctx, sourceImg, colors, bodyY, rare) {
     const panelX = PAD;
     const panelW = LEFT_W;
     const innerX = panelX + 8;
@@ -328,7 +370,10 @@ const ColorSnapshot = (() => {
     const photo = fitPhoto(sourceImg, innerW, PHOTO_MAX_H);
     const photoTop = bodyY + 8;
     const ribbonY = photoTop + Math.max(photo.h, 0) + PHOTO_GAP;
-    const panelH = ribbonY - bodyY + RIBBON_H + RIBBON_GAP + 4;
+    const rareY = ribbonY + RIBBON_H + RIBBON_GAP;
+    let panelH = rareY - bodyY + RARE_GAP + 4;
+    if (rare) panelH += RARE_H;
+    else panelH = ribbonY - bodyY + RIBBON_GAP + 4;
 
     drawRoundedRect(ctx, panelX, bodyY, panelW, panelH, 8);
     ctx.fillStyle = 'rgba(255, 255, 255, 0.28)';
@@ -350,6 +395,7 @@ const ColorSnapshot = (() => {
     }
 
     drawColorRibbon(ctx, colors, innerX, ribbonY, innerW, RIBBON_H);
+    if (rare) drawRareColorSpot(ctx, rare, innerX, rareY, innerW, RARE_H);
     return panelH;
   }
 
@@ -380,10 +426,11 @@ const ColorSnapshot = (() => {
     await ensureFonts();
 
     const poems = await Promise.all(colors.map((c) => loadPoetry(c.pinyin, c)));
+    const rare = typeof ColorRarity !== 'undefined' ? ColorRarity.pickRarest(colors) : null;
     const baseTs = typeScale(colors.length);
     const measureCtx = document.createElement('canvas').getContext('2d');
     const innerW = RIGHT_W - baseTs.pad * 2;
-    const leftH = measureLeftPanelH(sourceImg);
+    const leftH = measureLeftPanelH(sourceImg, !!rare);
     const ts = fitSpacingToTarget(measureCtx, poems, innerW, baseTs, leftH);
     const rightH = measureRightColumn(measureCtx, poems, innerW, ts);
     const bodyH = Math.max(rightH, leftH);
@@ -401,7 +448,7 @@ const ColorSnapshot = (() => {
     drawHeader(ctx);
 
     const bodyY = HEADER_H + 8;
-    drawLeftColumn(ctx, sourceImg, colors, bodyY);
+    drawLeftColumn(ctx, sourceImg, colors, bodyY, rare);
     drawColumnDivider(ctx, bodyY, bodyH);
 
     let cy = bodyY;
