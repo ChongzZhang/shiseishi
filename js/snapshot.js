@@ -131,20 +131,80 @@ const ColorSnapshot = (() => {
     return { name: 21, line: 15, pad: 20, gap: 22, lead: 18, lineLead: 11, seal: 28 };
   }
 
-  function measureColorBlock(ctx, poetry, innerW, ts) {
-    let h = ts.pad + ts.seal + ts.lead;
+  const SPACING_MIN = { gap: 8, lead: 8, lineLead: 6, pad: 10 };
+  const SPACING_MAX_EXTRA = { gap: 10, lead: 6, lineLead: 4, pad: 8 };
+
+  function spacingAtScale(baseTs, t) {
+    const clampT = Math.max(0, Math.min(1, t));
+    const lerp = (min, base) => Math.round(min + (base - min) * clampT);
+    return {
+      ...baseTs,
+      pad: lerp(SPACING_MIN.pad, baseTs.pad),
+      gap: lerp(SPACING_MIN.gap, baseTs.gap),
+      lead: lerp(SPACING_MIN.lead, baseTs.lead),
+      lineLead: lerp(SPACING_MIN.lineLead, baseTs.lineLead),
+    };
+  }
+
+  function blockTopPad(ts, index) {
+    return index === 0 ? ts.pad * 0.4 : ts.pad + 6;
+  }
+
+  function measureColorBlock(ctx, poetry, innerW, ts, index = 0, isLast = false) {
+    let h = blockTopPad(ts, index) + ts.seal + ts.lead;
     const line = poemLine(poetry);
     if (line) {
       ctx.font = `300 ${ts.line}px "Noto Serif SC", STSong, serif`;
       h += wrapText(ctx, line, innerW - ts.seal - 14).length * (ts.line + ts.lineLead);
     }
-    return h + ts.gap;
+    return h + (isLast ? ts.gap * 0.45 : ts.gap);
+  }
+
+  function measureRightColumn(ctx, poems, innerW, ts) {
+    let h = 0;
+    poems.forEach((poetry, i) => {
+      h += measureColorBlock(ctx, poetry, innerW, ts, i, i === poems.length - 1);
+    });
+    return h;
+  }
+
+  /** 按左栏高度微调右栏间距：偏紧时压缩，偏空时略撑开 */
+  function fitSpacingToTarget(ctx, poems, innerW, baseTs, targetH) {
+    const comfyH = measureRightColumn(ctx, poems, innerW, baseTs);
+    const tightH = measureRightColumn(ctx, poems, innerW, spacingAtScale(baseTs, 0));
+
+    if (targetH >= comfyH) {
+      const extra = Math.min(targetH - comfyH, SPACING_MAX_EXTRA.gap * poems.length + SPACING_MAX_EXTRA.pad);
+      if (extra <= 0) return { ...baseTs };
+      const slots = poems.length + 0.6;
+      return {
+        ...baseTs,
+        pad: baseTs.pad + extra * 0.18 / slots,
+        gap: baseTs.gap + extra * 0.55 / slots,
+        lead: baseTs.lead + extra * 0.15 / slots,
+        lineLead: baseTs.lineLead + extra * 0.12 / slots,
+      };
+    }
+
+    if (targetH <= tightH) return spacingAtScale(baseTs, 0);
+
+    let lo = 0;
+    let hi = 1;
+    for (let i = 0; i < 14; i++) {
+      const mid = (lo + hi) / 2;
+      const h = measureRightColumn(ctx, poems, innerW, spacingAtScale(baseTs, mid));
+      if (h > targetH) lo = mid;
+      else hi = mid;
+    }
+    return spacingAtScale(baseTs, hi);
   }
 
   /** 右栏：题跋式 — 色印 + 色名 + 诗句，层次分明 */
-  function drawColorBlock(ctx, x, y, color, poetry, colW, ts, isFirst) {
+  function drawColorBlock(ctx, x, y, color, poetry, colW, ts, index, total) {
     const innerW = colW - ts.pad * 2;
-    const blockH = measureColorBlock(ctx, poetry, innerW, ts) - ts.gap;
+    const isFirst = index === 0;
+    const isLast = index === total - 1;
+    const blockH = measureColorBlock(ctx, poetry, innerW, ts, index, isLast);
 
     if (!isFirst) {
       ctx.strokeStyle = C.border;
@@ -155,7 +215,7 @@ const ColorSnapshot = (() => {
       ctx.stroke();
     }
 
-    const baseY = y + (isFirst ? ts.pad * 0.4 : ts.pad + 6);
+    const baseY = y + blockTopPad(ts, index);
     const sealX = x + ts.pad;
     const sealY = baseY;
     const textX = sealX + ts.seal + 12;
@@ -185,7 +245,7 @@ const ColorSnapshot = (() => {
       });
     }
 
-    return blockH + ts.gap;
+    return blockH;
   }
 
   /** 照片下五色横条 — 大色面题签，无图表感 */
@@ -255,9 +315,9 @@ const ColorSnapshot = (() => {
     };
   }
 
-  function measureLeftColumn(sourceImg) {
+  function measureLeftPanelH(sourceImg) {
     const photo = fitPhoto(sourceImg, LEFT_W - 16, PHOTO_MAX_H);
-    return photo.h + PHOTO_GAP + RIBBON_H + RIBBON_GAP + 12;
+    return 8 + photo.h + PHOTO_GAP + RIBBON_H + RIBBON_GAP + 4;
   }
 
   function drawLeftColumn(ctx, sourceImg, colors, bodyY) {
@@ -320,16 +380,13 @@ const ColorSnapshot = (() => {
     await ensureFonts();
 
     const poems = await Promise.all(colors.map((c) => loadPoetry(c.pinyin, c)));
-    const ts = typeScale(colors.length);
+    const baseTs = typeScale(colors.length);
     const measureCtx = document.createElement('canvas').getContext('2d');
-    const innerW = RIGHT_W - ts.pad * 2;
-
-    let rightH = 0;
-    colors.forEach((_, i) => {
-      rightH += measureColorBlock(measureCtx, poems[i], innerW, ts);
-    });
-
-    const bodyH = Math.max(rightH, measureLeftColumn(sourceImg));
+    const innerW = RIGHT_W - baseTs.pad * 2;
+    const leftH = measureLeftPanelH(sourceImg);
+    const ts = fitSpacingToTarget(measureCtx, poems, innerW, baseTs, leftH);
+    const rightH = measureRightColumn(measureCtx, poems, innerW, ts);
+    const bodyH = Math.max(rightH, leftH);
     const totalH = HEADER_H + bodyH + BODY_PAD_BOTTOM;
 
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -349,7 +406,7 @@ const ColorSnapshot = (() => {
 
     let cy = bodyY;
     colors.forEach((c, i) => {
-      cy += drawColorBlock(ctx, RIGHT_X, cy, c, poems[i], RIGHT_W, ts, i === 0);
+      cy += drawColorBlock(ctx, RIGHT_X, cy, c, poems[i], RIGHT_W, ts, i, colors.length);
     });
 
     return canvas;
