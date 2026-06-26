@@ -21,8 +21,9 @@ const ColorSnapshot = (() => {
     accent: 'rgba(42, 40, 36, 0.06)',
   };
 
-  const PALETTE_ZONE_H = 178;
-  const PHOTO_PALETTE_GAP = 10;
+  const PALETTE_ZONE_H = 192;
+  const PHOTO_PALETTE_GAP = 12;
+  const PHOTO_MAX_H = 210;
 
   function hexToRgba(hex, alpha) {
     const h = (hex || '#888').replace('#', '');
@@ -57,15 +58,15 @@ const ColorSnapshot = (() => {
 
     const cx = boxX + boxW / 2;
     const cy = boxY + boxH / 2 + 4;
-    const R = Math.min(boxW, boxH) * 0.34;
-    const nodeR = n >= 5 ? 13 : 15;
+    const R = Math.min(boxW, boxH) * 0.36;
+    const nodeR = n >= 5 ? 14 : 16;
 
     ctx.save();
 
     drawRoundedRect(ctx, boxX + 2, boxY + 2, boxW - 4, boxH - 4, 6);
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.38)';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.52)';
     ctx.fill();
-    ctx.strokeStyle = C.border;
+    ctx.strokeStyle = 'rgba(42, 40, 36, 0.2)';
     ctx.lineWidth = 1;
     ctx.stroke();
 
@@ -190,9 +191,13 @@ const ColorSnapshot = (() => {
     ctx.restore();
   }
 
-  function drawLeftColumn(ctx, sourceImg, colors, bodyY, bodyH) {
-    const photoMaxH = Math.max(72, bodyH - PALETTE_ZONE_H - PHOTO_PALETTE_GAP);
-    const photo = fitPhoto(sourceImg, LEFT_W, photoMaxH);
+  function measureLeftColumn(sourceImg) {
+    const photo = fitPhoto(sourceImg, LEFT_W, PHOTO_MAX_H);
+    return photo.h + PHOTO_PALETTE_GAP + PALETTE_ZONE_H;
+  }
+
+  function drawLeftColumn(ctx, sourceImg, colors, bodyY) {
+    const photo = fitPhoto(sourceImg, LEFT_W, PHOTO_MAX_H);
     const px = PAD;
     const py = bodyY;
 
@@ -208,15 +213,8 @@ const ColorSnapshot = (() => {
       ctx.stroke();
     }
 
-    const ruleY = bodyY + photoMaxH + PHOTO_PALETTE_GAP * 0.35;
-    ctx.strokeStyle = C.border;
-    ctx.beginPath();
-    ctx.moveTo(PAD + 6, ruleY);
-    ctx.lineTo(PAD + LEFT_W - 6, ruleY);
-    ctx.stroke();
-
-    const paletteY = bodyY + bodyH - PALETTE_ZONE_H;
-    drawFiveColorPalette(ctx, colors, PAD, paletteY, LEFT_W, PALETTE_ZONE_H - 4);
+    const paletteY = py + photo.h + PHOTO_PALETTE_GAP;
+    drawFiveColorPalette(ctx, colors, PAD, paletteY, LEFT_W, PALETTE_ZONE_H);
   }
 
   let overlayEl = null;
@@ -464,7 +462,8 @@ const ColorSnapshot = (() => {
       );
     });
 
-    const bodyH = Math.max(rightH, PALETTE_ZONE_H + 100);
+    const leftH = measureLeftColumn(sourceImg);
+    const bodyH = Math.max(rightH, leftH);
     const totalH = HEADER_H + bodyH + FOOTER_H + PAD;
 
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -480,7 +479,7 @@ const ColorSnapshot = (() => {
 
     const bodyY = HEADER_H + PAD * 0.35;
 
-    drawLeftColumn(ctx, sourceImg, colors, bodyY, bodyH);
+    drawLeftColumn(ctx, sourceImg, colors, bodyY);
 
     ctx.strokeStyle = C.border;
     ctx.beginPath();
