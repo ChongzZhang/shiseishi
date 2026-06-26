@@ -490,11 +490,13 @@ body.snapshot-open {
 }
 
 .rare-color-spot {
-  margin-top: auto;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: 0;
-  padding-top: 1rem;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .rare-color-spot[hidden] {
